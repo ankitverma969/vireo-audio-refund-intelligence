@@ -1,0 +1,21 @@
+{
+  "raw_ticket_rows": 12238,
+  "unique_ticket_ids": 11600,
+  "duplicate_ticket_ids": 638,
+  "duplicate_rows": 1276,
+  "migration_pairs": 638,
+  "canonical_ticket_count": 11600,
+  "raw_refund_total_inr": 230124081.0,
+  "normalized_refund_total_with_dups_inr": 7070943.0,
+  "reconciled_refund_total_inr": 6709932.0,
+  "quarterly_average_refund_inr": 1118322.0,
+  "refund_ticket_count_raw": 2465,
+  "refund_ticket_count_canonical": 2340,
+  "reconciliation_exceptions_count": 0,
+  "order_match_stats": {
+    "quoted_valid": 7701,
+    "fallback_single": 3192,
+    "ambiguous": 707,
+    "unmatched": 0
+  }
+}
