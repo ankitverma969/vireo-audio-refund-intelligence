@@ -1,0 +1,414 @@
+{
+  "metadata": {
+    "total_tickets_raw": 12238,
+    "unique_ticket_ids": 11600,
+    "duplicate_ticket_ids": 638,
+    "total_duplicate_rows": 1276,
+    "date_range": {
+      "min": "2025-01-01 09:17",
+      "max": "2026-06-30 23:14"
+    }
+  },
+  "datasets": {
+    "tickets": {
+      "total_rows": 12238,
+      "unique_ids": 11600,
+      "status_distribution": {
+        "resolved": 10518,
+        "closed": 1098,
+        "open": 358,
+        "pending": 264
+      },
+      "channel_distribution": {
+        "chat": 5150,
+        "email": 3883,
+        "voice": 1969,
+        "social": 1236
+      },
+      "source_system_distribution": {
+        "helpdesk": 8364,
+        "legacy_fd": 3874
+      },
+      "missing_values": {
+        "ticket_id": 0,
+        "created_at": 0,
+        "first_response_at": 0,
+        "resolved_at": 622,
+        "status": 0,
+        "channel": 0,
+        "customer_id": 0,
+        "order_id": 4127,
+        "product_sku": 0,
+        "category": 0,
+        "priority": 0,
+        "assigned_team": 0,
+        "agent_id": 0,
+        "transfers": 0,
+        "csat_score": 6729,
+        "refund_amount_inr": 9773,
+        "refund_reason_code": 9773,
+        "replacement_issued": 0,
+        "customer_message": 0,
+        "agent_notes": 0,
+        "source_system": 0
+      },
+      "raw_refund_count": 2465,
+      "raw_refund_sum_inr": 230124081.0,
+      "reason_code_distribution": {
+        "nan": 9773,
+        "GW-OTHER": 1041,
+        "RETURN-QC-OK": 483,
+        "DUP-PAYMENT": 334,
+        "CANCEL": 242,
+        "DOA-REPL": 149,
+        "WTY-BUYBACK": 94,
+        "PRICE-ADJ": 74,
+        "LOST-TRANSIT": 48
+      },
+      "replacement_distribution": {
+        "N": 10891,
+        "Y": 1347
+      }
+    },
+    "agents": {
+      "total_rows": 44,
+      "unique_ids": 44,
+      "multi_roster_count": 0,
+      "from_date_range": {
+        "min": "2020-11-26",
+        "max": "2024-08-07"
+      },
+      "active_assignments": 44,
+      "team_distribution": {
+        "Chat Frontline": 15,
+        "Email Frontline": 7,
+        "Escalations & Warranty": 6,
+        "Logistics": 5,
+        "Voice Frontline": 4,
+        "Billing": 4,
+        "Returns Desk": 3
+      },
+      "tier_distribution": {
+        "1": 38,
+        "2": 6
+      },
+      "shift_distribution": {
+        "Morning": 22,
+        "Day": 17,
+        "Night": 5
+      },
+      "site_distribution": {
+        "Bengaluru": 24,
+        "Indore": 20
+      }
+    },
+    "customers": {
+      "total_rows": 9500,
+      "unique_ids": 9500,
+      "duplicate_ids": 0,
+      "missing_ids": 0,
+      "care_plus_distribution": {
+        "N": 6524,
+        "Y": 2976
+      }
+    },
+    "orders": {
+      "total_rows": 15000,
+      "unique_ids": 15000,
+      "duplicate_ids": 0,
+      "missing_ids": 0,
+      "channel_distribution": {
+        "vireo.in": 8285,
+        "Amazon": 4532,
+        "Flipkart": 2183
+      },
+      "date_range": {
+        "min": "2024-06-15",
+        "max": "2026-06-30"
+      },
+      "value_stats": {
+        "min": 319.0,
+        "max": 13998.0,
+        "mean": 3564.5664666666667,
+        "median": 3149.0
+      }
+    },
+    "products": {
+      "total_rows": 14,
+      "unique_skus": 14,
+      "duplicate_skus": 0,
+      "missing_costs": 0,
+      "missing_prices": 0
+    }
+  },
+  "referential_integrity": {
+    "tickets_customer_id_matched": 12238,
+    "tickets_customer_id_total": 12238,
+    "tickets_order_id_non_null": 8111,
+    "tickets_order_id_matched": 8111,
+    "tickets_order_id_missing": 4127,
+    "tickets_product_sku_matched": 12238,
+    "tickets_product_sku_total": 12238,
+    "tickets_agent_id_matched": 12238,
+    "tickets_agent_id_total": 12238,
+    "orders_customer_id_matched": 15000,
+    "orders_sku_matched": 15000,
+    "fallback_order_matching": {
+      "zero_matches": 0,
+      "single_match": 3391,
+      "multi_matches": 736
+    }
+  },
+  "monetary_investigation": {
+    "raw_by_source": {
+      "helpdesk": {
+        "count": 1690,
+        "sum": 4817881.0,
+        "min": 32.0,
+        "mean": 2850.8171597633136,
+        "median": 2499.0,
+        "max": 13998.0
+      },
+      "legacy_fd": {
+        "count": 775,
+        "sum": 225306200.0,
+        "min": 5700.0,
+        "mean": 290717.67741935485,
+        "median": 224900.0,
+        "max": 1399800.0
+      }
+    },
+    "duplicate_pairs_count": 125,
+    "exact_100x_ratio_confirmed": true,
+    "representative_examples": [
+      {
+        "ticket_id": "TK-240003",
+        "helpdesk_inr": 900.0,
+        "legacy_fd_raw": 90000.0,
+        "legacy_fd_normalized": 900.0,
+        "ratio": 100.0
+      },
+      {
+        "ticket_id": "TK-240009",
+        "helpdesk_inr": 2124.0,
+        "legacy_fd_raw": 212400.0,
+        "legacy_fd_normalized": 2124.0,
+        "ratio": 100.0
+      },
+      {
+        "ticket_id": "TK-240091",
+        "helpdesk_inr": 600.0,
+        "legacy_fd_raw": 60000.0,
+        "legacy_fd_normalized": 600.0,
+        "ratio": 100.0
+      },
+      {
+        "ticket_id": "TK-240121",
+        "helpdesk_inr": 1999.0,
+        "legacy_fd_raw": 199900.0,
+        "legacy_fd_normalized": 1999.0,
+        "ratio": 100.0
+      },
+      {
+        "ticket_id": "TK-240134",
+        "helpdesk_inr": 1999.0,
+        "legacy_fd_raw": 199900.0,
+        "legacy_fd_normalized": 1999.0,
+        "ratio": 100.0
+      },
+      {
+        "ticket_id": "TK-240148",
+        "helpdesk_inr": 2499.0,
+        "legacy_fd_raw": 249900.0,
+        "legacy_fd_normalized": 2499.0,
+        "ratio": 100.0
+      }
+    ],
+    "reconciliation_scenarios": {
+      "scenario_a_raw_export": {
+        "count": 2465,
+        "total_inr": 230124081.0
+      },
+      "scenario_b_dedup_raw": {
+        "count": 2340,
+        "total_inr": 194022981.0
+      },
+      "scenario_c_normalized_with_dups": {
+        "count": 2465,
+        "total_inr": 7070943.0
+      },
+      "scenario_d_reconciled": {
+        "count": 2340,
+        "total_inr": 6709932.0
+      }
+    },
+    "quarterly_reconciliation": [
+      {
+        "quarter": "2025Q1",
+        "raw_count": 244,
+        "raw_sum_inr": 61049992.0,
+        "reconciled_count": 212,
+        "reconciled_sum_inr": 609583.0
+      },
+      {
+        "quarter": "2025Q2",
+        "raw_count": 302,
+        "raw_sum_inr": 72879635.0,
+        "reconciled_count": 253,
+        "reconciled_sum_inr": 727422.0
+      },
+      {
+        "quarter": "2025Q3",
+        "raw_count": 449,
+        "raw_sum_inr": 92028618.0,
+        "reconciled_count": 405,
+        "reconciled_sum_inr": 1207091.0
+      },
+      {
+        "quarter": "2025Q4",
+        "raw_count": 542,
+        "raw_sum_inr": 1627575.0,
+        "reconciled_count": 542,
+        "reconciled_sum_inr": 1627575.0
+      },
+      {
+        "quarter": "2026Q1",
+        "raw_count": 455,
+        "raw_sum_inr": 1258438.0,
+        "reconciled_count": 455,
+        "reconciled_sum_inr": 1258438.0
+      },
+      {
+        "quarter": "2026Q2",
+        "raw_count": 473,
+        "raw_sum_inr": 1279823.0,
+        "reconciled_count": 473,
+        "reconciled_sum_inr": 1279823.0
+      }
+    ],
+    "refund_vs_order_validation": {
+      "count": 1542,
+      "full_refunds_count": 1150,
+      "partial_refunds_count": 392,
+      "exceeding_order_count": 0,
+      "max_ratio": 1.0
+    }
+  },
+  "anomalies": {
+    "double_dips": {
+      "count": 166,
+      "total_refund_inr": 574191.0,
+      "by_team": {
+        "Chat Frontline": 50,
+        "Logistics": 48,
+        "Email Frontline": 22,
+        "Voice Frontline": 19,
+        "Returns Desk": 13,
+        "Escalations & Warranty": 11,
+        "Billing": 3
+      }
+    },
+    "gw_other_cap_violations": {
+      "total_gw_tickets": 991,
+      "exceeding_500_inr_count": 879,
+      "exceeding_sum_inr": 2871632.0,
+      "compliance_rate": 0.11301715438950555
+    },
+    "replacement_tier_violations": {
+      "replacements_by_tier": {
+        "1": 1048,
+        "2": 234
+      },
+      "tier1_replacements_count": 1048,
+      "tier2_replacements_count": 234,
+      "replacements_by_team": {
+        "Chat Frontline": 339,
+        "Logistics": 327,
+        "Escalations & Warranty": 234,
+        "Email Frontline": 179,
+        "Returns Desk": 108,
+        "Voice Frontline": 82,
+        "Billing": 13
+      }
+    },
+    "refund_teams_distribution": {
+      "refunds_by_team": {
+        "Returns Desk": 612,
+        "Billing": 592,
+        "Chat Frontline": 387,
+        "Logistics": 356,
+        "Email Frontline": 213,
+        "Voice Frontline": 98,
+        "Escalations & Warranty": 82
+      },
+      "returns_desk_share": 0.26153846153846155,
+      "refunds_by_tier": {
+        "1": 2258,
+        "2": 82
+      }
+    },
+    "csat_metrics": {
+      "total_responses": 5237,
+      "response_rate": 0.4514655172413793,
+      "quarterly_trends": {
+        "2025Q1": {
+          "count": 476,
+          "mean": 3.5399159663865545,
+          "median": 4.0
+        },
+        "2025Q2": {
+          "count": 603,
+          "mean": 3.51575456053068,
+          "median": 4.0
+        },
+        "2025Q3": {
+          "count": 826,
+          "mean": 3.4782082324455206,
+          "median": 3.0
+        },
+        "2025Q4": {
+          "count": 1242,
+          "mean": 3.5072463768115942,
+          "median": 4.0
+        },
+        "2026Q1": {
+          "count": 1051,
+          "mean": 3.489058039961941,
+          "median": 4.0
+        },
+        "2026Q2": {
+          "count": 1039,
+          "mean": 3.46102021174206,
+          "median": 3.0
+        }
+      }
+    },
+    "sla_breaches": {
+      "total_breaches": 1060,
+      "breach_rate": 0.09137931034482759,
+      "breach_penalty_total_inr": 371000.0,
+      "by_channel": {
+        "chat": {
+          "total": 4886,
+          "breaches": 370,
+          "breach_rate": 0.0757265656979124
+        },
+        "email": {
+          "total": 3681,
+          "breaches": 486,
+          "breach_rate": 0.13202933985330073
+        },
+        "social": {
+          "total": 1173,
+          "breaches": 102,
+          "breach_rate": 0.08695652173913043
+        },
+        "voice": {
+          "total": 1860,
+          "breaches": 102,
+          "breach_rate": 0.054838709677419356
+        }
+      }
+    }
+  }
+}
