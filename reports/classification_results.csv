@@ -1,0 +1,992 @@
+ticket_id,existing_reason_code,predicted_reason_code,confidence,review_required,classification_method,evidence_text,explanation,review_priority,refund_amount_inr_normalized
+TK-240003,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,warranty claim; SERVICE CENTRE; warranty,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,MEDIUM,900.0
+TK-240015,GW-OTHER,RETURN-QC-OK,0.95,True,rule_based,money for the return; reverse pkp; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,1709.0
+TK-240023,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,warranty claim; warranty claim; rma status,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,MEDIUM,288.0
+TK-240026,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; cancelled before dispatch; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,3999.0
+TK-240028,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-240046,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 200.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,200.0
+TK-240089,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; cancel; cancelled,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,2499.0
+TK-240117,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,1400.0
+TK-240120,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,HIGH,13298.0
+TK-240138,GW-OTHER,CANCEL,0.95,True,rule_based,Cancelled before dispatch; cancel; Cancelled,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,1999.0
+TK-240146,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6999.0
+TK-240148,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-240226,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,4999.0
+TK-240242,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,reverse pkp; returned,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,2499.0
+TK-240246,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 80.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,80.0
+TK-240247,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,674.0
+TK-240262,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3999.0
+TK-240263,GW-OTHER,LOST-TRANSIT,0.95,True,rule_based,not delivered; lost in transit; not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,718.0
+TK-240279,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-240307,GW-OTHER,CANCEL,0.85,True,rule_based,cancel my order; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,8998.0
+TK-240311,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 288.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,288.0
+TK-240320,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-240328,GW-OTHER,RETURN-QC-OK,0.95,True,rule_based,money for the return; reverse pickup; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,1599.0
+TK-240338,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 170.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,170.0
+TK-240354,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,4248.0
+TK-240381,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; Cancelled before dispatch; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,2374.0
+TK-240416,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2660.0
+TK-240429,GW-OTHER,DOA-REPL,0.6,True,rule_based,out of the box,Moderate match: Unboxing defect phrasing,HIGH,2124.0
+TK-240479,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 332.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,332.0
+TK-240483,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5599.0
+TK-240492,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; cancel; cancelled,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,4749.0
+TK-240496,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,duplicate payment,Duplicate payment or double debit reported,MEDIUM,360.0
+TK-240505,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,2249.0
+TK-240530,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,HIGH,360.0
+TK-240545,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6299.0
+TK-240554,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5199.0
+TK-240564,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1299.0
+TK-240568,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1619.0
+TK-240588,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,HIGH,2499.0
+TK-240618,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-240641,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,promo code,Moderate match: Pricing difference mention,MEDIUM,380.0
+TK-240649,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,Reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,475.0
+TK-240650,GW-OTHER,DUP-PAYMENT,0.95,True,rule_based,charged twice; charged twice,Duplicate payment or double debit reported,HIGH,6299.0
+TK-240682,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; cancel; cancelled,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,6999.0
+TK-240691,GW-OTHER,RETURN-QC-OK,0.95,True,rule_based,money for the return; reverse pickup; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,1424.0
+TK-240699,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6649.0
+TK-240702,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; cancelled before dispatch; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,1699.0
+TK-240737,GW-OTHER,CANCEL,0.85,True,rule_based,cancellation request; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,1619.0
+TK-240753,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 400.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,400.0
+TK-240829,GW-OTHER,LOST-TRANSIT,0.925,True,rule_based,not delivered; lost in transit,Carrier transit failure or confirmed non-delivery,HIGH,13998.0
+TK-240834,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,charged twice,Duplicate payment or double debit reported,HIGH,5199.0
+TK-240835,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6299.0
+TK-240845,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5199.0
+TK-240856,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-240879,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-240951,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,4499.0
+TK-240953,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,900.0
+TK-240963,GW-OTHER,LOST-TRANSIT,0.925,True,rule_based,not delivered; not delivered,Carrier transit failure or confirmed non-delivery,HIGH,1599.0
+TK-240980,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,HIGH,5399.0
+TK-240984,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-241003,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 162.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,162.0
+TK-241026,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 324.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,324.0
+TK-241038,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5849.0
+TK-241062,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6999.0
+TK-241067,GW-OTHER,DOA-REPL,0.75,True,rule_based,doa,Dead on Arrival / unboxing hardware failure,MEDIUM,2374.0
+TK-241097,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,500.0
+TK-241118,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1187.0
+TK-241152,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,money for the return; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,160.0
+TK-241155,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,1599.0
+TK-241156,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-241215,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6649.0
+TK-241220,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,charged twice,Duplicate payment or double debit reported,HIGH,6649.0
+TK-241229,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-241236,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,3500.0
+TK-241243,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-241273,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2249.0
+TK-241284,GW-OTHER,CANCEL,0.95,True,rule_based,Cancelled before dispatch; CANCEL; Cancelled,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,375.0
+TK-241292,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-241315,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,duplicate payment,Duplicate payment or double debit reported,MEDIUM,4499.0
+TK-241333,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancelled before dispatch; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,6499.0
+TK-241342,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5199.0
+TK-241391,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,1799.0
+TK-241398,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,600.0
+TK-241415,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5849.0
+TK-241476,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6499.0
+TK-241540,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,2249.0
+TK-241559,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,800.0
+TK-241575,GW-OTHER,GW-OTHER,0.45,True,rule_based,goodwill,Weak indicator for GW-OTHER; confidence below decision threshold.,HIGH,1999.0
+TK-241675,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,returned,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,1799.0
+TK-241676,GW-OTHER,RETURN-QC-OK,0.95,True,rule_based,money for the return; reverse pickup; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,1300.0
+TK-241686,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6174.0
+TK-241690,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 216.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,216.0
+TK-241705,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1709.0
+TK-241711,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,duplicate payment,Duplicate payment or double debit reported,HIGH,6299.0
+TK-241735,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,money for the return; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,3998.0
+TK-241749,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2249.0
+TK-241755,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5524.0
+TK-241768,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-241775,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,750.0
+TK-241788,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,HIGH,5699.0
+TK-241796,GW-OTHER,CANCEL,0.95,True,rule_based,Cancelled before dispatch; cancellation; Cancelled,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,1439.0
+TK-241826,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2124.0
+TK-241832,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5599.0
+TK-241845,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6999.0
+TK-241851,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,Service centre; Warranty claim; service centre,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,MEDIUM,1699.0
+TK-241857,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; cancel; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,6499.0
+TK-241863,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,HIGH,5949.0
+TK-241876,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2249.0
+TK-241881,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 212.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,212.0
+TK-241883,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,8998.0
+TK-241897,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2249.0
+TK-241920,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5999.0
+TK-241927,GW-OTHER,DUP-PAYMENT,0.95,True,rule_based,charged twice; duplicate payment,Duplicate payment or double debit reported,MEDIUM,1699.0
+TK-241932,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,charged twice,Duplicate payment or double debit reported,MEDIUM,1000.0
+TK-241934,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,reverse pickup; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,1400.0
+TK-241942,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1999.0
+TK-241943,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 270.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,270.0
+TK-241962,GW-OTHER,CANCEL,0.775,True,rule_based,cancel; cancel,Cancellation term detected,MEDIUM,750.0
+TK-241993,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 340.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,340.0
+TK-242001,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,1999.0
+TK-242025,GW-OTHER,CANCEL,0.95,True,rule_based,Cancelled before dispatch; cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,1170.0
+TK-242047,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,1999.0
+TK-242055,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6999.0
+TK-242080,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,duplicate payment,Duplicate payment or double debit reported,MEDIUM,1104.0
+TK-242100,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,720.0
+TK-242101,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,discount,Moderate match: Pricing difference mention,MEDIUM,450.0
+TK-242112,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; cancel; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,975.0
+TK-242117,GW-OTHER,CANCEL,0.95,True,rule_based,Cancelled before dispatch; cancel; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,2249.0
+TK-242121,GW-OTHER,WTY-BUYBACK,0.85,True,rule_based,service centre; service centre,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,MEDIUM,1300.0
+TK-242130,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,8998.0
+TK-242131,GW-OTHER,DOA-REPL,0.6,True,rule_based,out of the box,Moderate match: Unboxing defect phrasing,MEDIUM,120.0
+TK-242158,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,HIGH,2998.0
+TK-242174,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3500.0
+TK-242191,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,2499.0
+TK-242222,GW-OTHER,PRICE-ADJ,0.75,True,rule_based,coupon code,Price adjustment or omitted coupon discount,MEDIUM,630.0
+TK-242223,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6499.0
+TK-242249,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1529.0
+TK-242251,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5699.0
+TK-242253,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1529.0
+TK-242266,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancellation request; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,160.0
+TK-242270,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,money for the return; return,Return reverse pickup / QC passed confirmation; General return term detected,HIGH,6999.0
+TK-242277,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,4999.0
+TK-242302,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1274.0
+TK-242310,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,319.0
+TK-242332,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-242356,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 64.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,64.0
+TK-242358,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,800.0
+TK-242380,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-242418,GW-OTHER,PRICE-ADJ,0.85,True,rule_based,coupon code; discount,Price adjustment or omitted coupon discount; Pricing difference mention,HIGH,5949.0
+TK-242510,GW-OTHER,LOST-TRANSIT,0.925,True,rule_based,not delivered; not delivered,Carrier transit failure or confirmed non-delivery,HIGH,5849.0
+TK-242519,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1999.0
+TK-242520,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,375.0
+TK-242544,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5849.0
+TK-242590,GW-OTHER,DUP-PAYMENT,0.95,True,rule_based,charged twice; duplicate payment,Duplicate payment or double debit reported,MEDIUM,1999.0
+TK-242621,GW-OTHER,LOST-TRANSIT,0.925,True,rule_based,not delivered; not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,337.0
+TK-242648,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; Cancelled before dispatch; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,3238.0
+TK-242666,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,2499.0
+TK-242670,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1299.0
+TK-242680,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,charged twice,Duplicate payment or double debit reported,MEDIUM,3999.0
+TK-242686,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,duplicate payment,Duplicate payment or double debit reported,MEDIUM,4999.0
+TK-242715,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,900.0
+TK-242730,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,3398.0
+TK-242736,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,duplicate payment,Duplicate payment or double debit reported,MEDIUM,1799.0
+TK-242752,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,6499.0
+TK-242771,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,RMA,Moderate match: Warranty / service centre reference,HIGH,1529.0
+TK-242778,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,356.0
+TK-242786,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6499.0
+TK-242799,GW-OTHER,RETURN-QC-OK,0.95,True,rule_based,money for the return; reverse pickup; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,1999.0
+TK-242877,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1169.0
+TK-242906,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-242957,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,Warranty claim; service centre; warranty claim,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,MEDIUM,1699.0
+TK-242963,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancellation request; cancelled before dispatch,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,617.0
+TK-242965,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,1299.0
+TK-242973,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2374.0
+TK-242985,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6999.0
+TK-242987,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; cancel; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,1799.0
+TK-242991,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,1999.0
+TK-243037,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-243071,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,2499.0
+TK-243086,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; cancelled before dispatch; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,2374.0
+TK-243097,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5599.0
+TK-243098,GW-OTHER,WTY-BUYBACK,0.85,True,rule_based,warranty claim; warranty,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,HIGH,2499.0
+TK-243141,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,reverse pickup; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,2374.0
+TK-243154,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,HIGH,6499.0
+TK-243157,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,12998.0
+TK-243185,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-243207,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1999.0
+TK-243210,GW-OTHER,LOST-TRANSIT,0.925,True,rule_based,not delivered; lost in transit,Carrier transit failure or confirmed non-delivery,HIGH,2499.0
+TK-243212,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,4499.0
+TK-243215,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; Cancellation request; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,12998.0
+TK-243224,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,duplicate payment,Duplicate payment or double debit reported,MEDIUM,2249.0
+TK-243273,GW-OTHER,DUP-PAYMENT,0.95,True,rule_based,charged twice; charged twice,Duplicate payment or double debit reported,MEDIUM,1799.0
+TK-243286,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,charged twice,Duplicate payment or double debit reported,MEDIUM,379.0
+TK-243305,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-243329,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 315.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,315.0
+TK-243337,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,duplicate payment,Duplicate payment or double debit reported,MEDIUM,1709.0
+TK-243341,GW-OTHER,GW-OTHER,0.45,True,rule_based,goodwill,Weak indicator for GW-OTHER; confidence below decision threshold.,HIGH,1799.0
+TK-243357,GW-OTHER,CANCEL,0.95,True,rule_based,Cancelled before dispatch; cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,4999.0
+TK-243392,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancel; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,6174.0
+TK-243395,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6174.0
+TK-243401,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,charged twice,Duplicate payment or double debit reported,MEDIUM,3324.0
+TK-243402,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,HIGH,1709.0
+TK-243408,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1709.0
+TK-243461,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,HIGH,1999.0
+TK-243486,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,duplicate payment,Duplicate payment or double debit reported,MEDIUM,2250.0
+TK-243490,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2799.0
+TK-243492,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,lost in transit,Carrier transit failure or confirmed non-delivery,MEDIUM,4749.0
+TK-243496,GW-OTHER,LOST-TRANSIT,0.925,True,rule_based,not delivered; lost in transit,Carrier transit failure or confirmed non-delivery,MEDIUM,2249.0
+TK-243501,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,RMA,Moderate match: Warranty / service centre reference,HIGH,2548.0
+TK-243514,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,promo code,Moderate match: Pricing difference mention,HIGH,2124.0
+TK-243542,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,promo code,Moderate match: Pricing difference mention,HIGH,720.0
+TK-243554,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-243565,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-243586,GW-OTHER,DUP-PAYMENT,0.95,True,rule_based,charged twice; duplicate payment,Duplicate payment or double debit reported,MEDIUM,1799.0
+TK-243592,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; cancel; cancelled,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,1999.0
+TK-243600,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 446.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,446.0
+TK-243601,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; cancel; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,339.0
+TK-243603,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1709.0
+TK-243657,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,charged twice,Duplicate payment or double debit reported,MEDIUM,750.0
+TK-243659,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6499.0
+TK-243661,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2974.0
+TK-243676,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,lost in transit,Carrier transit failure or confirmed non-delivery,MEDIUM,4799.0
+TK-243681,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-243718,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1999.0
+TK-243738,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,4999.0
+TK-243778,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,2974.0
+TK-243784,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,duplicate payment,Duplicate payment or double debit reported,MEDIUM,3499.0
+TK-243789,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,warranty,Moderate match: Warranty / service centre reference,HIGH,6499.0
+TK-243792,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,warranty,Moderate match: Warranty / service centre reference,HIGH,5199.0
+TK-243796,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,3149.0
+TK-243814,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,rma,Moderate match: Warranty / service centre reference,HIGH,6499.0
+TK-243823,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1439.0
+TK-243834,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1299.0
+TK-243843,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,HIGH,5599.0
+TK-243880,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,lost in transit,Carrier transit failure or confirmed non-delivery,MEDIUM,2799.0
+TK-243895,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,337.0
+TK-243905,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1999.0
+TK-243933,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,4749.0
+TK-243961,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,HIGH,1619.0
+TK-243965,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,2499.0
+TK-243991,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,money for the return; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,1619.0
+TK-244000,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1619.0
+TK-244010,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,2374.0
+TK-244018,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,reverse pickup; Return,Return reverse pickup / QC passed confirmation; General return term detected,HIGH,5948.0
+TK-244029,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3324.0
+TK-244031,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,4999.0
+TK-244040,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,rma,Moderate match: Warranty / service centre reference,HIGH,6174.0
+TK-244054,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,HIGH,5949.0
+TK-244078,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,HIGH,472.0
+TK-244095,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5599.0
+TK-244151,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-244152,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2799.0
+TK-244162,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2249.0
+TK-244164,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,525.0
+TK-244165,GW-OTHER,CANCEL,0.875,True,rule_based,cancel; cancel; Cancelled,Cancellation term detected,MEDIUM,3499.0
+TK-244172,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1999.0
+TK-244220,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-244228,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,service centre; rma status; service centre,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,MEDIUM,3499.0
+TK-244231,GW-OTHER,CANCEL,0.775,True,rule_based,cancel; cancel,Cancellation term detected,MEDIUM,1400.0
+TK-244273,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,2799.0
+TK-244310,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 475.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,475.0
+TK-244317,GW-OTHER,CANCEL,0.6,True,rule_based,cancel,Moderate match: Cancellation term detected,HIGH,2499.0
+TK-244323,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,charged twice,Duplicate payment or double debit reported,MEDIUM,810.0
+TK-244330,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1487.0
+TK-244333,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,3499.0
+TK-244349,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2974.0
+TK-244354,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1999.0
+TK-244355,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-244392,GW-OTHER,GW-OTHER,0.45,True,rule_based,goodwill,Weak indicator for GW-OTHER; confidence below decision threshold.,HIGH,3149.0
+TK-244423,GW-OTHER,CANCEL,0.775,True,rule_based,cancel; cancel,Cancellation term detected,MEDIUM,2499.0
+TK-244433,GW-OTHER,CANCEL,0.95,True,rule_based,Cancelled before dispatch; cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,810.0
+TK-244456,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,Reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,3324.0
+TK-244458,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 225.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,225.0
+TK-244484,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-244492,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,2799.0
+TK-244495,GW-OTHER,CANCEL,0.775,True,rule_based,cancel; Cancel,Cancellation term detected,HIGH,5199.0
+TK-244510,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1999.0
+TK-244515,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,returned,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,1709.0
+TK-244553,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancellation request; cancelled before dispatch,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,2499.0
+TK-244556,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2799.0
+TK-244561,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-244570,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-244573,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1529.0
+TK-244622,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1234.0
+TK-244635,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,315.0
+TK-244642,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,money for the return; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,2124.0
+TK-244677,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6999.0
+TK-244733,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,Duplicate payment,Duplicate payment or double debit reported,MEDIUM,600.0
+TK-244746,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,712.0
+TK-244757,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1000.0
+TK-244772,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,money for the return; return,Return reverse pickup / QC passed confirmation; General return term detected,HIGH,5948.0
+TK-244824,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,3499.0
+TK-244840,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; Cancelled before dispatch; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,2974.0
+TK-244843,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,5599.0
+TK-244844,GW-OTHER,CANCEL,0.95,True,rule_based,Cancelled before dispatch; cancel; CANCEL,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,6174.0
+TK-244845,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,2974.0
+TK-244872,GW-OTHER,DOA-REPL,0.75,True,rule_based,doa,Dead on Arrival / unboxing hardware failure,HIGH,2124.0
+TK-244880,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-244891,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,3499.0
+TK-244910,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-244911,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,4249.0
+TK-244931,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5199.0
+TK-244934,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 162.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,162.0
+TK-244962,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2124.0
+TK-244966,GW-OTHER,LOST-TRANSIT,0.925,True,rule_based,not delivered; not delivered,Carrier transit failure or confirmed non-delivery,HIGH,3324.0
+TK-244967,GW-OTHER,CANCEL,0.775,True,rule_based,cancel; cancellation,Cancellation term detected,MEDIUM,2974.0
+TK-244969,GW-OTHER,CANCEL,0.775,True,rule_based,cancel; cancellation,Cancellation term detected,MEDIUM,2499.0
+TK-244971,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,discount,Moderate match: Pricing difference mention,HIGH,3499.0
+TK-244974,GW-OTHER,CANCEL,0.95,True,rule_based,cancel; cancel; cancelled,Cancellation term detected,MEDIUM,4999.0
+TK-245000,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-245014,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,855.0
+TK-245048,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6999.0
+TK-245069,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-245071,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2799.0
+TK-245083,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-245084,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,13998.0
+TK-245092,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancelled before dispatch; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,2974.0
+TK-245112,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6299.0
+TK-245136,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1487.0
+TK-245137,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,520.0
+TK-245140,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,700.0
+TK-245141,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,rma,Moderate match: Warranty / service centre reference,HIGH,6999.0
+TK-245160,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1999.0
+TK-245163,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,HIGH,2799.0
+TK-245204,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,money for the return; return,Return reverse pickup / QC passed confirmation; General return term detected,HIGH,5524.0
+TK-245209,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,discount,Moderate match: Pricing difference mention,HIGH,1039.0
+TK-245216,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,4999.0
+TK-245232,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-245244,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,1999.0
+TK-245256,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,warranty claim; RMA status; warranty,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,HIGH,6174.0
+TK-245260,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1234.0
+TK-245265,GW-OTHER,RETURN-QC-OK,0.95,True,rule_based,money for the return; reverse pickup; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,3499.0
+TK-245266,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1999.0
+TK-245274,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,HIGH,9998.0
+TK-245282,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-245289,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,warranty,Moderate match: Warranty / service centre reference,HIGH,3499.0
+TK-245306,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,promo code,Moderate match: Pricing difference mention,HIGH,2499.0
+TK-245307,GW-OTHER,RETURN-QC-OK,0.95,True,rule_based,money for the return; reverse pickup; return,Return reverse pickup / QC passed confirmation; General return term detected,HIGH,5699.0
+TK-245319,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1299.0
+TK-245326,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,rma status; service centre; rma,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,HIGH,6999.0
+TK-245336,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,warranty,Moderate match: Warranty / service centre reference,HIGH,2374.0
+TK-245345,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,reverse pickup; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,446.0
+TK-245356,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,HIGH,2799.0
+TK-245381,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,2249.0
+TK-245382,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 216.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,216.0
+TK-245388,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; cancellation; Cancelled,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,2499.0
+TK-245406,GW-OTHER,GW-OTHER,0.45,True,rule_based,goodwill,Weak indicator for GW-OTHER; confidence below decision threshold.,HIGH,1999.0
+TK-245407,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 379.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,379.0
+TK-245411,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,money for the return; return,Return reverse pickup / QC passed confirmation; General return term detected,HIGH,6499.0
+TK-245423,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,HIGH,3324.0
+TK-245424,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3324.0
+TK-245440,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,6999.0
+TK-245443,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,reverse pickup; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,288.0
+TK-245488,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,RMA,Moderate match: Warranty / service centre reference,HIGH,11898.0
+TK-245494,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-245499,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-245502,GW-OTHER,CANCEL,0.775,True,rule_based,cancel; cancellation,Cancellation term detected,MEDIUM,2124.0
+TK-245509,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 32.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,32.0
+TK-245523,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 350.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,350.0
+TK-245535,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1599.0
+TK-245548,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3324.0
+TK-245553,GW-OTHER,CANCEL,0.6,True,rule_based,cancel,Moderate match: Cancellation term detected,HIGH,1619.0
+TK-245563,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3149.0
+TK-245577,GW-OTHER,CANCEL,0.95,True,rule_based,Cancelled before dispatch; cancel; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,2600.0
+TK-245582,GW-OTHER,CANCEL,0.95,True,rule_based,Cancelled before dispatch; Cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,6648.0
+TK-245584,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3324.0
+TK-245586,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,900.0
+TK-245589,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,2374.0
+TK-245607,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,reverse pkp; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,3499.0
+TK-245625,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,4999.0
+TK-245629,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-245664,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,1424.0
+TK-245697,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1529.0
+TK-245705,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,4248.0
+TK-245716,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,1662.0
+TK-245743,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-245745,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6999.0
+TK-245750,GW-OTHER,CANCEL,0.775,True,rule_based,cancel; cancellation,Cancellation term detected,HIGH,6998.0
+TK-245757,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; CANCEL; CANCEL,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,2374.0
+TK-245764,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3149.0
+TK-245777,GW-OTHER,,0.35,True,rule_based,Conflict between GW-OTHER ('goodwill') and RETURN-QC-OK ('returned'),Ambiguous evidence: equal signal for GW-OTHER and RETURN-QC-OK. Human review required.,HIGH,2499.0
+TK-245792,GW-OTHER,PRICE-ADJ,0.75,True,rule_based,coupon code,Price adjustment or omitted coupon discount,MEDIUM,1574.0
+TK-245793,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6648.0
+TK-245806,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; cancel; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,1999.0
+TK-245830,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,1799.0
+TK-245838,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; Cancelled before dispatch; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,3499.0
+TK-245846,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6648.0
+TK-245871,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,HIGH,6999.0
+TK-245875,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,charged twice,Duplicate payment or double debit reported,MEDIUM,1299.0
+TK-245880,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,2974.0
+TK-245888,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,560.0
+TK-245902,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,Reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,3149.0
+TK-245903,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5599.0
+TK-245910,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; cancel; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,5399.0
+TK-245943,GW-OTHER,RETURN-QC-OK,0.95,True,rule_based,money for the return; reverse pickup; return,Return reverse pickup / QC passed confirmation; General return term detected,HIGH,6998.0
+TK-245945,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,warranty,Moderate match: Warranty / service centre reference,HIGH,3499.0
+TK-245981,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2374.0
+TK-245994,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5949.0
+TK-246001,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,2499.0
+TK-246017,GW-OTHER,CANCEL,0.6,True,rule_based,cancellation,Moderate match: Cancellation term detected,HIGH,5999.0
+TK-246022,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,3999.0
+TK-246036,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,HIGH,5999.0
+TK-246059,GW-OTHER,CANCEL,0.775,True,rule_based,Cancelled; cancel,Cancellation term detected,MEDIUM,1250.0
+TK-246060,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,service centre; rma status; service centre,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,HIGH,3149.0
+TK-246071,GW-OTHER,DOA-REPL,0.6,True,rule_based,out of the box,Moderate match: Unboxing defect phrasing,HIGH,1699.0
+TK-246095,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; cancel; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,2250.0
+TK-246126,GW-OTHER,DOA-REPL,0.75,True,rule_based,doa,Dead on Arrival / unboxing hardware failure,HIGH,6499.0
+TK-246128,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,552.0
+TK-246139,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6998.0
+TK-246145,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,duplicate payment,Duplicate payment or double debit reported,MEDIUM,2499.0
+TK-246152,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-246164,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,3499.0
+TK-246170,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6999.0
+TK-246171,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-246175,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,945.0
+TK-246226,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6499.0
+TK-246242,GW-OTHER,CANCEL,0.775,True,rule_based,cancel; cancel,Cancellation term detected,MEDIUM,1400.0
+TK-246247,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 500.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,500.0
+TK-246257,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-246262,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; cancel; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,2799.0
+TK-246272,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3500.0
+TK-246276,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2249.0
+TK-246279,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,warranty,Moderate match: Warranty / service centre reference,HIGH,1999.0
+TK-246289,GW-OTHER,CANCEL,0.95,True,rule_based,Cancelled before dispatch; cancel; Cancelled,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,6998.0
+TK-246313,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,9998.0
+TK-246317,GW-OTHER,DOA-REPL,0.75,True,rule_based,DOA,Dead on Arrival / unboxing hardware failure,HIGH,1799.0
+TK-246344,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-246354,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,2799.0
+TK-246357,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-246358,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-246379,GW-OTHER,GW-OTHER,0.45,True,rule_based,goodwill,Weak indicator for GW-OTHER; confidence below decision threshold.,HIGH,11898.0
+TK-246391,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancel; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,3149.0
+TK-246399,GW-OTHER,DUP-PAYMENT,0.95,True,rule_based,charged twice; charged twice,Duplicate payment or double debit reported,MEDIUM,1999.0
+TK-246405,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,warranty claim; service centre; warranty,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,HIGH,6649.0
+TK-246408,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,1039.0
+TK-246412,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-246415,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3149.0
+TK-246431,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,discount,Moderate match: Pricing difference mention,HIGH,1400.0
+TK-246444,GW-OTHER,CANCEL,0.775,True,rule_based,cancel; cancel,Cancellation term detected,HIGH,499.0
+TK-246462,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2799.0
+TK-246466,GW-OTHER,GW-OTHER,0.45,True,rule_based,goodwill,Weak indicator for GW-OTHER; confidence below decision threshold.,HIGH,3999.0
+TK-246487,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3324.0
+TK-246538,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,HIGH,6499.0
+TK-246559,GW-OTHER,DUP-PAYMENT,0.95,True,rule_based,charged twice; charged twice,Duplicate payment or double debit reported,MEDIUM,1199.0
+TK-246585,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; cancellation; cancelled,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,3499.0
+TK-246601,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1187.0
+TK-246612,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,warranty,Moderate match: Warranty / service centre reference,HIGH,617.0
+TK-246633,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3324.0
+TK-246639,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,1799.0
+TK-246642,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,584.0
+TK-246654,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; cancellation; cancelled,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,630.0
+TK-246696,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,1799.0
+TK-246700,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 288.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,288.0
+TK-246750,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-246758,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,764.0
+TK-246767,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3500.0
+TK-246788,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,2799.0
+TK-246844,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6499.0
+TK-246850,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3324.0
+TK-246876,GW-OTHER,LOST-TRANSIT,0.925,True,rule_based,not delivered; not delivered,Carrier transit failure or confirmed non-delivery,HIGH,5949.0
+TK-246888,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,3149.0
+TK-246910,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 297.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,297.0
+TK-246915,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 500.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,500.0
+TK-246927,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,HIGH,6499.0
+TK-246928,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,RMA,Moderate match: Warranty / service centre reference,HIGH,3324.0
+TK-246935,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; Cancelled before dispatch; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,525.0
+TK-246936,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 375.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,375.0
+TK-246943,GW-OTHER,CANCEL,0.6,True,rule_based,cancellation,Moderate match: Cancellation term detected,HIGH,2499.0
+TK-246948,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,charged twice,Duplicate payment or double debit reported,MEDIUM,2499.0
+TK-246960,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5699.0
+TK-246980,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2799.0
+TK-246987,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,1529.0
+TK-247022,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 399.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,399.0
+TK-247025,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1709.0
+TK-247041,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,1709.0
+TK-247045,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,HIGH,2249.0
+TK-247060,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-247062,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,reverse pkp; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,4499.0
+TK-247086,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,warranty claim; warranty claim; rma status,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,HIGH,1599.0
+TK-247093,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,HIGH,2499.0
+TK-247095,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,700.0
+TK-247114,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,rma,Moderate match: Warranty / service centre reference,HIGH,6648.0
+TK-247120,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,11398.0
+TK-247126,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5999.0
+TK-247128,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1105.0
+TK-247145,GW-OTHER,GW-OTHER,0.45,True,rule_based,goodwill,Weak indicator for GW-OTHER; confidence below decision threshold.,HIGH,6999.0
+TK-247157,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1199.0
+TK-247158,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-247190,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,reverse pickup; RETURN,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,297.0
+TK-247217,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 379.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,379.0
+TK-247232,GW-OTHER,DOA-REPL,0.6,True,rule_based,out of the box,Moderate match: Unboxing defect phrasing,HIGH,4249.0
+TK-247254,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,money for the return; return,Return reverse pickup / QC passed confirmation; General return term detected,HIGH,2499.0
+TK-247273,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,HIGH,6499.0
+TK-247289,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; cancellation; cancelled,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,3499.0
+TK-247298,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-247303,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5999.0
+TK-247306,GW-OTHER,CANCEL,0.875,True,rule_based,cancel; cancel; Cancel,Cancellation term detected,MEDIUM,270.0
+TK-247308,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,reverse pkp; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,2249.0
+TK-247314,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5399.0
+TK-247342,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6999.0
+TK-247350,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5199.0
+TK-247354,GW-OTHER,CANCEL,0.875,True,rule_based,Cancel; cancel; cancellation,Cancellation term detected,MEDIUM,1599.0
+TK-247392,GW-OTHER,CANCEL,0.85,True,rule_based,cancellation request; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,4749.0
+TK-247433,GW-OTHER,GW-OTHER,0.45,True,rule_based,goodwill,Weak indicator for GW-OTHER; confidence below decision threshold.,HIGH,1899.0
+TK-247444,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,Warranty,Moderate match: Warranty / service centre reference,HIGH,6174.0
+TK-247468,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; Cancelled before dispatch; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,1104.0
+TK-247472,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1439.0
+TK-247478,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6298.0
+TK-247487,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,3499.0
+TK-247489,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancellation request; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,180.0
+TK-247492,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,HIGH,1999.0
+TK-247493,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,3499.0
+TK-247503,GW-OTHER,DUP-PAYMENT,0.95,True,rule_based,charged twice; charged twice,Duplicate payment or double debit reported,MEDIUM,1709.0
+TK-247506,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2124.0
+TK-247523,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1000.0
+TK-247560,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3149.0
+TK-247568,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,warranty claim; RMA status; RMA status,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,HIGH,1439.0
+TK-247584,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,charged twice,Duplicate payment or double debit reported,MEDIUM,975.0
+TK-247610,GW-OTHER,RETURN-QC-OK,0.95,True,rule_based,money for the return; reverse pickup; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,2974.0
+TK-247621,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,HIGH,4999.0
+TK-247642,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1750.0
+TK-247661,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6999.0
+TK-247664,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-247685,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-247752,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,DISCOUNT,Moderate match: Pricing difference mention,HIGH,570.0
+TK-247763,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,525.0
+TK-247764,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,2499.0
+TK-247767,GW-OTHER,RETURN-QC-OK,0.95,True,rule_based,money for the return; reverse pickup; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,3499.0
+TK-247768,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,2249.0
+TK-247823,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 117.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,117.0
+TK-247828,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1104.0
+TK-247836,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5999.0
+TK-247844,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2799.0
+TK-247849,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3999.0
+TK-247854,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6499.0
+TK-247882,GW-OTHER,CANCEL,0.875,True,rule_based,cancel; cancel; cancelled,Cancellation term detected,HIGH,2799.0
+TK-247905,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 237.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,237.0
+TK-247941,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6299.0
+TK-247945,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; Cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,6299.0
+TK-247959,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1487.0
+TK-247961,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,HIGH,3499.0
+TK-247969,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6499.0
+TK-247981,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,duplicate payment,Duplicate payment or double debit reported,MEDIUM,4999.0
+TK-247997,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-248011,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,525.0
+TK-248070,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-248071,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,6174.0
+TK-248074,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,297.0
+TK-248082,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,RMA,Moderate match: Warranty / service centre reference,HIGH,3499.0
+TK-248103,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,discount,Moderate match: Pricing difference mention,HIGH,630.0
+TK-248104,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,560.0
+TK-248138,GW-OTHER,CANCEL,0.95,True,rule_based,Cancelled before dispatch; cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,2799.0
+TK-248141,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-248145,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,Reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,350.0
+TK-248161,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,3149.0
+TK-248183,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 234.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,234.0
+TK-248190,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3149.0
+TK-248213,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; cancelled before dispatch; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,700.0
+TK-248230,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,4799.0
+TK-248237,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-248252,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-248262,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 375.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,375.0
+TK-248270,GW-OTHER,PRICE-ADJ,0.85,True,rule_based,Coupon code; promo code,Price adjustment or omitted coupon discount; Pricing difference mention,MEDIUM,3324.0
+TK-248288,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6649.0
+TK-248306,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,HIGH,1799.0
+TK-248322,GW-OTHER,PRICE-ADJ,0.85,True,rule_based,Coupon code; promo code,Price adjustment or omitted coupon discount; Pricing difference mention,MEDIUM,1709.0
+TK-248327,GW-OTHER,LOST-TRANSIT,0.95,True,rule_based,not delivered; not delivered; lost in transit,Carrier transit failure or confirmed non-delivery,MEDIUM,2974.0
+TK-248342,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,reverse pickup; return,Return reverse pickup / QC passed confirmation; General return term detected,HIGH,6998.0
+TK-248345,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1709.0
+TK-248352,GW-OTHER,DOA-REPL,0.75,True,rule_based,doa,Dead on Arrival / unboxing hardware failure,HIGH,6999.0
+TK-248394,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6499.0
+TK-248418,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1104.0
+TK-248426,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; cancellation; cancelled,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,160.0
+TK-248438,GW-OTHER,PRICE-ADJ,0.775,True,rule_based,promo code; promo code,Pricing difference mention,MEDIUM,306.0
+TK-248481,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1439.0
+TK-248485,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 350.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,HIGH,350.0
+TK-248507,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2799.0
+TK-248519,GW-OTHER,LOST-TRANSIT,0.95,True,rule_based,not delivered; not delivered; lost in transit,Carrier transit failure or confirmed non-delivery,HIGH,6499.0
+TK-248525,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,service centre; RMA status; service centre,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,MEDIUM,3499.0
+TK-248536,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 446.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,446.0
+TK-248537,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,duplicate payment,Duplicate payment or double debit reported,MEDIUM,3499.0
+TK-248556,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 250.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,250.0
+TK-248563,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3149.0
+TK-248569,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1662.0
+TK-248575,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-248594,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 500.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,500.0
+TK-248605,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1699.0
+TK-248633,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 40.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,40.0
+TK-248651,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2124.0
+TK-248652,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,700.0
+TK-248701,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2799.0
+TK-248705,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,RMA,Moderate match: Warranty / service centre reference,HIGH,2499.0
+TK-248744,GW-OTHER,CANCEL,0.95,True,rule_based,Cancelled before dispatch; cancellation; Cancelled,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,525.0
+TK-248753,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-248757,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-248762,GW-OTHER,GW-OTHER,0.45,True,rule_based,goodwill,Weak indicator for GW-OTHER; confidence below decision threshold.,HIGH,2499.0
+TK-248772,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5199.0
+TK-248782,GW-OTHER,CANCEL,0.775,True,rule_based,cancel; cancel,Cancellation term detected,MEDIUM,3149.0
+TK-248794,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,1499.0
+TK-248803,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,money for the return; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,926.0
+TK-248821,GW-OTHER,CANCEL,0.775,True,rule_based,cancel; cancel,Cancellation term detected,MEDIUM,2499.0
+TK-248840,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,rma,Moderate match: Warranty / service centre reference,HIGH,12598.0
+TK-248842,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 270.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,270.0
+TK-248849,GW-OTHER,LOST-TRANSIT,0.925,True,rule_based,not delivered; not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,3499.0
+TK-248859,GW-OTHER,WTY-BUYBACK,0.775,True,rule_based,RMA; RMA,Warranty / service centre reference,HIGH,2974.0
+TK-248911,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,discount,Moderate match: Pricing difference mention,HIGH,6499.0
+TK-248916,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,1299.0
+TK-248945,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,4249.0
+TK-248950,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,560.0
+TK-248991,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1000.0
+TK-248997,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-249009,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1699.0
+TK-249020,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,warranty,Moderate match: Warranty / service centre reference,HIGH,6499.0
+TK-249033,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,945.0
+TK-249067,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6999.0
+TK-249092,GW-OTHER,LOST-TRANSIT,0.925,True,rule_based,not delivered; not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,3499.0
+TK-249130,GW-OTHER,CANCEL,0.6,True,rule_based,Cancel,Moderate match: Cancellation term detected,HIGH,2499.0
+TK-249134,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2799.0
+TK-249147,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,700.0
+TK-249151,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 499.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,499.0
+TK-249161,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1999.0
+TK-249163,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,duplicate payment,Duplicate payment or double debit reported,HIGH,6999.0
+TK-249167,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1999.0
+TK-249172,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-249195,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5399.0
+TK-249196,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,4999.0
+TK-249198,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,RMA,Moderate match: Warranty / service centre reference,HIGH,2499.0
+TK-249200,GW-OTHER,RETURN-QC-OK,0.95,True,rule_based,money for the return; reverse pickup; return,Return reverse pickup / QC passed confirmation; General return term detected,HIGH,5399.0
+TK-249213,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 180.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,180.0
+TK-249217,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,money for the return; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,1104.0
+TK-249219,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-249228,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,2799.0
+TK-249273,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 130.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,130.0
+TK-249291,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1400.0
+TK-249324,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,RMA,Moderate match: Warranty / service centre reference,HIGH,1699.0
+TK-249329,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2799.0
+TK-249338,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-249353,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,rma,Moderate match: Warranty / service centre reference,HIGH,3499.0
+TK-249373,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2374.0
+TK-249418,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 475.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,HIGH,475.0
+TK-249425,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,6299.0
+TK-249427,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,warranty,Moderate match: Warranty / service centre reference,HIGH,3149.0
+TK-249488,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-249490,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,2974.0
+TK-249501,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,540.0
+TK-249527,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,2799.0
+TK-249530,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2799.0
+TK-249535,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 500.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,500.0
+TK-249537,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2374.0
+TK-249566,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,3324.0
+TK-249572,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1619.0
+TK-249585,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,520.0
+TK-249591,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6299.0
+TK-249630,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,2499.0
+TK-249701,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6649.0
+TK-249713,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,Reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,3499.0
+TK-249715,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 450.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,450.0
+TK-249725,GW-OTHER,LOST-TRANSIT,0.95,True,rule_based,not delivered; not delivered; lost in transit,Carrier transit failure or confirmed non-delivery,MEDIUM,1699.0
+TK-249730,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-249741,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,duplicate payment,Duplicate payment or double debit reported,MEDIUM,650.0
+TK-249755,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2124.0
+TK-249761,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1299.0
+TK-249774,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3149.0
+TK-249788,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6174.0
+TK-249790,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,discount,Moderate match: Pricing difference mention,MEDIUM,350.0
+TK-249803,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,promo code,Moderate match: Pricing difference mention,HIGH,5199.0
+TK-249811,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-249833,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,1250.0
+TK-249853,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,700.0
+TK-249872,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-249890,GW-OTHER,RETURN-QC-OK,0.95,True,rule_based,money for the return; reverse pkp; return,Return reverse pickup / QC passed confirmation; General return term detected,HIGH,3499.0
+TK-249896,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,reverse pkp; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,2499.0
+TK-249897,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 475.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,475.0
+TK-249912,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3149.0
+TK-249952,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,2974.0
+TK-249960,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-249993,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,1799.0
+TK-249996,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1999.0
+TK-250008,GW-OTHER,RETURN-QC-OK,0.95,True,rule_based,money for the return; reverse pkp; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,3499.0
+TK-250012,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2374.0
+TK-250022,GW-OTHER,GW-OTHER,0.45,True,rule_based,goodwill,Weak indicator for GW-OTHER; confidence below decision threshold.,HIGH,3324.0
+TK-250044,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1619.0
+TK-250087,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,returned,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,2974.0
+TK-250094,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; Cancelled before dispatch; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,2124.0
+TK-250108,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; cancel; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,319.0
+TK-250120,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 270.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,HIGH,270.0
+TK-250137,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3149.0
+TK-250139,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 356.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,HIGH,356.0
+TK-250140,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,charged twice,Duplicate payment or double debit reported,MEDIUM,3499.0
+TK-250155,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,2799.0
+TK-250182,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,700.0
+TK-250209,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,2974.0
+TK-250215,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-250251,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,promo code,Moderate match: Pricing difference mention,HIGH,2799.0
+TK-250255,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,money for the return; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,630.0
+TK-250341,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 499.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,499.0
+TK-250345,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1899.0
+TK-250359,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,service centre; service centre; RMA,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,HIGH,1999.0
+TK-250370,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3149.0
+TK-250422,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,4999.0
+TK-250428,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1274.0
+TK-250446,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1750.0
+TK-250453,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5199.0
+TK-250470,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,11048.0
+TK-250471,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,service centre; warranty claim; rma status,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,HIGH,5949.0
+TK-250489,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,500.0
+TK-250499,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1439.0
+TK-250554,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-250580,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,12348.0
+TK-250588,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 332.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,332.0
+TK-250604,GW-OTHER,CANCEL,0.95,True,rule_based,Cancelled before dispatch; cancel; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,3499.0
+TK-250608,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 247.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,247.0
+TK-250624,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,rma status; rma status; rma,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,MEDIUM,1619.0
+TK-250626,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1299.0
+TK-250632,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5524.0
+TK-250633,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1699.0
+TK-250634,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,350.0
+TK-250666,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-250701,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2249.0
+TK-250703,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2374.0
+TK-250720,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,reverse pkp; return,Return reverse pickup / QC passed confirmation; General return term detected,HIGH,5599.0
+TK-250722,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,560.0
+TK-250749,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-250754,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,Reverse pickup,Return reverse pickup / QC passed confirmation,HIGH,5598.0
+TK-250758,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,500.0
+TK-250764,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-250813,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,926.0
+TK-250823,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1999.0
+TK-250877,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2878.0
+TK-250880,GW-OTHER,CANCEL,0.6,True,rule_based,cancel,Moderate match: Cancellation term detected,HIGH,525.0
+TK-250886,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,12348.0
+TK-250891,GW-OTHER,DUP-PAYMENT,0.95,True,rule_based,charged twice; duplicate payment,Duplicate payment or double debit reported,MEDIUM,3198.0
+TK-250906,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5999.0
+TK-250922,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2160.0
+TK-250948,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,warranty claim; service centre; warranty,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,MEDIUM,2499.0
+TK-250954,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 359.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,359.0
+TK-250974,GW-OTHER,LOST-TRANSIT,0.925,True,rule_based,NOT DELIVERED; not delivered,Carrier transit failure or confirmed non-delivery,HIGH,3499.0
+TK-250977,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-250988,GW-OTHER,CANCEL,0.95,True,rule_based,Cancellation request; Cancelled before dispatch; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,6174.0
+TK-251001,GW-OTHER,CANCEL,0.775,True,rule_based,cancel; cancel,Cancellation term detected,MEDIUM,3499.0
+TK-251017,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,520.0
+TK-251021,GW-OTHER,CANCEL,0.95,True,rule_based,Cancelled before dispatch; cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,500.0
+TK-251031,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,RMA,Moderate match: Warranty / service centre reference,HIGH,6649.0
+TK-251042,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,2499.0
+TK-251070,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancellation request; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,3499.0
+TK-251094,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,charged twice,Duplicate payment or double debit reported,MEDIUM,3499.0
+TK-251115,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,665.0
+TK-251139,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,3149.0
+TK-251146,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-251151,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3324.0
+TK-251186,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 446.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,446.0
+TK-251200,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,Reverse pickup,Return reverse pickup / QC passed confirmation,HIGH,2124.0
+TK-251237,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 104.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,104.0
+TK-251248,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,4999.0
+TK-251265,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,service centre; warranty claim; service centre,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,MEDIUM,3324.0
+TK-251274,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2974.0
+TK-251282,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,reverse pickup; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,110.0
+TK-251284,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1662.0
+TK-251307,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-251331,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,1999.0
+TK-251369,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,HIGH,5199.0
+TK-251380,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,3999.0
+TK-251387,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,638.0
+TK-251401,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; Cancelled before dispatch; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,900.0
+TK-251408,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1199.0
+TK-251410,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5599.0
+TK-251438,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,1199.0
+TK-251443,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5399.0
+TK-251451,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,560.0
+TK-251463,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3149.0
+TK-251484,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,promo code,Moderate match: Pricing difference mention,HIGH,1799.0
+TK-251494,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1170.0
+TK-251500,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2500.0
+TK-251519,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5699.0
+TK-251523,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,charged twice,Duplicate payment or double debit reported,HIGH,1487.0
+TK-251601,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1899.0
+TK-251620,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,rma,Moderate match: Warranty / service centre reference,HIGH,1299.0
+TK-251633,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1999.0
+TK-251638,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2799.0
+TK-251644,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,630.0
+TK-251706,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,rma,Moderate match: Warranty / service centre reference,HIGH,3499.0
+TK-251708,GW-OTHER,LOST-TRANSIT,0.925,True,rule_based,not delivered; lost in transit,Carrier transit failure or confirmed non-delivery,MEDIUM,2974.0
+TK-251720,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3324.0
+TK-251723,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; cancellation; cancelled,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,144.0
+TK-251738,GW-OTHER,PRICE-ADJ,0.775,True,rule_based,Discount; discount,Pricing difference mention,MEDIUM,1439.0
+TK-251777,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,4799.0
+TK-251809,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,552.0
+TK-251831,GW-OTHER,RETURN-QC-OK,0.95,True,rule_based,money for the return; reverse pickup; return,Return reverse pickup / QC passed confirmation; General return term detected,HIGH,9498.0
+TK-251840,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-251849,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2124.0
+TK-251856,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6999.0
+TK-251857,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2974.0
+TK-251863,GW-OTHER,CANCEL,0.6,True,rule_based,cancel,Moderate match: Cancellation term detected,HIGH,4249.0
+TK-251865,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1000.0
+TK-251900,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,reverse pkp; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,1999.0
+TK-251905,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1999.0
+TK-251928,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3324.0
+TK-251955,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-251988,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; cancel; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,6998.0
+TK-252004,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,1487.0
+TK-252010,GW-OTHER,LOST-TRANSIT,0.925,True,rule_based,not delivered; not delivered,Carrier transit failure or confirmed non-delivery,HIGH,6999.0
+TK-252020,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-252024,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-252063,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 32.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,32.0
+TK-252073,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancellation request; cancelled before dispatch,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,6298.0
+TK-252076,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,HIGH,6999.0
+TK-252081,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,HIGH,6499.0
+TK-252082,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2799.0
+TK-252087,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1250.0
+TK-252097,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-252118,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2470.0
+TK-252125,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2974.0
+TK-252137,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,warranty claim; service centre; warranty claim,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,MEDIUM,297.0
+TK-252173,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6299.0
+TK-252181,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1750.0
+TK-252185,GW-OTHER,DOA-REPL,0.75,True,rule_based,DOA,Dead on Arrival / unboxing hardware failure,MEDIUM,2799.0
+TK-252188,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 379.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,379.0
+TK-252207,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-252212,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3149.0
+TK-252214,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,discount,Moderate match: Pricing difference mention,MEDIUM,399.0
+TK-252230,GW-OTHER,CANCEL,0.95,True,rule_based,Cancellation request; Cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,2878.0
+TK-252233,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3999.0
+TK-252235,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1709.0
+TK-252243,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-252262,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-252280,GW-OTHER,CANCEL,0.775,True,rule_based,cancel; cancel,Cancellation term detected,MEDIUM,3149.0
+TK-252291,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; Cancelled before dispatch; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,3149.0
+TK-252297,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,Discount,Moderate match: Pricing difference mention,MEDIUM,350.0
+TK-252308,GW-OTHER,LOST-TRANSIT,0.925,True,rule_based,not delivered; not delivered,Carrier transit failure or confirmed non-delivery,HIGH,6499.0
+TK-252328,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1260.0
+TK-252335,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,1050.0
+TK-252346,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,money for the return; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,1487.0
+TK-252357,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,1299.0
+TK-252370,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2799.0
+TK-252384,GW-OTHER,DUP-PAYMENT,0.95,True,rule_based,charged twice; duplicate payment,Duplicate payment or double debit reported,MEDIUM,2799.0
+TK-252400,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,HIGH,6499.0
+TK-252405,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-252408,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,3499.0
+TK-252414,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6499.0
+TK-252460,GW-OTHER,GW-OTHER,0.45,True,rule_based,goodwill,Weak indicator for GW-OTHER; confidence below decision threshold.,HIGH,2799.0
+TK-252492,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,500.0
+TK-252505,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; cancel; cancelled,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,700.0
+TK-252513,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,560.0
+TK-252514,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3149.0
+TK-252517,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-252532,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,3149.0
+TK-252537,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1499.0
+TK-252577,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2374.0
+TK-252581,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 340.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,340.0
+TK-252601,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,Reverse pkp; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,1499.0
+TK-252603,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,630.0
+TK-252604,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,money for the return; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,3499.0
+TK-252627,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,HIGH,5199.0
+TK-252634,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,1599.0
+TK-252636,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1574.0
+TK-252644,GW-OTHER,RETURN-QC-OK,0.95,True,rule_based,money for the return; reverse pkp; return,Return reverse pickup / QC passed confirmation; General return term detected,HIGH,1400.0
+TK-252675,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,rma status; rma; RMA,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,HIGH,2499.0
+TK-252678,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2799.0
+TK-252693,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,5849.0
+TK-252699,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6998.0
+TK-252702,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 319.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,319.0
+TK-252703,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,RMA,Moderate match: Warranty / service centre reference,HIGH,7998.0
+TK-252718,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,Discount,Moderate match: Pricing difference mention,HIGH,2249.0
+TK-252723,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-252726,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,4499.0
+TK-252727,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1169.0
+TK-252735,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-252794,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1899.0
+TK-252869,GW-OTHER,PRICE-ADJ,0.6,True,rule_based,promo code,Moderate match: Pricing difference mention,HIGH,3499.0
+TK-252890,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-252929,GW-OTHER,PRICE-ADJ,0.75,True,rule_based,coupon code,Price adjustment or omitted coupon discount,MEDIUM,560.0
+TK-252934,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1187.0
+TK-252965,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,duplicate payment,Duplicate payment or double debit reported,MEDIUM,2124.0
+TK-252978,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3149.0
+TK-253023,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1999.0
+TK-253024,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6174.0
+TK-253035,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-253061,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,300.0
+TK-253123,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,765.0
+TK-253129,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2974.0
+TK-253133,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; cancelled before dispatch; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,195.0
+TK-253135,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-253146,GW-OTHER,CANCEL,0.775,True,rule_based,cancel; cancel,Cancellation term detected,HIGH,5524.0
+TK-253162,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,RMA,Moderate match: Warranty / service centre reference,HIGH,3499.0
+TK-253166,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,money for the return; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,3499.0
+TK-253178,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3198.0
+TK-253197,GW-OTHER,,0.35,True,rule_based,Conflict between GW-OTHER ('goodwill') and RETURN-QC-OK ('return'),Ambiguous evidence: equal signal for GW-OTHER and RETURN-QC-OK. Human review required.,HIGH,3149.0
+TK-253305,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-253307,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,warranty,Moderate match: Warranty / service centre reference,HIGH,2799.0
+TK-253309,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-253312,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 350.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,350.0
+TK-253335,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,1104.0
+TK-253339,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2799.0
+TK-253342,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,3149.0
+TK-253345,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,rma status; service centre; rma,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,HIGH,2124.0
+TK-253348,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1662.0
+TK-253354,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,3499.0
+TK-253358,GW-OTHER,CANCEL,0.775,True,rule_based,cancel; cancel,Cancellation term detected,MEDIUM,892.0
+TK-253362,GW-OTHER,CANCEL,0.95,True,rule_based,cancellation request; cancel; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,6174.0
+TK-253378,GW-OTHER,LOST-TRANSIT,0.925,True,rule_based,not delivered; lost in transit,Carrier transit failure or confirmed non-delivery,MEDIUM,2799.0
+TK-253395,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,2124.0
+TK-253397,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,1274.0
+TK-253405,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2499.0
+TK-253406,GW-OTHER,CANCEL,0.95,True,rule_based,cancelled before dispatch; cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,3499.0
+TK-253419,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,duplicate payment,Duplicate payment or double debit reported,MEDIUM,4499.0
+TK-253422,GW-OTHER,CANCEL,0.6,True,rule_based,cancellation,Moderate match: Cancellation term detected,HIGH,6499.0
+TK-253451,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,warranty,Moderate match: Warranty / service centre reference,HIGH,6999.0
+TK-253466,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,712.0
+TK-253474,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,reverse pickup; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,2249.0
+TK-253498,GW-OTHER,PRICE-ADJ,0.775,True,rule_based,Discount; promo code,Pricing difference mention,MEDIUM,1529.0
+TK-253510,GW-OTHER,CANCEL,0.95,True,rule_based,CANCEL MY ORDER; cancellation request; cancelled before dispatch,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,350.0
+TK-253521,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,5999.0
+TK-253558,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1299.0
+TK-253559,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,552.0
+TK-253561,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,2124.0
+TK-253563,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,1040.0
+TK-253569,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,RMA status; warranty; RMA,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,HIGH,1999.0
+TK-253570,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,665.0
+TK-253597,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2974.0
+TK-253599,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,warranty claim; warranty claim; service centre,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,HIGH,4749.0
+TK-253615,GW-OTHER,GW-OTHER,0.45,True,rule_based,goodwill,Weak indicator for GW-OTHER; confidence below decision threshold.,HIGH,2974.0
+TK-253623,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,1104.0
+TK-253632,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,2499.0
+TK-253652,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,duplicate payment,Duplicate payment or double debit reported,MEDIUM,1999.0
+TK-253668,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2974.0
+TK-253679,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,HIGH,2799.0
+TK-253682,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-253727,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,charged twice,Duplicate payment or double debit reported,MEDIUM,1709.0
+TK-253739,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-253747,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,reverse pkp; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,2974.0
+TK-253748,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3324.0
+TK-253767,GW-OTHER,DUP-PAYMENT,0.95,True,rule_based,charged twice; charged twice,Duplicate payment or double debit reported,MEDIUM,900.0
+TK-253778,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,446.0
+TK-253804,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,rma,Moderate match: Warranty / service centre reference,HIGH,3324.0
+TK-253814,GW-OTHER,CANCEL,0.95,True,rule_based,Cancelled before dispatch; cancel; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,2974.0
+TK-253819,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancellation request; Cancelled before dispatch,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,3499.0
+TK-253833,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,700.0
+TK-253860,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2799.0
+TK-253890,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,Reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,3149.0
+TK-253929,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,2124.0
+TK-253941,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,900.0
+TK-253966,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1299.0
+TK-253989,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,RMA,Moderate match: Warranty / service centre reference,HIGH,3499.0
+TK-253991,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancellation request; cancelled before dispatch,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,6999.0
+TK-253996,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,12348.0
+TK-253997,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,lost in transit,Carrier transit failure or confirmed non-delivery,HIGH,6299.0
+TK-254011,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,HIGH,2374.0
+TK-254056,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1000.0
+TK-254064,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,lost in transit,Carrier transit failure or confirmed non-delivery,HIGH,3149.0
+TK-254083,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,money for the return; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,4998.0
+TK-254125,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-254155,GW-OTHER,CANCEL,0.6,True,rule_based,cancel,Moderate match: Cancellation term detected,HIGH,2799.0
+TK-254168,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1499.0
+TK-254172,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,service centre; warranty claim; service centre,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,HIGH,6499.0
+TK-254197,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3499.0
+TK-254202,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1709.0
+TK-254243,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 200.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,200.0
+TK-254260,GW-OTHER,LOST-TRANSIT,0.925,True,rule_based,not delivered; not delivered,Carrier transit failure or confirmed non-delivery,HIGH,5099.0
+TK-254270,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1529.0
+TK-254285,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,270.0
+TK-254289,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,1039.0
+TK-254296,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,1299.0
+TK-254298,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,warranty,Moderate match: Warranty / service centre reference,HIGH,1299.0
+TK-254301,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,3324.0
+TK-254302,GW-OTHER,DUP-PAYMENT,0.775,True,rule_based,charged twice,Duplicate payment or double debit reported,MEDIUM,3499.0
+TK-254317,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1799.0
+TK-254328,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,RMA,Moderate match: Warranty / service centre reference,HIGH,3149.0
+TK-254348,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,Warranty,Moderate match: Warranty / service centre reference,HIGH,1709.0
+TK-254361,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,2499.0
+TK-254364,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,4999.0
+TK-254368,GW-OTHER,CANCEL,0.875,True,rule_based,Cancel; cancel; cancellation,Cancellation term detected,MEDIUM,1799.0
+TK-254372,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pkp,Return reverse pickup / QC passed confirmation,MEDIUM,350.0
+TK-254381,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1709.0
+TK-254384,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,MEDIUM,2124.0
+TK-254401,GW-OTHER,LOST-TRANSIT,0.75,True,rule_based,not delivered,Carrier transit failure or confirmed non-delivery,HIGH,2799.0
+TK-254410,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,return,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,2499.0
+TK-254433,GW-OTHER,WTY-BUYBACK,0.6,True,rule_based,rma,Moderate match: Warranty / service centre reference,HIGH,3324.0
+TK-254439,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1529.0
+TK-254449,GW-OTHER,WTY-BUYBACK,0.95,True,rule_based,warranty claim; rma status; warranty,Warranty service claim / unrepairable hardware RMA; Warranty / service centre reference,HIGH,6499.0
+TK-254465,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,HIGH,3324.0
+TK-254466,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1699.0
+TK-254467,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 250.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,250.0
+TK-254469,GW-OTHER,CANCEL,0.95,True,rule_based,Cancellation request; Cancelled before dispatch; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,319.0
+TK-254480,GW-OTHER,GW-OTHER,0.65,True,rule_based,Refund amount (Rs 332.00) within Rs 500 goodwill cap with no conflicting defect keywords,Consistent with allowable goodwill credit under Policy §5 (within Rs 500 threshold).,MEDIUM,332.0
+TK-254481,GW-OTHER,RETURN-QC-OK,0.825,True,rule_based,reverse pkp; return,Return reverse pickup / QC passed confirmation; General return term detected,MEDIUM,166.0
+TK-254495,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancel; cancellation,Explicit pre-dispatch cancellation request; Cancellation term detected,MEDIUM,1169.0
+TK-254497,GW-OTHER,CANCEL,0.95,True,rule_based,cancel my order; cancel; cancel,Explicit pre-dispatch cancellation request; Cancellation term detected,HIGH,5199.0
+TK-254499,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,1000.0
+TK-254504,GW-OTHER,,0.2,True,rule_based,No distinctive policy keywords detected,Insufficient evidence in ticket text to support automatic re-classification.,HIGH,6174.0
+TK-254511,GW-OTHER,RETURN-QC-OK,0.75,True,rule_based,reverse pickup,Return reverse pickup / QC passed confirmation,MEDIUM,2499.0
+TK-254521,GW-OTHER,RETURN-QC-OK,0.45,True,rule_based,returned,Weak indicator for RETURN-QC-OK; confidence below decision threshold.,HIGH,2124.0

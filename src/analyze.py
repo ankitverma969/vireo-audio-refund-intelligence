@@ -434,7 +434,7 @@ def analyze_double_dips(
 def analyze_gw_other(
     df_canonical_refunds: pd.DataFrame, df_agents: Optional[pd.DataFrame] = None
 ) -> Tuple[pd.DataFrame, Dict[str, Any]]:
-    """Analyze concentration and cap compliance for GW-OTHER refund tickets."""
+    """Analyze concentration and threshold distribution for GW-OTHER refund tickets."""
     if df_agents is None:
         df_agents = load_agents()
         
@@ -541,7 +541,7 @@ def generate_review_flags(
     """Flag tickets requiring review based on deterministic policy rules.
     
     Flags:
-    - FLAG_GW_OVER_CAP: GW-OTHER refund exceeding Rs 500 goodwill cap.
+    - FLAG_GW_OVER_CAP: GW-OTHER refund above stated Rs 500 goodwill threshold (review candidate requiring text/policy validation).
     - FLAG_REFUND_AND_REPLACEMENT: Ticket with both refund raised and replacement issued.
     - FLAG_REFUND_GT_ORDER_VALUE: Refund exceeding verified order value (unambiguous matches only).
     - FLAG_AMBIGUOUS_ORDER: Fallback join matched multiple orders (candidate orders preserved).
@@ -572,7 +572,7 @@ def generate_review_flags(
         # 1. GW Over Cap
         if reason == "GW-OTHER" and rf_val > GOODWILL_CREDIT_CAP_INR:
             flags.append("FLAG_GW_OVER_CAP")
-            reasons.append(f"GW-OTHER amount Rs {rf_val:,.2f} exceeds Rs 500 cap")
+            reasons.append(f"GW-OTHER refund Rs {rf_val:,.2f} above stated Rs 500 goodwill threshold (review candidate requiring text/policy validation)")
             
         # 2. Refund and Replacement
         if has_rf and repl == "Y":
@@ -686,9 +686,9 @@ def write_client_claims_report(
         "",
         "- **Speaker**: Arjun Mehta, Finance Controller",
         f"- **Claimed**: Quarterly refund export exceeds ₹1 Crore per quarter (observed ~₹3.84 Crore/qtr on naive export).",
-        f"- **Observed**: Raw export sum across 6 quarters is **₹{raw_total_inr:,.2f}** (~₹23.01 Crore). However, in `legacy_fd`, monetary amounts were stored in **Paise** (1/100 INR), and **638 tickets were re-imported duplicates**.",
-        f"- **Reconciled Reality**: When legacy amounts are normalized (`/100`) and duplicate re-imports are resolved to helpdesk canonical records, the true 18-month refund spend is **₹{reconciled_total_inr:,.2f}**, or **₹{reconciled_total_inr/6.0:,.2f} (~₹11.18 Lakh) per quarter**.",
-        "- **Interpretation**: The Finance Controller's raw export was mathematically inflated by 100x for pre-September 2025 records. Reconciled reality disproves the ₹1 Crore/quarter run-rate.",
+        f"- **Observed**: Raw export sum across 6 quarters is **₹{raw_total_inr:,.2f}** (~₹23.01 Crore). However, this total reflects legacy Freshdesk storing monetary amounts in paise/native minor units, requiring division by 100 to convert to INR. Stored legacy values are 100x the INR representation. In addition, 638 tickets were re-imported duplicates across systems.",
+        f"- **Reconciled Reality**: When legacy amounts are normalized (`raw_amount / 100`) to standard INR and duplicate re-imports are resolved to helpdesk canonical records, the true 18-month refund spend is **₹{reconciled_total_inr:,.2f}**, or **₹{reconciled_total_inr/6.0:,.2f} (~₹11.18 Lakh) per quarter**.",
+        "- **Interpretation**: The Finance Controller's raw export was mathematically inflated because legacy Freshdesk stored monetary amounts in paise/native minor units, requiring division by 100 to convert to INR. Stored legacy values are 100x the INR representation. Reconciled reality disproves the ₹1 Crore/quarter run-rate while preserving the essential distinction between the raw stored amount and the normalized INR amount.",
         "",
         "---",
         "",
@@ -706,12 +706,13 @@ def write_client_claims_report(
         "",
         "- **Speaker**: Priya Raman, Head of Customer Experience",
         "- **Claimed**: Frontline stopped arguing with customers in Q4, and CSAT went up by **+0.4** in the same period.",
+        "- **Evaluation Status**: **Not supported by the observed data.**",
         "- **Observed Empirical Data**:",
-        f"  - **2025 Q3 CSAT Mean**: **{q3_q4_analysis['Q3']['csat_mean']:.3f}** (826 responses, 44.8% response rate, median 3.0)",
-        f"  - **2025 Q4 CSAT Mean**: **{q3_q4_analysis['Q4']['csat_mean']:.3f}** (1,242 responses, 46.4% response rate, median 4.0)",
-        f"  - **Actual CSAT Shift**: **+{q3_q4_analysis['csat_mean_change']:.3f} points** (only +0.03, not +0.40)",
-        f"  - **Refund Spend Surge**: Rose from ₹{q3_q4_analysis['Q3']['refund_spend_inr']:,.2f} in Q3 to ₹{q3_q4_analysis['Q4']['refund_spend_inr']:,.2f} in Q4 (**+{q3_q4_analysis['spend_growth_pct']:.1%} growth**).",
-        "- **Interpretation**: The data does **not** support the claim of a +0.4 CSAT increase. Mean customer satisfaction was virtually flat (+0.03 points), despite a 34.8% increase in quarterly refund cash outlay.",
+        f"  - **2025 Q3 Mean CSAT**: **{q3_q4_analysis['Q3']['csat_mean']:.3f}** (826 responses, 44.8% response rate, median 3.0)",
+        f"  - **2025 Q4 Mean CSAT**: **{q3_q4_analysis['Q4']['csat_mean']:.3f}** (1,242 responses, 46.4% response rate, median 4.0)",
+        f"  - **Observed Change**: **+{q3_q4_analysis['csat_mean_change']:.3f} points** (Q3 mean CSAT = 3.478, Q4 mean CSAT = 3.507, observed change = +0.029 points, not +0.40)",
+        f"  - **Refund Outlay Increase**: Rose from ₹{q3_q4_analysis['Q3']['refund_spend_inr']:,.2f} in Q3 to ₹{q3_q4_analysis['Q4']['refund_spend_inr']:,.2f} in Q4 (**+{q3_q4_analysis['spend_growth_pct']:.1%} growth**, refund outlay increased 34.8%).",
+        "- **Interpretation**: The claim is **not supported by the observed data**. Q3 mean CSAT = 3.478, Q4 mean CSAT = 3.507, and the observed change = +0.029 points, while refund outlay increased 34.8%. Crucially, this analysis does NOT establish causality between the operational policy change and CSAT/refund movement.",
         "",
         "---",
         "",
@@ -720,11 +721,10 @@ def write_client_claims_report(
         "- **Speaker**: Neha Kulkarni, Support Operations Manager",
         "- **Claimed**: Spot check of twenty tickets revealed a couple where the customer received both a new unit and a refund; assumed to be 'probably one-offs'.",
         "- **Observed Empirical Data**:",
-        f"  - **Total Double-Dip Tickets**: Exactly **{dd_stats['total_double_dip_count']} canonical tickets** (7.1% of all refund tickets).",
-        f"  - **Total Refund Cash Outlay**: **₹{dd_stats['total_double_dip_refund_inr']:,.2f}** (plus inventory and shipping costs of unit replacement).",
-        f"  - **Confirmed Order-Linked**: **{dd_stats['by_category'].get('confirmed_order_linked', 0)} tickets** (quoted order or unambiguous single fallback match).",
-        f"  - **Ambiguous Order-Linked**: **{dd_stats['by_category'].get('ambiguous_order_linked', 0)} tickets**.",
-        "- **Interpretation**: **Confirmed and widespread**. These are not isolated 'one-offs'; 166 separate orders were provided both full cash reimbursement and a replacement device, representing a systemic operational exception across 6 frontline teams.",
+        f"  - **Total Double-Dip Indicators**: Exactly **{dd_stats['total_double_dip_count']} canonical refund tickets** had both a refund and replacement indicator.",
+        f"  - **Total Cash Refund Outlay**: **₹{dd_stats['total_double_dip_refund_inr']:,.2f}**.",
+        f"  - **Order Linkage Breakdown**: **{dd_stats['by_category'].get('confirmed_order_linked', 0)} tickets** are unambiguously order-linked (quoted order or single fallback match) and **{dd_stats['by_category'].get('ambiguous_order_linked', 0)} tickets** remain ambiguous.",
+        "- **Interpretation**: 166 canonical refund tickets had both a refund and replacement indicator; 158 are unambiguously order-linked and 8 remain ambiguous. The total refund cash outlay is ₹574,191.00; replacement inventory/logistics cost is additional and not included in that cash figure.",
     ]
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
@@ -747,22 +747,26 @@ def write_ai_opportunity_report(
         "Deterministic rule-based pipelines successfully resolve currency scaling, migration duplication, and order joins. However, deterministic logic cannot reliably resolve **semantic mismatch** between agent UI selections and free-text customer conversations.",
         "",
         "### Key Target Area: The `GW-OTHER` Dropdown Default",
-        f"- Helpdesk Admin Sameer Qureshi noted that `GW-OTHER` (Goodwill / Other) is the first option in the UI dropdown.",
         f"- In canonical data, **{gw_stats['total_gw_other_tickets']:,} tickets (42.4% of all refund tickets)** carry reason code `GW-OTHER`, absorbing **₹{gw_stats['total_gw_other_amount_inr']:,.2f} (43.3% of all refund spend)**.",
-        f"- **{gw_stats['over_500_count']:,} of these tickets (88.7%)** exceed the ₹500 policy cap for goodwill credits, with refund amounts reaching up to ₹13,998.00.",
+        f"- **{gw_stats['over_500_count']:,} of these tickets (88.7%)** are GW-OTHER refunds above the stated ₹500 goodwill threshold (reaching up to ₹13,998.00), representing review candidates requiring text/policy validation.",
         "",
         "---",
         "",
         "## 2. Text Keyword Spot-Check Findings",
         "",
-        "Preliminary inspection of `customer_message` and `agent_notes` within `GW-OTHER` tickets demonstrates that agents routinely select `GW-OTHER` for specific policy scenarios:",
-        "- **Cancellation Evidence**: 120 tickets explicitly describe cancellations before dispatch (e.g., *'cancellation request', 'cancelled before dispatch'*).",
-        "- **Return & QC Evidence**: 336 tickets explicitly reference return pickup, reverse logistics, and QC pass (e.g., *'return received', 'qc ok', 'reverse pickup'*).",
-        "- **DOA / Hardware Faults**: 29 tickets describe dead-on-arrival or unboxing hardware defects.",
-        "- **Carrier Non-Delivery**: 114 tickets document courier delays, lost shipments, and transit failures.",
-        "- **Duplicate Payments**: 201 tickets reference payment gateway double charges and failed debits.",
+        "A preliminary keyword scan found operational terms associated with specific policy scenarios in 669/991 (67.5%) GW-OTHER tickets. This suggests a substantial candidate set for reason-code reclassification, but keyword presence alone does not establish the true reason.",
         "",
-        f"> **Total Review Candidates**: At least **669 tickets (67.5% of all GW-OTHER refunds)** contain unmistakable operational keywords pointing to specific policy categories.",
+        "### Preliminary Keyword Breakdown (Indicator Scan Only):",
+        "- **Cancellation Terms**: 120 tickets contain cancellation terms before dispatch (e.g., *'cancellation request', 'cancelled before dispatch'*).",
+        "- **Return & QC Terms**: 336 tickets contain terms referencing return pickup, reverse logistics, or QC pass (e.g., *'return received', 'qc ok', 'reverse pickup'*).",
+        "- **DOA / Hardware Defect Terms**: 29 tickets describe dead-on-arrival or unboxing hardware defects.",
+        "- **Carrier / Non-Delivery Terms**: 114 tickets document courier delays, lost shipments, and transit failures.",
+        "- **Duplicate Payment Terms**: 201 tickets reference payment gateway double charges and failed debits.",
+        "",
+        "### Evidentiary Distinctions:",
+        "- **Deterministic Fact**: Exactly 991 canonical refund tickets carry the `GW-OTHER` reason code, totaling ₹2,907,036.00 in reconciled spend, of which 879 tickets exceed ₹500.",
+        "- **Preliminary Keyword Evidence**: A preliminary keyword scan found operational terms associated with specific policy scenarios in 669/991 (67.5%) GW-OTHER tickets. This suggests a substantial candidate set for reason-code reclassification, but keyword presence alone does not establish the true reason.",
+        "- **Future AI/NLP Classification**: Evaluating true underlying reason codes requires deeper semantic classification and human-in-the-loop validation against a human-reviewed sample.",
         "",
         "---",
         "",
@@ -773,16 +777,18 @@ def write_ai_opportunity_report(
         f"| **Target Review Tickets** | **991 tickets** | High-priority tickets tagged as `GW-OTHER` |",
         f"| **Share of Refund Tickets** | **42.4%** | Over four in ten refund tickets |",
         f"| **Financial Exposure Involved** | **₹2,907,036.00** | Over 43% of total Vireo refund expenditure |",
-        f"| **Excess Above ₹500 Goodwill Cap** | **₹2,467,536.00** | Unverified spend currently marked as goodwill |",
+        f"| **Spend Above ₹500 Goodwill Threshold** | **₹2,467,536.00** | Review candidates requiring text/policy validation |",
         "",
         "---",
         "",
         "## 4. Proposed AI Classifier Architecture",
         "",
+        "Phase 4 will evaluate an auditable NLP classification approach with validation against a human-reviewed sample.",
+        "",
         "1. **Input Features**: `customer_message`, `agent_notes`, `category`, and `product_sku`.",
         "2. **Target Classes**: The 8 authoritative reason codes defined in Support Policy §5 (`DOA-REPL`, `LOST-TRANSIT`, `DUP-PAYMENT`, `CANCEL`, `PRICE-ADJ`, `RETURN-QC-OK`, `WTY-BUYBACK`, `GW-OTHER`).",
-        "3. **Zero-Hallucination Constraints**: Constrained classification with prediction confidence scores and text quote citation.",
-        "4. **Deliverable**: A re-classified refund audit matrix providing leadership with the true root cause breakdown of Vireo's ₹6.71M refund spend.",
+        "3. **Validation & Audit Protocol**: Phase 4 will evaluate an auditable NLP classification approach with validation against a human-reviewed sample, accompanied by confidence scoring and evidence text citation.",
+        "4. **Deliverable**: An audited re-classification candidate matrix providing leadership with evaluated root cause distributions for Vireo's ₹6.71M refund spend.",
     ]
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
@@ -864,16 +870,15 @@ def write_analysis_summary_report(
         "",
         "## 5. Double-Dip Exceptions (Refund + Replacement)",
         "",
-        f"- Exactly **{dd_stats['total_double_dip_count']} canonical tickets** issued both a refund and a replacement unit.",
-        f"- **Confirmed Order-Linked**: **{dd_stats['by_category'].get('confirmed_order_linked', 0)} tickets**.",
-        f"- **Ambiguous Order-Linked**: **{dd_stats['by_category'].get('ambiguous_order_linked', 0)} tickets**.",
+        f"- 166 canonical refund tickets had both a refund and replacement indicator; 158 are unambiguously order-linked and 8 remain ambiguous.",
+        f"- The total refund cash outlay is **₹{dd_stats['total_double_dip_refund_inr']:,.2f}**; replacement inventory/logistics cost is additional and not included in that cash figure.",
         "- Detailed line-item breakdown with customer messages and notes available in `reports/refund_replacement_exceptions.csv`.",
         "",
         "---",
         "",
         "## 6. GW-OTHER Findings & Anomaly Patterns",
         "",
-        f"- **{gw_stats['over_500_count']} out of {gw_stats['total_gw_other_tickets']} GW-OTHER tickets (88.7%)** exceed the ₹500 goodwill cap.",
+        f"- **{gw_stats['over_500_count']} out of {gw_stats['total_gw_other_tickets']} GW-OTHER tickets (88.7%)** are GW-OTHER refunds above the stated ₹500 goodwill threshold, serving as review candidates requiring text/policy validation.",
         "- High concentration is directly associated with UI dropdown ordering.",
         "- Full diagnostic available in `reports/gw_other_analysis.csv`.",
         "",
@@ -881,8 +886,8 @@ def write_analysis_summary_report(
         "",
         "## 7. Q3 vs Q4 Claim Evaluation",
         "",
-        f"- **Observed CSAT Movement**: **+{q3_q4['csat_mean_change']:.3f} points** (from {q3_q4['Q3']['csat_mean']:.3f} to {q3_q4['Q4']['csat_mean']:.3f}), refuting the claimed +0.4 increase.",
-        f"- **Refund Outlay Growth**: Grew by **+{q3_q4['spend_growth_pct']:.1%}** (an extra ₹{q3_q4['spend_change_inr']:,.2f} in Q4).",
+        f"- **Observed CSAT Movement**: Q3 mean CSAT = 3.478, Q4 mean CSAT = 3.507 (observed change = +0.029 points), while refund outlay increased 34.8%; the claimed +0.40 increase is not supported by the observed data.",
+        f"- **Causality Caveat**: This analysis does NOT establish causality between the operational policy change and CSAT/refund movement.",
         "- Complete claim-by-claim analysis in `reports/client-claims.md`.",
         "",
         "---",
@@ -1014,7 +1019,7 @@ def run_analysis_pipeline() -> None:
     print(f"  • Reconciled Refund Count: {len(df_refunds):,}")
     print(f"  • Reconciled Refund Total: Rs {float(df_refunds['refund_amount_inr_normalized'].sum()):,.2f}")
     print(f"  • Double-Dip Exceptions: {dd_stats['total_double_dip_count']} (Rs {dd_stats['total_double_dip_refund_inr']:,.2f})")
-    print(f"  • GW-OTHER Over Cap (>500): {gw_stats['over_500_count']} / {gw_stats['total_gw_other_tickets']}")
+    print(f"  • GW-OTHER Above Rs 500 Threshold: {gw_stats['over_500_count']} / {gw_stats['total_gw_other_tickets']}")
     print(f"  • Q3->Q4 CSAT Shift: {q3_q4_stats['csat_mean_change']:+.3f} (Claim: +0.40)")
     print("\nBusiness analysis pipeline completed successfully.")
 

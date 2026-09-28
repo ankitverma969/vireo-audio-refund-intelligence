@@ -10,9 +10,10 @@ from typing import Dict, List, Optional
 # Base repository root directory
 BASE_DIR: Path = Path(__file__).resolve().parent.parent
 
-# Primary data directories
+DATA_DIR: Path = BASE_DIR / "data"
 DATA_RAW_DIR: Path = BASE_DIR / "data" / "raw"
 DATA_PROCESSED_DIR: Path = BASE_DIR / "data" / "processed"
+DATA_VALIDATION_DIR: Path = BASE_DIR / "data" / "validation"
 REPORTS_DIR: Path = BASE_DIR / "reports"
 DOCS_DIR: Path = BASE_DIR / "docs"
 

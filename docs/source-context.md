@@ -133,8 +133,8 @@ Analysis of the correspondence between Vireo leadership and our engagement team 
 
 1. **Fallback Order Disambiguation**:
    For the 4,127 tickets lacking an `order_id`, while 3,391 map to a unique order for that customer and SKU, **736 tickets map to multiple orders** (707 in canonical tickets). The documentation does not specify whether to match by nearest prior order date, nearest order value, or flag as ambiguous. To maintain auditable integrity, these must be flagged as ambiguous without guessing.
-2. **`GW-OTHER` Concentration & Cap Exceptions**:
-   `GW-OTHER` is highly concentrated and 88.8% of associated refunds exceed the Rs 500 goodwill cap (reaching up to Rs 13,998). This represents an exception pattern requiring text-level investigation rather than an assumed conclusion about individual agent motives.
+2. **`GW-OTHER` Concentration & Threshold Patterns**:
+   `GW-OTHER` is highly concentrated and 88.8% of associated refunds are GW-OTHER refunds above the stated Rs 500 goodwill threshold (reaching up to Rs 13,998). Because GW-OTHER is a combined Goodwill/Other reason code, these are review candidates requiring text/policy validation rather than confirmed policy violations.
 3. **Double-Dip Policy Enforcement**:
    166 unique tickets have both a refund raised and a replacement unit dispatched. The documentation specifies this requires escalation to TL and Finance, but the dataset lacks an approval/escalation log.
 4. **Dispersed Refund Authority**:

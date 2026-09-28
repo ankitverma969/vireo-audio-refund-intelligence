@@ -52,16 +52,15 @@ Per Support Policy §6, Tier 2 Escalations & Warranty agents are measured on res
 
 ## 5. Double-Dip Exceptions (Refund + Replacement)
 
-- Exactly **166 canonical tickets** issued both a refund and a replacement unit.
-- **Confirmed Order-Linked**: **158 tickets**.
-- **Ambiguous Order-Linked**: **8 tickets**.
+- 166 canonical refund tickets had both a refund and replacement indicator; 158 are unambiguously order-linked and 8 remain ambiguous.
+- The total refund cash outlay is **₹574,191.00**; replacement inventory/logistics cost is additional and not included in that cash figure.
 - Detailed line-item breakdown with customer messages and notes available in `reports/refund_replacement_exceptions.csv`.
 
 ---
 
 ## 6. GW-OTHER Findings & Anomaly Patterns
 
-- **879 out of 991 GW-OTHER tickets (88.7%)** exceed the ₹500 goodwill cap.
+- **879 out of 991 GW-OTHER tickets (88.7%)** are GW-OTHER refunds above the stated ₹500 goodwill threshold, serving as review candidates requiring text/policy validation.
 - High concentration is directly associated with UI dropdown ordering.
 - Full diagnostic available in `reports/gw_other_analysis.csv`.
 
@@ -69,8 +68,8 @@ Per Support Policy §6, Tier 2 Escalations & Warranty agents are measured on res
 
 ## 7. Q3 vs Q4 Claim Evaluation
 
-- **Observed CSAT Movement**: **+0.029 points** (from 3.478 to 3.507), refuting the claimed +0.4 increase.
-- **Refund Outlay Growth**: Grew by **+34.8%** (an extra ₹420,484.00 in Q4).
+- **Observed CSAT Movement**: Q3 mean CSAT = 3.478, Q4 mean CSAT = 3.507 (observed change = +0.029 points), while refund outlay increased 34.8%; the claimed +0.40 increase is not supported by the observed data.
+- **Causality Caveat**: This analysis does NOT establish causality between the operational policy change and CSAT/refund movement.
 - Complete claim-by-claim analysis in `reports/client-claims.md`.
 
 ---

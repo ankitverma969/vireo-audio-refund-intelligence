@@ -8,9 +8,9 @@
 
 - **Speaker**: Arjun Mehta, Finance Controller
 - **Claimed**: Quarterly refund export exceeds ₹1 Crore per quarter (observed ~₹3.84 Crore/qtr on naive export).
-- **Observed**: Raw export sum across 6 quarters is **₹230,124,081.00** (~₹23.01 Crore). However, in `legacy_fd`, monetary amounts were stored in **Paise** (1/100 INR), and **638 tickets were re-imported duplicates**.
-- **Reconciled Reality**: When legacy amounts are normalized (`/100`) and duplicate re-imports are resolved to helpdesk canonical records, the true 18-month refund spend is **₹6,709,932.00**, or **₹1,118,322.00 (~₹11.18 Lakh) per quarter**.
-- **Interpretation**: The Finance Controller's raw export was mathematically inflated by 100x for pre-September 2025 records. Reconciled reality disproves the ₹1 Crore/quarter run-rate.
+- **Observed**: Raw export sum across 6 quarters is **₹230,124,081.00** (~₹23.01 Crore). However, this total reflects legacy Freshdesk storing monetary amounts in paise/native minor units, requiring division by 100 to convert to INR. Stored legacy values are 100x the INR representation. In addition, 638 tickets were re-imported duplicates across systems.
+- **Reconciled Reality**: When legacy amounts are normalized (`raw_amount / 100`) to standard INR and duplicate re-imports are resolved to helpdesk canonical records, the true 18-month refund spend is **₹6,709,932.00**, or **₹1,118,322.00 (~₹11.18 Lakh) per quarter**.
+- **Interpretation**: The Finance Controller's raw export was mathematically inflated because legacy Freshdesk stored monetary amounts in paise/native minor units, requiring division by 100 to convert to INR. Stored legacy values are 100x the INR representation. Reconciled reality disproves the ₹1 Crore/quarter run-rate while preserving the essential distinction between the raw stored amount and the normalized INR amount.
 
 ---
 
@@ -28,12 +28,13 @@
 
 - **Speaker**: Priya Raman, Head of Customer Experience
 - **Claimed**: Frontline stopped arguing with customers in Q4, and CSAT went up by **+0.4** in the same period.
+- **Evaluation Status**: **Not supported by the observed data.**
 - **Observed Empirical Data**:
-  - **2025 Q3 CSAT Mean**: **3.478** (826 responses, 44.8% response rate, median 3.0)
-  - **2025 Q4 CSAT Mean**: **3.507** (1,242 responses, 46.4% response rate, median 4.0)
-  - **Actual CSAT Shift**: **+0.029 points** (only +0.03, not +0.40)
-  - **Refund Spend Surge**: Rose from ₹1,207,091.00 in Q3 to ₹1,627,575.00 in Q4 (**+34.8% growth**).
-- **Interpretation**: The data does **not** support the claim of a +0.4 CSAT increase. Mean customer satisfaction was virtually flat (+0.03 points), despite a 34.8% increase in quarterly refund cash outlay.
+  - **2025 Q3 Mean CSAT**: **3.478** (826 responses, 44.8% response rate, median 3.0)
+  - **2025 Q4 Mean CSAT**: **3.507** (1,242 responses, 46.4% response rate, median 4.0)
+  - **Observed Change**: **+0.029 points** (Q3 mean CSAT = 3.478, Q4 mean CSAT = 3.507, observed change = +0.029 points, not +0.40)
+  - **Refund Outlay Increase**: Rose from ₹1,207,091.00 in Q3 to ₹1,627,575.00 in Q4 (**+34.8% growth**, refund outlay increased 34.8%).
+- **Interpretation**: The claim is **not supported by the observed data**. Q3 mean CSAT = 3.478, Q4 mean CSAT = 3.507, and the observed change = +0.029 points, while refund outlay increased 34.8%. Crucially, this analysis does NOT establish causality between the operational policy change and CSAT/refund movement.
 
 ---
 
@@ -42,8 +43,7 @@
 - **Speaker**: Neha Kulkarni, Support Operations Manager
 - **Claimed**: Spot check of twenty tickets revealed a couple where the customer received both a new unit and a refund; assumed to be 'probably one-offs'.
 - **Observed Empirical Data**:
-  - **Total Double-Dip Tickets**: Exactly **166 canonical tickets** (7.1% of all refund tickets).
-  - **Total Refund Cash Outlay**: **₹574,191.00** (plus inventory and shipping costs of unit replacement).
-  - **Confirmed Order-Linked**: **158 tickets** (quoted order or unambiguous single fallback match).
-  - **Ambiguous Order-Linked**: **8 tickets**.
-- **Interpretation**: **Confirmed and widespread**. These are not isolated 'one-offs'; 166 separate orders were provided both full cash reimbursement and a replacement device, representing a systemic operational exception across 6 frontline teams.
+  - **Total Double-Dip Indicators**: Exactly **166 canonical refund tickets** had both a refund and replacement indicator.
+  - **Total Cash Refund Outlay**: **₹574,191.00**.
+  - **Order Linkage Breakdown**: **158 tickets** are unambiguously order-linked (quoted order or single fallback match) and **8 tickets** remain ambiguous.
+- **Interpretation**: 166 canonical refund tickets had both a refund and replacement indicator; 158 are unambiguously order-linked and 8 remain ambiguous. The total refund cash outlay is ₹574,191.00; replacement inventory/logistics cost is additional and not included in that cash figure.
