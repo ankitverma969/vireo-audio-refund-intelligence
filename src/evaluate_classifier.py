@@ -192,6 +192,155 @@ def evaluate_validation_file(
     return metrics
 
 
+def generate_validation_report(
+    eval_result: Dict[str, Any],
+    sample_df: pd.DataFrame,
+    ai_sample_path: Optional[Path],
+    output_path: Path,
+) -> None:
+    """Generate reports/ai-validation.md documenting validation status and multi-way agreement."""
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    total_samples = len(sample_df)
+    labeled_count = eval_result.get("labeled_count", 0)
+
+    # Inspect AI sample results if present
+    ai_sample_df = None
+    if ai_sample_path is not None and ai_sample_path.is_file():
+        try:
+            ai_sample_df = pd.read_csv(ai_sample_path)
+        except Exception:
+            ai_sample_df = None
+
+    md = [
+        "# Vireo Audio — AI Classification Validation & Multi-Way Agreement Report",
+        "",
+        "> **Audit Standard**: Evaluates model performance against human ground truth and inspects model agreement.",
+        "> **Methodological Rule**: Never treat existing reason codes, rule-based outputs, or LLM predictions as ground truth.",
+        "",
+        "---",
+        "",
+        "## 1. Validation Status & Ground Truth Availability",
+        "",
+        f"- **Validation Sample Size**: **{total_samples:,} tickets** (stratified random sample, `seed=42`)",
+        f"- **Verified Human Annotations Completed**: **{labeled_count:,} / {total_samples:,}**",
+    ]
+
+    if labeled_count == 0:
+        md.extend([
+            f"- **Validation Benchmark Status**: **PENDING HUMAN AUDIT**",
+            "",
+            "> [!IMPORTANT]",
+            "> **Formal model accuracy has not yet been established because human ground truth is pending.**",
+            "> No synthetic or fabricated labels have been substituted. Accuracy, precision, recall, and F1 metrics",
+            "> will be computed exclusively once operational reviewers populate `human_label` in `data/validation/gw_other_validation_sample.csv`.",
+        ])
+    else:
+        acc = eval_result.get("accuracy", 0.0)
+        macro_f1 = eval_result.get("macro_f1", 0.0)
+        macro_p = eval_result.get("macro_precision", 0.0)
+        macro_r = eval_result.get("macro_recall", 0.0)
+        abst_rate = eval_result.get("abstention_rate", 0.0)
+
+        md.extend([
+            f"- **Validation Benchmark Status**: **COMPLETED ON {labeled_count} LABELED TICKETS**",
+            f"- **Exact Accuracy vs Human**: **{acc:.1%}**",
+            f"- **Macro F1 Score**: **{macro_f1:.3f}**",
+            f"- **Macro Precision**: **{macro_p:.3f}**",
+            f"- **Macro Recall**: **{macro_r:.3f}**",
+            f"- **Model Abstention / Review Rate**: **{abst_rate:.1%}**",
+            f"- **Existing Reason Mismatched Human**: **{eval_result.get('existing_diff_human_count', 0)} tickets**",
+            f"- **Model Agreed with Human**: **{eval_result.get('classifier_agree_human_count', 0)} tickets**",
+            f"- **Model Disagreed with Human**: **{eval_result.get('classifier_disagree_human_count', 0)} tickets**",
+        ])
+
+    md.extend([
+        "",
+        "---",
+        "",
+        "## 2. Multi-Way Classifier Agreement Analysis",
+        "",
+    ])
+
+    if ai_sample_df is not None and not ai_sample_df.empty:
+        n_ai = len(ai_sample_df)
+        agr_counts = ai_sample_df["agreement_rule_vs_llm"].value_counts().to_dict()
+        pending_cred = agr_counts.get("PENDING_CREDENTIALS", 0)
+
+        md.append(f"Analyzed controlled subset of **{n_ai} tickets** from the human validation sample:\n")
+
+        if pending_cred > 0:
+            md.extend([
+                "- **LLM Execution Status**: `LLM execution pending credentials (OPENAI_API_KEY not configured)`",
+                "- **Live API Calls Made**: `0`",
+                "- **Rule-Based Predictions**: Successfully computed for all 30 sample tickets.",
+                "- **LLM Agreement Calculation**: Deferred until API credentials are provided.",
+                "",
+                "To execute live LLM comparison on this subset:",
+                "```bash",
+                "export OPENAI_API_KEY=your_key_here",
+                "python -m src.classify",
+                "python -m src.evaluate_classifier",
+                "```",
+            ])
+        else:
+            agree_count = agr_counts.get("AGREE", 0)
+            disagree_count = agr_counts.get("DISAGREE", 0)
+            unclass_count = agr_counts.get("BOTH_UNCLASSIFIED", 0)
+            partial_count = agr_counts.get("PARTIAL_ABSTAIN", 0)
+
+            agree_pct = (agree_count / n_ai) if n_ai > 0 else 0.0
+
+            md.extend([
+                f"- **Total Controlled AI Subset**: **{n_ai} tickets**",
+                f"- **Exact Agreement (Rule-Based == LLM)**: **{agree_count} tickets ({agree_pct:.1%})**",
+                f"- **Disagreements**: **{disagree_count} tickets**",
+                f"- **Both Abstained / Unclassified**: **{unclass_count} tickets**",
+                f"- **Partial Abstention (One Model Abstained)**: **{partial_count} tickets**",
+                "",
+                "### Disagreement & Edge Case Examples",
+                "",
+                "| Ticket ID | Existing Reason | Rule-Based Prediction | LLM Prediction | LLM Confidence | Notes |",
+                "| :--- | :--- | :--- | :--- | :---: | :--- |",
+            ])
+
+            disagreements = ai_sample_df[ai_sample_df["agreement_rule_vs_llm"].isin(["DISAGREE", "PARTIAL_ABSTAIN"])]
+            for _, r in disagreements.head(5).iterrows():
+                md.append(
+                    f"| `{r['ticket_id']}` | `{r['existing_reason_code']}` | `{r['rule_based_prediction']}` | "
+                    f"`{r['llm_prediction']}` | {r['llm_confidence']} | {str(r['llm_explanation'])[:60]}... |"
+                )
+    else:
+        md.append("- No AI sample results available yet. Run `python -m src.classify` to generate `reports/ai_sample_results.csv`.\n")
+
+    md.extend([
+        "",
+        "---",
+        "",
+        "## 3. Review Workflow & Next Steps for Operational Leads",
+        "",
+        "1. Open `data/validation/gw_other_validation_sample.csv` in Excel or an internal audit tool.",
+        "2. For each of the 100 tickets, review `customer_message`, `agent_notes`, and `refund_amount_inr_normalized` against Support Policy §5.",
+        "3. Enter the authoritative policy code into `human_label` (`GW-OTHER`, `DOA-REPL`, `LOST-TRANSIT`, `DUP-PAYMENT`, `CANCEL`, `PRICE-ADJ`, `RETURN-QC-OK`, `WTY-BUYBACK`).",
+        "4. Record `human_reviewer` initials and brief `review_notes`.",
+        "5. Save the CSV and run:",
+        "   ```bash",
+        "   python -m src.evaluate_classifier",
+        "   ```",
+        "6. The evaluation engine will automatically compute exact accuracy, macro F1, and export `reports/classification_confusion_matrix.csv`.",
+        "",
+        "---",
+        "",
+        "## 4. Limitations & Governance Safeguards",
+        "",
+        "- **Lexical Ambiguity**: Rule-based baseline relies on deterministic pattern weights; edge cases with conflicting customer narratives are routed to HIGH priority review.",
+        "- **Zero Automated Mutations**: Predictions are advisory. The canonical financial ledger (`canonical_tickets.parquet`) is never modified by the classifier.",
+        "- **No Misconduct Inferences**: Models do not score agent integrity or performance.",
+    ])
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(md))
+
+
 def main() -> None:
     """CLI Entrypoint for running classifier evaluation."""
     print("=" * 60)
@@ -200,9 +349,21 @@ def main() -> None:
 
     sample_file = DATA_VALIDATION_DIR / "gw_other_validation_sample.csv"
     cm_file = REPORTS_DIR / "classification_confusion_matrix.csv"
+    ai_sample_file = REPORTS_DIR / "ai_sample_results.csv"
+    validation_report_file = REPORTS_DIR / "ai-validation.md"
 
-    print(f"\nEvaluating validation sample: {sample_file}")
+    print(f"\n[1/2] Evaluating human validation sample: {sample_file}")
     res = evaluate_validation_file(sample_file, confusion_matrix_out=cm_file)
+
+    sample_df = pd.read_csv(sample_file) if sample_file.is_file() else pd.DataFrame()
+
+    print(f"[2/2] Generating multi-way validation report: {validation_report_file}")
+    generate_validation_report(
+        eval_result=res,
+        sample_df=sample_df,
+        ai_sample_path=ai_sample_file,
+        output_path=validation_report_file,
+    )
 
     if res["status"] == "validation_pending":
         print("\n[VALIDATION STATUS]: PENDING HUMAN AUDIT")
@@ -210,6 +371,7 @@ def main() -> None:
         print(f"  • Labeled Tickets: {res['labeled_count']}")
         print(f"  • Note: {res['message']}")
         print("  • No metrics fabricated. Evaluation ready for verified labels.")
+        print(f"  • Validation report written to: {validation_report_file}")
     elif res["status"] == "completed":
         print("\n[VALIDATION STATUS]: EVALUATION COMPLETED")
         print(f"  • Sample Size: {res['labeled_count']} / {res['total_sample_size']}")
@@ -222,6 +384,7 @@ def main() -> None:
         print(f"  • Classifier Disagreed with Human: {res['classifier_disagree_human_count']}")
         print(f"  • Existing Code Mismatched Human: {res['existing_diff_human_count']}")
         print(f"  • Confusion Matrix exported to: {cm_file}")
+        print(f"  • Validation report written to: {validation_report_file}")
     else:
         print(f"\n[VALIDATION STATUS]: {res['status'].upper()}")
         print(f"  • Message: {res['message']}")
@@ -229,3 +392,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

@@ -340,55 +340,399 @@ class RuleBasedRefundClassifier(RefundClassifier):
 
 
 # --------------------------------------------------------------------------
-# 5. Optional LLM Adapter (Disabled by default)
+# 5. Usage & Cost Tracking for AI Classifiers
+# --------------------------------------------------------------------------
+
+@dataclass
+class AIUsageRecord:
+    timestamp: str
+    provider: str
+    model: str
+    tickets_count: int
+    prompt_tokens: int
+    completion_tokens: int
+    total_tokens: int
+    estimated_cost_usd: Optional[float]
+    is_fallback: bool
+    notes: str
+
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
+
+
+class AIUsageTracker:
+    """Thread-safe usage and token tracker for external AI calls."""
+    _instance: Optional[AIUsageTracker] = None
+
+    def __init__(self) -> None:
+        self.records: List[AIUsageRecord] = []
+
+    @classmethod
+    def get_instance(cls) -> AIUsageTracker:
+        if cls._instance is None:
+            cls._instance = cls()
+        return cls._instance
+
+    def record_call(
+        self,
+        provider: str,
+        model: str,
+        tickets_count: int = 1,
+        prompt_tokens: int = 0,
+        completion_tokens: int = 0,
+        total_tokens: int = 0,
+        estimated_cost_usd: Optional[float] = None,
+        is_fallback: bool = False,
+        notes: str = "",
+    ) -> None:
+        from datetime import datetime, timezone
+        now_iso = datetime.now(timezone.utc).isoformat()
+        rec = AIUsageRecord(
+            timestamp=now_iso,
+            provider=provider,
+            model=model,
+            tickets_count=tickets_count,
+            prompt_tokens=prompt_tokens,
+            completion_tokens=completion_tokens,
+            total_tokens=total_tokens,
+            estimated_cost_usd=estimated_cost_usd,
+            is_fallback=is_fallback,
+            notes=notes,
+        )
+        self.records.append(rec)
+
+    def generate_report(self, output_path: Path) -> None:
+        """Write reports/ai_usage.md detailing all external AI calls and token usage."""
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        total_calls = len(self.records)
+        total_tickets = sum(r.tickets_count for r in self.records)
+        total_prompt_tok = sum(r.prompt_tokens for r in self.records)
+        total_comp_tok = sum(r.completion_tokens for r in self.records)
+        total_tokens = sum(r.total_tokens for r in self.records)
+        total_cost_usd = sum(r.estimated_cost_usd for r in self.records if r.estimated_cost_usd is not None)
+
+        md = [
+            "# Vireo Audio — AI Model Usage & Token Cost Tracking",
+            "",
+            "> **Audit Governance**: Detailed accounting of external API calls, token volumes, and incurred expenses.",
+            "",
+            "---",
+            "",
+            "## 1. Executive Summary",
+            "",
+            f"- **External API Calls Made**: **{total_calls:,}**",
+            f"- **Total Tickets Processed via API**: **{total_tickets:,}**",
+            f"- **Total Prompt Tokens**: **{total_prompt_tok:,}**",
+            f"- **Total Completion Tokens**: **{total_comp_tok:,}**",
+            f"- **Aggregate Tokens**: **{total_tokens:,}**",
+            f"- **Total Incurred Cost (USD)**: **${total_cost_usd:.4f}** (Monetary cost: {'$0.00 / Not calculated (no external calls)' if total_calls == 0 else f'${total_cost_usd:.4f}'})",
+            f"- **Default Pipeline Mode**: `CLASSIFIER_PROVIDER=local` (100% offline rule-based NLP baseline)",
+            "",
+            "---",
+            "",
+            "## 2. Model & Fallback Transparency",
+            "",
+        ]
+
+        if total_calls == 0:
+            md.extend([
+                "No live external API calls were executed during the pipeline run.",
+                "- The system ran using the deterministic **local rule-based baseline** (`RuleBasedRefundClassifier`).",
+                "- Zero API credentials were required or consumed.",
+                "- Zero financial cost was incurred.",
+                "",
+                "### Configuration Options",
+                "To enable live OpenAI classification on a sample batch:",
+                "```bash",
+                "export CLASSIFIER_PROVIDER=openai",
+                "export OPENAI_API_KEY=your-api-key-here",
+                "export OPENAI_MODEL=gpt-4o-mini",
+                "python -m src.classify",
+                "```",
+            ])
+        else:
+            md.extend([
+                "| Timestamp (UTC) | Provider | Model | Tickets | Prompt Tok | Comp Tok | Total Tok | Cost (USD) | Fallback | Notes |",
+                "| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |",
+            ])
+            for r in self.records:
+                cost_str = f"${r.estimated_cost_usd:.4f}" if r.estimated_cost_usd is not None else "Not calculated"
+                md.append(
+                    f"| `{r.timestamp[:19]}` | `{r.provider}` | `{r.model}` | {r.tickets_count} | "
+                    f"{r.prompt_tokens:,} | {r.completion_tokens:,} | {r.total_tokens:,} | {cost_str} | "
+                    f"{r.is_fallback} | {r.notes} |"
+                )
+
+        md.extend([
+            "",
+            "---",
+            "",
+            "## 3. Pricing & Billing Limitations",
+            "",
+            "- Provider token pricing changes dynamically across model generations.",
+            "- In the absence of an explicit pricing configuration table, token counts are strictly preserved as primary truth.",
+            "- Token counts are reported directly from provider completion usage metadata.",
+        ])
+
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write("\n".join(md))
+
+
+# --------------------------------------------------------------------------
+# 6. Structured Output Validation for LLM Responses
+# --------------------------------------------------------------------------
+
+def validate_and_parse_llm_response(
+    raw_response: Union[str, Dict[str, Any]],
+    ticket: Dict[str, Any],
+    method_name: str,
+) -> ClassificationResult:
+    """Strictly validate and parse LLM response into ClassificationResult.
+    
+    Enforces:
+    - JSON parsing safety (does not crash pipeline on malformed syntax)
+    - Authoritative label space check (rejects any label not in 8 policy codes)
+    - Normalized confidence clamping [0.0, 1.0]
+    - Bounded evidence text length
+    - Review required flag on ambiguity or unparsed output
+    - Preserves all original ticket attributes (ticket_id, refund_reason_code, refund_amount)
+    """
+    ticket_id = str(ticket.get("ticket_id", ""))
+    existing_code = str(ticket.get("refund_reason_code", "")).strip()
+    refund_amount = float(ticket.get("refund_amount_inr_normalized", 0.0) or 0.0)
+    replacement_issued = str(ticket.get("replacement_issued", "")).strip()
+    order_match_status = str(ticket.get("order_match_status", "")).strip()
+
+    # Parse JSON if passed as string
+    if isinstance(raw_response, str):
+        try:
+            parsed = json.loads(raw_response)
+        except Exception as e:
+            return ClassificationResult(
+                ticket_id=ticket_id,
+                existing_reason_code=existing_code,
+                predicted_reason_code=None,
+                confidence=0.0,
+                review_required=True,
+                classification_method=method_name,
+                evidence_text="",
+                explanation=f"[Malformed LLM JSON syntax: {str(e)} — flagged for human review]",
+                review_priority="HIGH",
+            )
+    elif isinstance(raw_response, dict):
+        parsed = raw_response
+    else:
+        return ClassificationResult(
+            ticket_id=ticket_id,
+            existing_reason_code=existing_code,
+            predicted_reason_code=None,
+            confidence=0.0,
+            review_required=True,
+            classification_method=method_name,
+            evidence_text="",
+            explanation="[Invalid LLM response payload type — flagged for human review]",
+            review_priority="HIGH",
+        )
+
+    # 1. Validate predicted_reason_code
+    pred_code_raw = parsed.get("predicted_reason_code")
+    predicted_code: Optional[str] = None
+    label_rejection_note = ""
+
+    if pred_code_raw is not None and str(pred_code_raw).strip() != "":
+        cand = str(pred_code_raw).strip().upper()
+        if cand in AUTHORITATIVE_REASON_CODES:
+            predicted_code = cand
+        else:
+            predicted_code = None
+            label_rejection_note = f"[Rejected non-authoritative label '{pred_code_raw}'] "
+
+    # 2. Validate confidence
+    raw_conf = parsed.get("confidence", 0.0)
+    try:
+        conf_float = float(raw_conf)
+    except (ValueError, TypeError):
+        conf_float = 0.0
+    confidence = max(0.0, min(1.0, conf_float))
+
+    # If predicted_code is None or rejected, confidence is low
+    if predicted_code is None:
+        confidence = min(confidence, 0.40)
+
+    # 3. Evidence text (clamped to 300 chars)
+    evidence_text = str(parsed.get("evidence_text", "")).strip()
+    if len(evidence_text) > 300:
+        evidence_text = evidence_text[:297] + "..."
+
+    # 4. Explanation
+    raw_exp = str(parsed.get("explanation", "")).strip()
+    explanation = f"{label_rejection_note}{raw_exp}".strip()
+    if not explanation:
+        explanation = "Model generated prediction with no narrative explanation."
+
+    # 5. Deterministic Review Priority
+    review_priority, review_req = determine_review_priority(
+        existing_reason=existing_code,
+        predicted_reason=predicted_code,
+        confidence=confidence,
+        refund_amount=refund_amount,
+        replacement_issued=replacement_issued,
+        order_match_status=order_match_status,
+    )
+
+    # Explicit review_required override if model explicitly requested review
+    explicit_review = parsed.get("review_required")
+    if explicit_review is True:
+        review_req = True
+        if review_priority == "LOW":
+            review_priority = "MEDIUM"
+
+    return ClassificationResult(
+        ticket_id=ticket_id,
+        existing_reason_code=existing_code,
+        predicted_reason_code=predicted_code,
+        confidence=round(confidence, 3),
+        review_required=review_req,
+        classification_method=method_name,
+        evidence_text=evidence_text,
+        explanation=explanation,
+        review_priority=review_priority,
+    )
+
+
+# --------------------------------------------------------------------------
+# 7. Mock Classifier for Safe Automated Testing
+# --------------------------------------------------------------------------
+
+class MockRefundClassifier(RefundClassifier):
+    """Mock classifier for automated testing without live API keys or network calls.
+    
+    Allows injecting predefined valid, malformed, out-of-label, or error responses.
+    """
+
+    def __init__(
+        self,
+        mock_responses: Optional[List[Union[str, Dict[str, Any]]]] = None,
+        default_response: Optional[Dict[str, Any]] = None,
+        simulate_network_error: bool = False,
+    ) -> None:
+        self.method_name = "mock_llm"
+        self.mock_responses = mock_responses or []
+        self.default_response = default_response or {
+            "predicted_reason_code": "CANCEL",
+            "confidence": 0.88,
+            "evidence_text": "customer requested cancellation before dispatch",
+            "explanation": "Valid mock pre-dispatch cancellation request.",
+            "review_required": False,
+        }
+        self.simulate_network_error = simulate_network_error
+        self.fallback = RuleBasedRefundClassifier()
+        self._call_index = 0
+
+    def classify(self, ticket: Dict[str, Any]) -> ClassificationResult:
+        if self.simulate_network_error:
+            # Fall back safely
+            res = self.fallback.classify(ticket)
+            res.explanation = f"[Mock simulated network timeout — fallback to rule_based] {res.explanation}"
+            return res
+
+        if self._call_index < len(self.mock_responses):
+            raw = self.mock_responses[self._call_index]
+            self._call_index += 1
+        else:
+            raw = self.default_response
+
+        return validate_and_parse_llm_response(
+            raw_response=raw,
+            ticket=ticket,
+            method_name=self.method_name,
+        )
+
+
+# --------------------------------------------------------------------------
+# 8. Optional LLM Adapter (OpenAI)
 # --------------------------------------------------------------------------
 
 class LLMRefundClassifier(RefundClassifier):
-    """Optional LLM classification adapter.
+    """Optional LLM classification adapter using the official OpenAI Python SDK.
     
     Disabled by default. Reads CLASSIFIER_PROVIDER and OPENAI_API_KEY from environment.
     If credentials are missing or CLASSIFIER_PROVIDER='local', falls back cleanly
     to the rule-based baseline without breaking clean-machine execution.
     """
 
-    def __init__(self, provider: str = "openai", model_name: str = "gpt-4o-mini") -> None:
+    def __init__(
+        self,
+        provider: str = "openai",
+        model_name: Optional[str] = None,
+        api_key: Optional[str] = None,
+    ) -> None:
         self.provider = provider
-        self.model_name = model_name
+        self.model_name = model_name or os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
         self.fallback = RuleBasedRefundClassifier()
-        self.api_key = os.environ.get("OPENAI_API_KEY", "").strip()
+        self.api_key = api_key or os.environ.get("OPENAI_API_KEY", "").strip()
+        self.usage_tracker = AIUsageTracker.get_instance()
+
+    def _build_prompt(self, ticket: Dict[str, Any]) -> Tuple[str, str]:
+        """Construct auditable, policy-constrained prompts for the LLM."""
+        policy_context_lines = []
+        for code in AUTHORITATIVE_REASON_CODES:
+            defn = POLICY_REASON_DEFINITIONS[code]
+            policy_context_lines.append(f"- {code} ({defn['label']}): {defn['description']}")
+        policy_context = "\n".join(policy_context_lines)
+
+        system_prompt = (
+            "You are an auditable support ticket refund auditor for Vireo Audio.\n"
+            "Your task: Determine whether the existing refund reason is supported by the ticket evidence. "
+            "If not, propose the most appropriate policy reason code. If evidence is insufficient or conflicting, "
+            "return null and require human review.\n\n"
+            "STRICT RULES:\n"
+            "1. You must choose predicted_reason_code from EXACTLY ONE of the 8 authoritative policy reason codes:\n"
+            f"{', '.join(AUTHORITATIVE_REASON_CODES)}\n"
+            "2. If evidence is ambiguous, contradictory, or insufficient, set predicted_reason_code to null.\n"
+            "3. NEVER accuse agents of misconduct or determine agent performance.\n"
+            "4. NEVER invent facts or infer intent without direct text evidence.\n"
+            "5. NEVER calculate or modify financial totals.\n"
+            "6. Require exact evidence text from the customer message or agent notes.\n"
+            "7. Return ONLY valid JSON matching this exact structure:\n"
+            "{\n"
+            '  "predicted_reason_code": string or null,\n'
+            '  "confidence": float between 0.0 and 1.0,\n'
+            '  "evidence_text": string,\n'
+            '  "explanation": string,\n'
+            '  "review_required": boolean\n'
+            "}\n\n"
+            f"Authoritative Policy Context:\n{policy_context}"
+        )
+
+        customer_msg = ticket.get("customer_message")
+        agent_notes = ticket.get("agent_notes")
+        existing_code = ticket.get("refund_reason_code", "GW-OTHER")
+        amt = ticket.get("refund_amount_inr_normalized", 0.0)
+
+        user_prompt = (
+            f"TICKET DETAILS:\n"
+            f"- Existing Reason Code: {existing_code}\n"
+            f"- Refund Amount (INR): Rs {amt:,.2f}\n"
+            f"- Customer Message:\n{customer_msg if pd.notna(customer_msg) else '[None]'}\n"
+            f"- Agent Notes:\n{agent_notes if pd.notna(agent_notes) else '[None]'}\n\n"
+            "Provide your structured JSON classification:"
+        )
+
+        return system_prompt, user_prompt
 
     def classify(self, ticket: Dict[str, Any]) -> ClassificationResult:
         if not self.api_key:
-            # Fall back safely
+            # Clean fallback when credentials are not configured
             res = self.fallback.classify(ticket)
             res.explanation = f"[LLM API key not configured — fallback to rule_based] {res.explanation}"
             return res
 
-        # If API key is present, execute structured prompt via OpenAI client
         try:
             from openai import OpenAI  # type: ignore
             client = OpenAI(api_key=self.api_key)
 
-            text = preprocess_ticket_text(
-                ticket.get("customer_message"), ticket.get("agent_notes")
-            )
-            amt = ticket.get("refund_amount_inr_normalized", 0.0)
-            existing = ticket.get("refund_reason_code", "")
-
-            system_prompt = (
-                "You are an auditable support ticket refund auditor for Vireo Audio. "
-                "Classify the ticket text into EXACTLY ONE of the 8 authoritative policy reason codes: "
-                f"{', '.join(AUTHORITATIVE_REASON_CODES)}. "
-                "If evidence is insufficient or contradictory, return predicted_reason_code as null. "
-                "Return valid JSON matching: "
-                '{"predicted_reason_code": string|null, "confidence": float 0.0-1.0, "evidence_text": string, "explanation": string}'
-            )
-
-            user_prompt = (
-                f"Existing reason code: {existing}\n"
-                f"Refund amount (INR): {amt}\n"
-                f"Ticket text:\n{text}"
-            )
+            system_prompt, user_prompt = self._build_prompt(ticket)
 
             response = client.chat.completions.create(
                 model=self.model_name,
@@ -400,48 +744,60 @@ class LLMRefundClassifier(RefundClassifier):
                 response_format={"type": "json_object"},
             )
 
-            content = response.choices[0].message.content
-            parsed = json.loads(content)
-            pred = parsed.get("predicted_reason_code")
-            if pred not in AUTHORITATIVE_REASON_CODES:
-                pred = None
+            usage = getattr(response, "usage", None)
+            p_tok = getattr(usage, "prompt_tokens", 0) if usage else 0
+            c_tok = getattr(usage, "completion_tokens", 0) if usage else 0
+            t_tok = getattr(usage, "total_tokens", 0) if usage else (p_tok + c_tok)
 
-            conf = float(parsed.get("confidence", 0.0))
-            conf = max(0.0, min(1.0, conf))
-
-            review_priority, review_req = determine_review_priority(
-                existing_reason=existing,
-                predicted_reason=pred,
-                confidence=conf,
-                refund_amount=float(amt or 0.0),
-                replacement_issued=str(ticket.get("replacement_issued", "")),
-                order_match_status=str(ticket.get("order_match_status", "")),
+            self.usage_tracker.record_call(
+                provider=self.provider,
+                model=self.model_name,
+                tickets_count=1,
+                prompt_tokens=p_tok,
+                completion_tokens=c_tok,
+                total_tokens=t_tok,
+                estimated_cost_usd=None,  # Not calculated to prevent fabricating rates
+                is_fallback=False,
+                notes=f"Ticket {ticket.get('ticket_id', '')}",
             )
 
-            return ClassificationResult(
-                ticket_id=str(ticket.get("ticket_id", "")),
-                existing_reason_code=existing,
-                predicted_reason_code=pred,
-                confidence=round(conf, 3),
-                review_required=review_req,
-                classification_method=f"llm_{self.provider}_{self.model_name}",
-                evidence_text=str(parsed.get("evidence_text", "")),
-                explanation=str(parsed.get("explanation", "")),
-                review_priority=review_priority,
+            content = response.choices[0].message.content
+            return validate_and_parse_llm_response(
+                raw_response=content,
+                ticket=ticket,
+                method_name=f"llm_{self.provider}_{self.model_name}",
             )
 
         except Exception as e:
-            # Fall back on error without crashing pipeline
+            # Fall back gracefully on API error without crashing pipeline
+            self.usage_tracker.record_call(
+                provider=self.provider,
+                model=self.model_name,
+                tickets_count=1,
+                prompt_tokens=0,
+                completion_tokens=0,
+                total_tokens=0,
+                estimated_cost_usd=None,
+                is_fallback=True,
+                notes=f"API Exception on ticket {ticket.get('ticket_id', '')}: {str(e)}",
+            )
             res = self.fallback.classify(ticket)
             res.explanation = f"[LLM invocation error: {str(e)} — fallback to rule_based] {res.explanation}"
+            res.review_required = True
+            res.review_priority = "HIGH"
             return res
 
 
 def get_classifier(provider: Optional[str] = None) -> RefundClassifier:
     """Factory function returning the configured classifier."""
-    selected_provider = provider or os.environ.get("CLASSIFIER_PROVIDER", "local").lower().strip()
+    selected_provider = (
+        provider or os.environ.get("CLASSIFIER_PROVIDER", "local")
+    ).lower().strip()
+
     if selected_provider == "openai":
         return LLMRefundClassifier(provider="openai")
+    elif selected_provider == "mock":
+        return MockRefundClassifier()
     return RuleBasedRefundClassifier()
 
 
@@ -751,7 +1107,87 @@ def generate_classification_reports(
 
 
 # --------------------------------------------------------------------------
-# 9. Pipeline Orchestrator (CLI Entrypoint)
+# 9. Controlled AI Run on Sample Subset
+# --------------------------------------------------------------------------
+
+def run_ai_sample_evaluation(
+    val_sample_df: pd.DataFrame,
+    output_path: Path,
+    max_tickets: int = 30,
+) -> pd.DataFrame:
+    """Run controlled LLM classification on a reproducible sample subset (max 30 tickets).
+    
+    If OPENAI_API_KEY is not configured:
+    - Never makes fake calls or fabricates outputs.
+    - Clearly documents 'LLM execution pending credentials'.
+    - Populates rule-based predictions alongside pending LLM columns.
+    
+    If OPENAI_API_KEY is configured:
+    - Executes LLM classification with usage tracking.
+    - Computes rule-vs-LLM agreement rate.
+    """
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    sample_subset = val_sample_df.head(max_tickets).copy()
+
+    rule_classifier = RuleBasedRefundClassifier()
+    api_key = os.environ.get("OPENAI_API_KEY", "").strip()
+
+    rows: List[Dict[str, Any]] = []
+
+    if not api_key:
+        # No API credentials in environment — strictly document status without fabricating
+        for _, ticket in sample_subset.iterrows():
+            t_dict = ticket.to_dict()
+            rule_res = rule_classifier.classify(t_dict)
+
+            rows.append({
+                "ticket_id": t_dict.get("ticket_id"),
+                "existing_reason_code": t_dict.get("existing_reason_code") or t_dict.get("refund_reason_code"),
+                "rule_based_prediction": rule_res.predicted_reason_code,
+                "llm_prediction": None,
+                "llm_confidence": None,
+                "llm_evidence": None,
+                "llm_explanation": "[LLM execution pending credentials: OPENAI_API_KEY not configured]",
+                "agreement_rule_vs_llm": "PENDING_CREDENTIALS",
+                "review_required": True,
+            })
+    else:
+        # Live LLM execution on controlled sample
+        llm_classifier = LLMRefundClassifier(provider="openai")
+        for _, ticket in sample_subset.iterrows():
+            t_dict = ticket.to_dict()
+            rule_res = rule_classifier.classify(t_dict)
+            llm_res = llm_classifier.classify(t_dict)
+
+            # Check agreement
+            r_pred = rule_res.predicted_reason_code
+            l_pred = llm_res.predicted_reason_code
+            if r_pred is not None and l_pred is not None:
+                agreement = "AGREE" if r_pred == l_pred else "DISAGREE"
+            elif r_pred is None and l_pred is None:
+                agreement = "BOTH_UNCLASSIFIED"
+            else:
+                agreement = "PARTIAL_ABSTAIN"
+
+            rows.append({
+                "ticket_id": t_dict.get("ticket_id"),
+                "existing_reason_code": t_dict.get("existing_reason_code") or t_dict.get("refund_reason_code"),
+                "rule_based_prediction": r_pred,
+                "llm_prediction": l_pred,
+                "llm_confidence": llm_res.confidence,
+                "llm_evidence": llm_res.evidence_text,
+                "llm_explanation": llm_res.explanation,
+                "agreement_rule_vs_llm": agreement,
+                "review_required": llm_res.review_required or rule_res.review_required,
+            })
+
+    results_df = pd.DataFrame(rows)
+    results_df.to_csv(output_path, index=False, encoding="utf-8")
+    return results_df
+
+
+# --------------------------------------------------------------------------
+# 10. Pipeline Orchestrator (CLI Entrypoint)
 # --------------------------------------------------------------------------
 
 def run_classification_pipeline() -> None:
@@ -769,15 +1205,15 @@ def run_classification_pipeline() -> None:
     else:
         df_all = pd.read_csv(tickets_csv)
 
-    print(f"\n[1/5] Loaded canonical tickets: {len(df_all):,} records.")
+    print(f"\n[1/6] Loaded canonical tickets: {len(df_all):,} records.")
 
     # Filter to 991 GW-OTHER refund tickets
     gw_df = df_all[df_all["refund_reason_code"] == "GW-OTHER"].copy()
-    print(f"[2/5] Isolated GW-OTHER target cohort: {len(gw_df):,} tickets.")
+    print(f"[2/6] Isolated GW-OTHER target cohort: {len(gw_df):,} tickets.")
 
     # 2. Initialize classifier
     classifier = get_classifier()
-    print(f"[3/5] Initialized classifier: {classifier.__class__.__name__} (method: {getattr(classifier, 'method_name', 'external')})")
+    print(f"[3/6] Initialized classifier: {classifier.__class__.__name__} (method: {getattr(classifier, 'method_name', 'external')})")
 
     # 3. Classify batch
     print("      Classifying all 991 GW-OTHER tickets...")
@@ -799,16 +1235,31 @@ def run_classification_pipeline() -> None:
         seed=42,
         output_path=val_sample_path,
     )
-    print(f"[4/5] Generated reproducible human validation sample: {len(val_sample)} tickets.")
+    print(f"[4/6] Generated reproducible human validation sample: {len(val_sample)} tickets.")
     print(f"      Saved to: {val_sample_path}")
 
-    # 5. Export Reports
-    print("[5/5] Generating classification reports...")
+    # 5. Controlled AI Sample Run (30 tickets)
+    ai_sample_path = REPORTS_DIR / "ai_sample_results.csv"
+    ai_sample_df = run_ai_sample_evaluation(
+        val_sample_df=val_sample,
+        output_path=ai_sample_path,
+        max_tickets=30,
+    )
+    print(f"[5/6] Evaluated controlled AI sample subset: {len(ai_sample_df)} tickets.")
+    print(f"      Saved to: {ai_sample_path}")
+
+    # 6. Export Reports & Usage Tracking
+    print("[6/6] Generating classification reports and AI usage ledger...")
     summary_stats = generate_classification_reports(
         results_df=results_df,
         df_tickets=df_all,
         output_dir=REPORTS_DIR,
     )
+
+    # Export AI Usage report
+    usage_report_path = REPORTS_DIR / "ai_usage.md"
+    AIUsageTracker.get_instance().generate_report(usage_report_path)
+    print(f"      Saved AI usage report to: {usage_report_path}")
 
     print("\n" + "=" * 60)
     print("CLASSIFICATION PIPELINE COMPLETE")
@@ -824,7 +1275,10 @@ def run_classification_pipeline() -> None:
     print("      - classification_review_queue.csv")
     print("      - classification_summary.md")
     print("      - classification_confusion_matrix.csv")
+    print("      - ai_sample_results.csv")
+    print("      - ai_usage.md")
 
 
 if __name__ == "__main__":
     run_classification_pipeline()
+

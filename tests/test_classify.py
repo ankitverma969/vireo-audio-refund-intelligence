@@ -197,3 +197,167 @@ class TestReviewPrioritization:
         )
         assert prio == "LOW"
         assert req is False
+
+
+class TestMockClassifierAndSafety:
+    """Validate mock testing adapter, LLM response parsing, error fallbacks, and safety invariants."""
+
+    def test_mock_valid_structured_response(self):
+        """13. Mock classifier parses valid structured JSON response correctly."""
+        from src.classify import MockRefundClassifier
+
+        mock = MockRefundClassifier(
+            mock_responses=[
+                {
+                    "predicted_reason_code": "CANCEL",
+                    "confidence": 0.92,
+                    "evidence_text": "customer requested pre-dispatch cancellation",
+                    "explanation": "Explicit cancellation request.",
+                    "review_required": False,
+                }
+            ]
+        )
+        tck = {
+            "ticket_id": "TK-MOCK-1",
+            "refund_reason_code": "GW-OTHER",
+            "refund_amount_inr_normalized": 1200.0,
+        }
+        res = mock.classify(tck)
+
+        assert res.predicted_reason_code == "CANCEL"
+        assert res.confidence == 0.92
+        assert res.review_required is True  # Reason changed from GW-OTHER -> review required
+        assert res.evidence_text == "customer requested pre-dispatch cancellation"
+
+    def test_mock_malformed_response_does_not_crash(self):
+        """14. Malformed JSON string response is gracefully flagged for review."""
+        from src.classify import MockRefundClassifier
+
+        mock = MockRefundClassifier(mock_responses=["{invalid_json: true, unterminated"])
+        tck = {
+            "ticket_id": "TK-MOCK-2",
+            "refund_reason_code": "GW-OTHER",
+            "refund_amount_inr_normalized": 800.0,
+        }
+        res = mock.classify(tck)
+
+        assert res.predicted_reason_code is None
+        assert res.confidence == 0.0
+        assert res.review_required is True
+        assert res.review_priority == "HIGH"
+        assert "Malformed LLM JSON syntax" in res.explanation
+
+    def test_mock_invalid_label_rejected(self):
+        """15. Unsupported reason code is rejected and reset to None."""
+        from src.classify import MockRefundClassifier
+
+        mock = MockRefundClassifier(
+            mock_responses=[
+                {
+                    "predicted_reason_code": "FRAUD_SUSPECTED",
+                    "confidence": 0.95,
+                    "evidence_text": "suspicious claim",
+                    "explanation": "Flagged as fraudulent.",
+                }
+            ]
+        )
+        tck = {
+            "ticket_id": "TK-MOCK-3",
+            "refund_reason_code": "GW-OTHER",
+            "refund_amount_inr_normalized": 1500.0,
+        }
+        res = mock.classify(tck)
+
+        assert res.predicted_reason_code is None
+        assert res.review_required is True
+        assert res.confidence <= 0.40
+        assert "Rejected non-authoritative label" in res.explanation
+
+    def test_mock_invalid_confidence_clamped(self):
+        """16. Out-of-bounds confidence is strictly clamped to [0.0, 1.0]."""
+        from src.classify import MockRefundClassifier
+
+        mock = MockRefundClassifier(
+            mock_responses=[
+                {
+                    "predicted_reason_code": "CANCEL",
+                    "confidence": 1.75,  # Invalid: > 1.0
+                    "evidence_text": "cancel order",
+                    "explanation": "Customer cancelled.",
+                },
+                {
+                    "predicted_reason_code": "RETURN-QC-OK",
+                    "confidence": -0.50,  # Invalid: < 0.0
+                    "evidence_text": "returned item",
+                    "explanation": "Item returned.",
+                },
+            ]
+        )
+        tck = {"ticket_id": "TK-1", "refund_reason_code": "GW-OTHER", "refund_amount_inr_normalized": 500.0}
+        res1 = mock.classify(tck)
+        res2 = mock.classify(tck)
+
+        assert res1.confidence == 1.0
+        assert res2.confidence == 0.0
+
+    def test_mock_network_error_fallback(self):
+        """17. Network exception simulates fallback to deterministic rule-based baseline."""
+        from src.classify import MockRefundClassifier
+
+        mock = MockRefundClassifier(simulate_network_error=True)
+        tck = {
+            "ticket_id": "TK-MOCK-ERR",
+            "refund_reason_code": "GW-OTHER",
+            "refund_amount_inr_normalized": 1200.0,
+            "customer_message": "courier lost package in transit",
+            "agent_notes": "carrier confirms transit lost",
+        }
+        res = mock.classify(tck)
+
+        # Fallback to rule-based correctly identifies LOST-TRANSIT
+        assert res.predicted_reason_code == "LOST-TRANSIT"
+        assert "fallback to rule_based" in res.explanation
+
+    def test_secret_not_exposed_in_output(self):
+        """18. Secrets or API keys are never leaked in output schemas."""
+        from src.classify import LLMRefundClassifier
+
+        fake_secret = "dummy_mock_secret_key_never_real_token"
+        classifier = LLMRefundClassifier(api_key=fake_secret)
+        tck = {
+            "ticket_id": "TK-SEC",
+            "refund_reason_code": "GW-OTHER",
+            "refund_amount_inr_normalized": 400.0,
+            "customer_message": "just a message",
+            "agent_notes": "notes",
+        }
+        # In absence of mock server, will fall through to error handler
+        res = classifier.classify(tck)
+        res_dict = res.to_dict()
+
+        for val in res_dict.values():
+            assert fake_secret not in str(val)
+
+    def test_invariants_preserved_by_llm_interface(self):
+        """19. Classifier interface never modifies original ticket attributes."""
+        from src.classify import MockRefundClassifier
+
+        mock = MockRefundClassifier()
+        orig_ticket = {
+            "ticket_id": "TK-INV-999",
+            "refund_reason_code": "GW-OTHER",
+            "refund_amount_inr_normalized": 4500.0,
+            "agent_id": "A3012",
+            "team": "Tier 1",
+            "tier": "Tier 1",
+            "order_match_status": "quoted_valid",
+        }
+        ticket_copy = dict(orig_ticket)
+        res = mock.classify(ticket_copy)
+
+        # Ensure original dictionary values were completely untouched
+        assert ticket_copy == orig_ticket
+        # Ensure result records match original metadata
+        assert res.ticket_id == orig_ticket["ticket_id"]
+        assert res.existing_reason_code == orig_ticket["refund_reason_code"]
+

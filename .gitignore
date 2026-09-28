@@ -30,6 +30,8 @@ venv/
 .venv/
 env/
 ENV/
+.clean_test_venv/
+.*venv*
 
 # IDE / Editor
 .vscode/
@@ -50,3 +52,12 @@ htmlcov/
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Streamlit cache
+.streamlit/
+
+# Benchmark artifacts
+.benchmarks/
+
+# Logs
+*.log
