@@ -1,0 +1,1150 @@
+month,refund_reason_code,agent_id,agent_name,team,tier,refund_ticket_count,refund_amount_inr,average_refund
+2025-01,GW-OTHER,A3036,Ritika D'Souza,Returns Desk,1,2,14698.0,7349.0
+2025-01,GW-OTHER,A3037,Manish Iyer,Returns Desk,1,4,11377.0,2844.25
+2025-01,GW-OTHER,A3023,Ritika Gaikwad,Voice Frontline,1,1,8998.0,8998.0
+2025-01,CANCEL,A3010,Tenzin Mathew,Chat Frontline,1,2,8173.0,4086.5
+2025-01,DUP-PAYMENT,A3033,Vikram Banerjee,Billing,1,1,6999.0,6999.0
+2025-01,DUP-PAYMENT,A3032,Sneha Bansal,Billing,1,4,6714.0,1678.5
+2025-01,CANCEL,A3008,Meera Malhotra,Chat Frontline,1,1,6649.0,6649.0
+2025-01,DUP-PAYMENT,A3034,Tanvi Rathore,Billing,1,2,5598.0,2799.0
+2025-01,DUP-PAYMENT,A3020,Aadhya Singh,Email Frontline,1,1,5399.0,5399.0
+2025-01,GW-OTHER,A3038,Ankit Dhillon,Returns Desk,1,1,4999.0,4999.0
+2025-01,GW-OTHER,A3032,Sneha Bansal,Billing,1,2,4673.0,2336.5
+2025-01,RETURN-QC-OK,A3036,Ritika D'Souza,Returns Desk,1,4,4542.0,1135.5
+2025-01,DOA-REPL,A3006,Varun Bhatt,Chat Frontline,1,1,4249.0,4249.0
+2025-01,GW-OTHER,A3019,Kavya Agarwal,Email Frontline,1,1,4248.0,4248.0
+2025-01,GW-OTHER,A3030,Aishwarya Trivedi,Logistics,1,1,3999.0,3999.0
+2025-01,GW-OTHER,A3022,Daniel Arora,Email Frontline,1,2,3398.0,1699.0
+2025-01,GW-OTHER,A3029,Rajat Mukherjee,Logistics,1,2,3217.0,1608.5
+2025-01,RETURN-QC-OK,A3037,Manish Iyer,Returns Desk,1,3,2853.0,951.0
+2025-01,GW-OTHER,A3039,Reyansh Mishra,Escalations & Warranty,2,2,2787.0,1393.5
+2025-01,GW-OTHER,A3007,Abhishek Gupta,Chat Frontline,1,1,2499.0,2499.0
+2025-01,WTY-BUYBACK,A3003,Komal Singh,Chat Frontline,1,1,2499.0,2499.0
+2025-01,GW-OTHER,A3035,Dev Kulkarni,Billing,1,1,2374.0,2374.0
+2025-01,CANCEL,A3009,Sukhwinder Singh,Chat Frontline,1,1,2124.0,2124.0
+2025-01,GW-OTHER,A3031,Zaid Desai,Logistics,1,1,1999.0,1999.0
+2025-01,CANCEL,A3031,Zaid Desai,Logistics,1,1,1799.0,1799.0
+2025-01,DOA-REPL,A3031,Zaid Desai,Logistics,1,1,1799.0,1799.0
+2025-01,DUP-PAYMENT,A3035,Dev Kulkarni,Billing,1,1,1799.0,1799.0
+2025-01,GW-OTHER,A3002,Steven Ansari,Chat Frontline,1,1,1799.0,1799.0
+2025-01,RETURN-QC-OK,A3032,Sneha Bansal,Billing,1,1,1619.0,1619.0
+2025-01,RETURN-QC-OK,A3028,Sameer Kapoor,Logistics,1,1,1599.0,1599.0
+2025-01,DOA-REPL,A3018,Krishna Bhatt,Email Frontline,1,1,1299.0,1299.0
+2025-01,DUP-PAYMENT,A3005,Payal Bhatia,Chat Frontline,1,1,1250.0,1250.0
+2025-01,GW-OTHER,A3040,Thomas Jadhav,Escalations & Warranty,2,1,900.0,900.0
+2025-01,RETURN-QC-OK,A3034,Tanvi Rathore,Billing,1,1,700.0,700.0
+2025-01,WTY-BUYBACK,A3018,Krishna Bhatt,Email Frontline,1,1,342.0,342.0
+2025-01,GW-OTHER,A3015,Sameer Jadhav,Chat Frontline,1,1,288.0,288.0
+2025-01,CANCEL,A3013,Rohit Nair,Chat Frontline,1,1,270.0,270.0
+2025-01,CANCEL,A3005,Payal Bhatia,Chat Frontline,1,1,240.0,240.0
+2025-01,GW-OTHER,A3018,Krishna Bhatt,Email Frontline,1,1,200.0,200.0
+2025-01,GW-OTHER,A3034,Tanvi Rathore,Billing,1,1,80.0,80.0
+2025-02,LOST-TRANSIT,A3030,Aishwarya Trivedi,Logistics,1,1,13998.0,13998.0
+2025-02,GW-OTHER,A3030,Aishwarya Trivedi,Logistics,1,3,13280.0,4426.67
+2025-02,DUP-PAYMENT,A3032,Sneha Bansal,Billing,1,3,9937.0,3312.33
+2025-02,DUP-PAYMENT,A3035,Dev Kulkarni,Billing,1,2,9498.0,4749.0
+2025-02,RETURN-QC-OK,A3038,Ankit Dhillon,Returns Desk,1,3,8798.0,2932.67
+2025-02,GW-OTHER,A3012,Lakshmi Srivastava,Chat Frontline,1,1,6999.0,6999.0
+2025-02,RETURN-QC-OK,A3030,Aishwarya Trivedi,Logistics,1,2,6924.0,3462.0
+2025-02,GW-OTHER,A3035,Dev Kulkarni,Billing,1,2,6818.0,3409.0
+2025-02,WTY-BUYBACK,A3036,Ritika D'Souza,Returns Desk,1,1,6649.0,6649.0
+2025-02,DUP-PAYMENT,A3033,Vikram Banerjee,Billing,1,2,6544.0,3272.0
+2025-02,GW-OTHER,A3033,Vikram Banerjee,Billing,1,1,6299.0,6299.0
+2025-02,WTY-BUYBACK,A3018,Krishna Bhatt,Email Frontline,1,1,5999.0,5999.0
+2025-02,RETURN-QC-OK,A3002,Steven Ansari,Chat Frontline,1,1,5849.0,5849.0
+2025-02,DOA-REPL,A3040,Thomas Jadhav,Escalations & Warranty,2,1,5599.0,5599.0
+2025-02,GW-OTHER,A3025,Komal Malhotra,Voice Frontline,1,1,5599.0,5599.0
+2025-02,GW-OTHER,A3017,Kabir Singh,Email Frontline,1,1,4749.0,4749.0
+2025-02,RETURN-QC-OK,A3037,Manish Iyer,Returns Desk,1,3,4480.0,1493.33
+2025-02,GW-OTHER,A3029,Rajat Mukherjee,Logistics,1,2,4373.0,2186.5
+2025-02,CANCEL,A3003,Komal Singh,Chat Frontline,1,1,4248.0,4248.0
+2025-02,GW-OTHER,A3034,Tanvi Rathore,Billing,1,3,3440.0,1146.67
+2025-02,GW-OTHER,A3036,Ritika D'Souza,Returns Desk,1,2,3223.0,1611.5
+2025-02,RETURN-QC-OK,A3036,Ritika D'Souza,Returns Desk,1,3,3122.0,1040.67
+2025-02,CANCEL,A3026,Aadhya Deshpande,Voice Frontline,1,1,2520.0,2520.0
+2025-02,GW-OTHER,A3027,Priya Agarwal,Logistics,1,1,2499.0,2499.0
+2025-02,LOST-TRANSIT,A3031,Zaid Desai,Logistics,1,1,2499.0,2499.0
+2025-02,CANCEL,A3007,Abhishek Gupta,Chat Frontline,1,1,1999.0,1999.0
+2025-02,PRICE-ADJ,A3010,Tenzin Mathew,Chat Frontline,1,1,1999.0,1999.0
+2025-02,WTY-BUYBACK,A3039,Reyansh Mishra,Escalations & Warranty,2,1,1899.0,1899.0
+2025-02,CANCEL,A3034,Tanvi Rathore,Billing,1,1,1799.0,1799.0
+2025-02,DUP-PAYMENT,A3034,Tanvi Rathore,Billing,1,1,1799.0,1799.0
+2025-02,CANCEL,A3016,Thomas Kumar,Email Frontline,1,1,1709.0,1709.0
+2025-02,CANCEL,A3018,Krishna Bhatt,Email Frontline,1,1,1709.0,1709.0
+2025-02,GW-OTHER,A3026,Aadhya Deshpande,Voice Frontline,1,1,1699.0,1699.0
+2025-02,GW-OTHER,A3042,Swati Bhatia,Escalations & Warranty,2,1,1619.0,1619.0
+2025-02,CANCEL,A3006,Varun Bhatt,Chat Frontline,1,1,1439.0,1439.0
+2025-02,DOA-REPL,A3030,Aishwarya Trivedi,Logistics,1,2,1374.0,687.0
+2025-02,GW-OTHER,A3022,Daniel Arora,Email Frontline,1,1,1299.0,1299.0
+2025-02,DUP-PAYMENT,A3023,Ritika Gaikwad,Voice Frontline,1,1,900.0,900.0
+2025-02,GW-OTHER,A3038,Ankit Dhillon,Returns Desk,1,2,835.0,417.5
+2025-02,RETURN-QC-OK,A3028,Sameer Kapoor,Logistics,1,1,720.0,720.0
+2025-02,CANCEL,A3029,Rajat Mukherjee,Logistics,1,1,600.0,600.0
+2025-02,GW-OTHER,A3032,Sneha Bansal,Billing,1,1,360.0,360.0
+2025-02,CANCEL,A3019,Kavya Agarwal,Email Frontline,1,1,237.0,237.0
+2025-03,RETURN-QC-OK,A3036,Ritika D'Souza,Returns Desk,1,13,41860.0,3220.0
+2025-03,RETURN-QC-OK,A3038,Ankit Dhillon,Returns Desk,1,5,17371.0,3474.2
+2025-03,DUP-PAYMENT,A3034,Tanvi Rathore,Billing,1,5,17350.0,3470.0
+2025-03,GW-OTHER,A3035,Dev Kulkarni,Billing,1,5,16833.0,3366.6
+2025-03,GW-OTHER,A3030,Aishwarya Trivedi,Logistics,1,2,15597.0,7798.5
+2025-03,GW-OTHER,A3018,Krishna Bhatt,Email Frontline,1,2,12848.0,6424.0
+2025-03,RETURN-QC-OK,A3037,Manish Iyer,Returns Desk,1,6,11512.0,1918.67
+2025-03,GW-OTHER,A3032,Sneha Bansal,Billing,1,2,8699.0,4349.5
+2025-03,PRICE-ADJ,A3034,Tanvi Rathore,Billing,1,3,8185.0,2728.33
+2025-03,DUP-PAYMENT,A3033,Vikram Banerjee,Billing,1,3,7967.0,2655.67
+2025-03,DUP-PAYMENT,A3032,Sneha Bansal,Billing,1,2,7523.0,3761.5
+2025-03,DUP-PAYMENT,A3035,Dev Kulkarni,Billing,1,3,7522.0,2507.33
+2025-03,DOA-REPL,A3031,Zaid Desai,Logistics,1,1,6999.0,6999.0
+2025-03,DUP-PAYMENT,A3001,Suresh Kaur,Chat Frontline,1,1,6649.0,6649.0
+2025-03,GW-OTHER,A3013,Rohit Nair,Chat Frontline,1,1,6649.0,6649.0
+2025-03,CANCEL,A3016,Thomas Kumar,Email Frontline,1,1,6299.0,6299.0
+2025-03,DOA-REPL,A3026,Aadhya Deshpande,Voice Frontline,1,1,6299.0,6299.0
+2025-03,GW-OTHER,A3015,Sameer Jadhav,Chat Frontline,1,1,6299.0,6299.0
+2025-03,CANCEL,A3013,Rohit Nair,Chat Frontline,1,1,5849.0,5849.0
+2025-03,DOA-REPL,A3035,Dev Kulkarni,Billing,1,1,5699.0,5699.0
+2025-03,GW-OTHER,A3034,Tanvi Rathore,Billing,1,2,5686.0,2843.0
+2025-03,GW-OTHER,A3037,Manish Iyer,Returns Desk,1,1,5399.0,5399.0
+2025-03,WTY-BUYBACK,A3013,Rohit Nair,Chat Frontline,1,1,4749.0,4749.0
+2025-03,DUP-PAYMENT,A3026,Aadhya Deshpande,Voice Frontline,1,1,4499.0,4499.0
+2025-03,LOST-TRANSIT,A3027,Priya Agarwal,Logistics,1,1,3999.0,3999.0
+2025-03,GW-OTHER,A3014,Anjali D'Souza,Chat Frontline,1,2,3848.0,1924.0
+2025-03,GW-OTHER,A3033,Vikram Banerjee,Billing,1,2,3598.0,1799.0
+2025-03,GW-OTHER,A3002,Steven Ansari,Chat Frontline,1,2,2699.0,1349.5
+2025-03,DOA-REPL,A3012,Lakshmi Srivastava,Chat Frontline,1,1,2500.0,2500.0
+2025-03,DOA-REPL,A3020,Aadhya Singh,Email Frontline,1,1,2499.0,2499.0
+2025-03,WTY-BUYBACK,A3017,Kabir Singh,Email Frontline,1,1,2499.0,2499.0
+2025-03,GW-OTHER,A3036,Ritika D'Souza,Returns Desk,1,3,2459.0,819.67
+2025-03,DOA-REPL,A3028,Sameer Kapoor,Logistics,1,1,2374.0,2374.0
+2025-03,GW-OTHER,A3017,Kabir Singh,Email Frontline,1,1,2374.0,2374.0
+2025-03,CANCEL,A3021,Meera Mathew,Email Frontline,1,1,1799.0,1799.0
+2025-03,GW-OTHER,A3019,Kavya Agarwal,Email Frontline,1,1,1799.0,1799.0
+2025-03,GW-OTHER,A3026,Aadhya Deshpande,Voice Frontline,1,1,1799.0,1799.0
+2025-03,GW-OTHER,A3038,Ankit Dhillon,Returns Desk,1,1,1799.0,1799.0
+2025-03,PRICE-ADJ,A3035,Dev Kulkarni,Billing,1,1,1799.0,1799.0
+2025-03,DOA-REPL,A3027,Priya Agarwal,Logistics,1,1,1619.0,1619.0
+2025-03,CANCEL,A3017,Kabir Singh,Email Frontline,1,1,1599.0,1599.0
+2025-03,CANCEL,A3024,Amit Deshpande,Voice Frontline,1,1,1529.0,1529.0
+2025-03,DOA-REPL,A3030,Aishwarya Trivedi,Logistics,1,1,1499.0,1499.0
+2025-03,CANCEL,A3010,Tenzin Mathew,Chat Frontline,1,1,1040.0,1040.0
+2025-03,DUP-PAYMENT,A3019,Kavya Agarwal,Email Frontline,1,1,750.0,750.0
+2025-03,GW-OTHER,A3011,Rohit Gill,Chat Frontline,1,1,375.0,375.0
+2025-04,GW-OTHER,A3033,Vikram Banerjee,Billing,1,4,14459.0,3614.75
+2025-04,DUP-PAYMENT,A3034,Tanvi Rathore,Billing,1,3,13377.0,4459.0
+2025-04,DUP-PAYMENT,A3035,Dev Kulkarni,Billing,1,1,13298.0,13298.0
+2025-04,GW-OTHER,A3038,Ankit Dhillon,Returns Desk,1,4,13071.0,3267.75
+2025-04,RETURN-QC-OK,A3036,Ritika D'Souza,Returns Desk,1,6,12700.0,2116.67
+2025-04,RETURN-QC-OK,A3038,Ankit Dhillon,Returns Desk,1,4,11987.0,2996.75
+2025-04,GW-OTHER,A3030,Aishwarya Trivedi,Logistics,1,2,11698.0,5849.0
+2025-04,GW-OTHER,A3026,Aadhya Deshpande,Voice Frontline,1,2,11247.0,5623.5
+2025-04,GW-OTHER,A3036,Ritika D'Souza,Returns Desk,1,4,10657.0,2664.25
+2025-04,GW-OTHER,A3037,Manish Iyer,Returns Desk,1,3,8389.0,2796.33
+2025-04,PRICE-ADJ,A3035,Dev Kulkarni,Billing,1,3,7548.0,2516.0
+2025-04,RETURN-QC-OK,A3037,Manish Iyer,Returns Desk,1,2,7053.0,3526.5
+2025-04,GW-OTHER,A3002,Steven Ansari,Chat Frontline,1,1,6499.0,6499.0
+2025-04,GW-OTHER,A3014,Anjali D'Souza,Chat Frontline,1,1,6499.0,6499.0
+2025-04,GW-OTHER,A3035,Dev Kulkarni,Billing,1,2,6349.0,3174.5
+2025-04,DUP-PAYMENT,A3036,Ritika D'Souza,Returns Desk,1,1,5999.0,5999.0
+2025-04,CANCEL,A3020,Aadhya Singh,Email Frontline,1,1,5949.0,5949.0
+2025-04,GW-OTHER,A3029,Rajat Mukherjee,Logistics,1,1,5949.0,5949.0
+2025-04,GW-OTHER,A3039,Reyansh Mishra,Escalations & Warranty,2,1,5524.0,5524.0
+2025-04,CANCEL,A3017,Kabir Singh,Email Frontline,1,1,5399.0,5399.0
+2025-04,DOA-REPL,A3028,Sameer Kapoor,Logistics,1,2,5336.0,2668.0
+2025-04,WTY-BUYBACK,A3026,Aadhya Deshpande,Voice Frontline,1,1,5199.0,5199.0
+2025-04,WTY-BUYBACK,A3044,Arjun Kumar,Escalations & Warranty,2,1,5199.0,5199.0
+2025-04,GW-OTHER,A3018,Krishna Bhatt,Email Frontline,1,3,4288.0,1429.33
+2025-04,CANCEL,A3007,Abhishek Gupta,Chat Frontline,1,1,4249.0,4249.0
+2025-04,GW-OTHER,A3034,Tanvi Rathore,Billing,1,1,3998.0,3998.0
+2025-04,DOA-REPL,A3016,Thomas Kumar,Email Frontline,1,1,3598.0,3598.0
+2025-04,RETURN-QC-OK,A3033,Vikram Banerjee,Billing,1,1,3500.0,3500.0
+2025-04,RETURN-QC-OK,A3017,Kabir Singh,Email Frontline,1,1,2499.0,2499.0
+2025-04,CANCEL,A3011,Rohit Gill,Chat Frontline,1,1,2374.0,2374.0
+2025-04,PRICE-ADJ,A3033,Vikram Banerjee,Billing,1,1,2374.0,2374.0
+2025-04,WTY-BUYBACK,A3028,Sameer Kapoor,Logistics,1,1,2374.0,2374.0
+2025-04,WTY-BUYBACK,A3022,Daniel Arora,Email Frontline,1,1,2249.0,2249.0
+2025-04,DUP-PAYMENT,A3001,Suresh Kaur,Chat Frontline,1,2,2199.0,1099.5
+2025-04,CANCEL,A3009,Sukhwinder Singh,Chat Frontline,1,1,1999.0,1999.0
+2025-04,DOA-REPL,A3013,Rohit Nair,Chat Frontline,1,1,1799.0,1799.0
+2025-04,GW-OTHER,A3005,Payal Bhatia,Chat Frontline,1,1,1799.0,1799.0
+2025-04,GW-OTHER,A3020,Aadhya Singh,Email Frontline,1,1,1799.0,1799.0
+2025-04,DUP-PAYMENT,A3033,Vikram Banerjee,Billing,1,1,1699.0,1699.0
+2025-04,RETURN-QC-OK,A3030,Aishwarya Trivedi,Logistics,1,1,1439.0,1439.0
+2025-04,CANCEL,A3033,Vikram Banerjee,Billing,1,1,1400.0,1400.0
+2025-04,CANCEL,A3035,Dev Kulkarni,Billing,1,1,1349.0,1349.0
+2025-04,DUP-PAYMENT,A3020,Aadhya Singh,Email Frontline,1,1,1000.0,1000.0
+2025-04,CANCEL,A3030,Aishwarya Trivedi,Logistics,1,1,800.0,800.0
+2025-04,GW-OTHER,A3031,Zaid Desai,Logistics,1,1,800.0,800.0
+2025-04,RETURN-QC-OK,A3028,Sameer Kapoor,Logistics,1,1,500.0,500.0
+2025-04,CANCEL,A3006,Varun Bhatt,Chat Frontline,1,1,475.0,475.0
+2025-04,DUP-PAYMENT,A3032,Sneha Bansal,Billing,1,1,144.0,144.0
+2025-05,GW-OTHER,A3035,Dev Kulkarni,Billing,1,6,20801.0,3466.83
+2025-05,GW-OTHER,A3030,Aishwarya Trivedi,Logistics,1,4,16994.0,4248.5
+2025-05,GW-OTHER,A3036,Ritika D'Souza,Returns Desk,1,5,14987.0,2997.4
+2025-05,PRICE-ADJ,A3035,Dev Kulkarni,Billing,1,3,13423.0,4474.33
+2025-05,RETURN-QC-OK,A3036,Ritika D'Souza,Returns Desk,1,4,11239.0,2809.75
+2025-05,RETURN-QC-OK,A3037,Manish Iyer,Returns Desk,1,5,10880.0,2176.0
+2025-05,CANCEL,A3026,Aadhya Deshpande,Voice Frontline,1,4,9818.0,2454.5
+2025-05,GW-OTHER,A3037,Manish Iyer,Returns Desk,1,4,9797.0,2449.25
+2025-05,GW-OTHER,A3034,Tanvi Rathore,Billing,1,3,9302.0,3100.67
+2025-05,PRICE-ADJ,A3032,Sneha Bansal,Billing,1,2,7598.0,3799.0
+2025-05,RETURN-QC-OK,A3038,Ankit Dhillon,Returns Desk,1,4,7198.0,1799.5
+2025-05,WTY-BUYBACK,A3028,Sameer Kapoor,Logistics,1,1,6499.0,6499.0
+2025-05,CANCEL,A3008,Meera Malhotra,Chat Frontline,1,1,6174.0,6174.0
+2025-05,DUP-PAYMENT,A3034,Tanvi Rathore,Billing,1,1,5849.0,5849.0
+2025-05,GW-OTHER,A3018,Krishna Bhatt,Email Frontline,1,1,5699.0,5699.0
+2025-05,WTY-BUYBACK,A3027,Priya Agarwal,Logistics,1,1,5399.0,5399.0
+2025-05,DUP-PAYMENT,A3008,Meera Malhotra,Chat Frontline,1,1,5199.0,5199.0
+2025-05,CANCEL,A3014,Anjali D'Souza,Chat Frontline,1,1,4749.0,4749.0
+2025-05,GW-OTHER,A3017,Kabir Singh,Email Frontline,1,2,3698.0,1849.0
+2025-05,DUP-PAYMENT,A3035,Dev Kulkarni,Billing,1,3,3449.0,1149.67
+2025-05,CANCEL,A3023,Ritika Gaikwad,Voice Frontline,1,1,3324.0,3324.0
+2025-05,RETURN-QC-OK,A3022,Daniel Arora,Email Frontline,1,1,3087.0,3087.0
+2025-05,GW-OTHER,A3006,Varun Bhatt,Chat Frontline,1,1,2499.0,2499.0
+2025-05,RETURN-QC-OK,A3032,Sneha Bansal,Billing,1,1,2374.0,2374.0
+2025-05,PRICE-ADJ,A3033,Vikram Banerjee,Billing,1,1,2249.0,2249.0
+2025-05,DUP-PAYMENT,A3023,Ritika Gaikwad,Voice Frontline,1,1,1999.0,1999.0
+2025-05,WTY-BUYBACK,A3012,Lakshmi Srivastava,Chat Frontline,1,1,1999.0,1999.0
+2025-05,WTY-BUYBACK,A3039,Reyansh Mishra,Escalations & Warranty,2,1,1899.0,1899.0
+2025-05,CANCEL,A3030,Aishwarya Trivedi,Logistics,1,1,1799.0,1799.0
+2025-05,RETURN-QC-OK,A3030,Aishwarya Trivedi,Logistics,1,1,1799.0,1799.0
+2025-05,WTY-BUYBACK,A3026,Aadhya Deshpande,Voice Frontline,1,1,1599.0,1599.0
+2025-05,GW-OTHER,A3012,Lakshmi Srivastava,Chat Frontline,1,1,1529.0,1529.0
+2025-05,WTY-BUYBACK,A3001,Suresh Kaur,Chat Frontline,1,1,1439.0,1439.0
+2025-05,GW-OTHER,A3032,Sneha Bansal,Billing,1,2,1425.0,712.5
+2025-05,GW-OTHER,A3043,Nikhil Gupta,Escalations & Warranty,2,1,1300.0,1300.0
+2025-05,CANCEL,A3028,Sameer Kapoor,Logistics,1,1,1299.0,1299.0
+2025-05,DOA-REPL,A3005,Payal Bhatia,Chat Frontline,1,1,1299.0,1299.0
+2025-05,GW-OTHER,A3011,Rohit Gill,Chat Frontline,1,1,1170.0,1170.0
+2025-05,LOST-TRANSIT,A3031,Zaid Desai,Logistics,1,1,780.0,780.0
+2025-05,GW-OTHER,A3015,Sameer Jadhav,Chat Frontline,1,1,750.0,750.0
+2025-05,GW-OTHER,A3028,Sameer Kapoor,Logistics,1,1,720.0,720.0
+2025-05,GW-OTHER,A3020,Aadhya Singh,Email Frontline,1,1,630.0,630.0
+2025-05,GW-OTHER,A3033,Vikram Banerjee,Billing,1,2,404.0,202.0
+2025-05,DOA-REPL,A3030,Aishwarya Trivedi,Logistics,1,1,400.0,400.0
+2025-05,CANCEL,A3007,Abhishek Gupta,Chat Frontline,1,1,375.0,375.0
+2025-05,DUP-PAYMENT,A3026,Aadhya Deshpande,Voice Frontline,1,1,285.0,285.0
+2025-05,GW-OTHER,A3014,Anjali D'Souza,Chat Frontline,1,1,160.0,160.0
+2025-05,GW-OTHER,A3029,Rajat Mukherjee,Logistics,1,1,120.0,120.0
+2025-06,RETURN-QC-OK,A3036,Ritika D'Souza,Returns Desk,1,8,26067.0,3258.38
+2025-06,DUP-PAYMENT,A3032,Sneha Bansal,Billing,1,4,15496.0,3874.0
+2025-06,DUP-PAYMENT,A3033,Vikram Banerjee,Billing,1,3,14308.0,4769.33
+2025-06,GW-OTHER,A3036,Ritika D'Souza,Returns Desk,1,3,13877.0,4625.67
+2025-06,GW-OTHER,A3038,Ankit Dhillon,Returns Desk,1,5,13171.0,2634.2
+2025-06,WTY-BUYBACK,A3030,Aishwarya Trivedi,Logistics,1,1,10398.0,10398.0
+2025-06,GW-OTHER,A3035,Dev Kulkarni,Billing,1,3,8597.0,2865.67
+2025-06,RETURN-QC-OK,A3038,Ankit Dhillon,Returns Desk,1,2,7498.0,3749.0
+2025-06,DOA-REPL,A3027,Priya Agarwal,Logistics,1,2,7224.0,3612.0
+2025-06,GW-OTHER,A3017,Kabir Singh,Email Frontline,1,1,6999.0,6999.0
+2025-06,GW-OTHER,A3037,Manish Iyer,Returns Desk,1,4,6728.0,1682.0
+2025-06,DOA-REPL,A3001,Suresh Kaur,Chat Frontline,1,1,6649.0,6649.0
+2025-06,CANCEL,A3001,Suresh Kaur,Chat Frontline,1,1,6499.0,6499.0
+2025-06,DUP-PAYMENT,A3038,Ankit Dhillon,Returns Desk,1,1,6499.0,6499.0
+2025-06,GW-OTHER,A3028,Sameer Kapoor,Logistics,1,2,6186.0,3093.0
+2025-06,DUP-PAYMENT,A3002,Steven Ansari,Chat Frontline,1,1,6174.0,6174.0
+2025-06,WTY-BUYBACK,A3028,Sameer Kapoor,Logistics,1,1,5599.0,5599.0
+2025-06,CANCEL,A3004,Geeta Dutta,Chat Frontline,1,1,5524.0,5524.0
+2025-06,DUP-PAYMENT,A3020,Aadhya Singh,Email Frontline,1,1,5199.0,5199.0
+2025-06,DUP-PAYMENT,A3035,Dev Kulkarni,Billing,1,3,5169.0,1723.0
+2025-06,WTY-BUYBACK,A3044,Arjun Kumar,Escalations & Warranty,2,1,4499.0,4499.0
+2025-06,DUP-PAYMENT,A3034,Tanvi Rathore,Billing,1,2,4498.0,2249.0
+2025-06,GW-OTHER,A3018,Krishna Bhatt,Email Frontline,1,2,4498.0,2249.0
+2025-06,GW-OTHER,A3020,Aadhya Singh,Email Frontline,1,1,3999.0,3999.0
+2025-06,GW-OTHER,A3012,Lakshmi Srivastava,Chat Frontline,1,2,3798.0,1899.0
+2025-06,RETURN-QC-OK,A3035,Dev Kulkarni,Billing,1,2,3598.0,1799.0
+2025-06,GW-OTHER,A3005,Payal Bhatia,Chat Frontline,1,1,3238.0,3238.0
+2025-06,DUP-PAYMENT,A3014,Anjali D'Souza,Chat Frontline,1,1,2974.0,2974.0
+2025-06,CANCEL,A3010,Tenzin Mathew,Chat Frontline,1,1,2499.0,2499.0
+2025-06,DOA-REPL,A3018,Krishna Bhatt,Email Frontline,1,1,2499.0,2499.0
+2025-06,PRICE-ADJ,A3033,Vikram Banerjee,Billing,1,1,2499.0,2499.0
+2025-06,WTY-BUYBACK,A3027,Priya Agarwal,Logistics,1,1,2499.0,2499.0
+2025-06,RETURN-QC-OK,A3031,Zaid Desai,Logistics,1,1,2374.0,2374.0
+2025-06,RETURN-QC-OK,A3032,Sneha Bansal,Billing,1,1,2374.0,2374.0
+2025-06,DOA-REPL,A3029,Rajat Mukherjee,Logistics,1,1,2124.0,2124.0
+2025-06,CANCEL,A3011,Rohit Gill,Chat Frontline,1,1,1999.0,1999.0
+2025-06,PRICE-ADJ,A3011,Rohit Gill,Chat Frontline,1,1,1999.0,1999.0
+2025-06,RETURN-QC-OK,A3028,Sameer Kapoor,Logistics,1,1,1999.0,1999.0
+2025-06,DOA-REPL,A3030,Aishwarya Trivedi,Logistics,1,1,1799.0,1799.0
+2025-06,GW-OTHER,A3022,Daniel Arora,Email Frontline,1,1,1799.0,1799.0
+2025-06,RETURN-QC-OK,A3012,Lakshmi Srivastava,Chat Frontline,1,1,1799.0,1799.0
+2025-06,GW-OTHER,A3040,Thomas Jadhav,Escalations & Warranty,2,1,1699.0,1699.0
+2025-06,DOA-REPL,A3044,Arjun Kumar,Escalations & Warranty,2,1,1599.0,1599.0
+2025-06,LOST-TRANSIT,A3009,Sukhwinder Singh,Chat Frontline,1,1,1499.0,1499.0
+2025-06,RETURN-QC-OK,A3037,Manish Iyer,Returns Desk,1,1,1424.0,1424.0
+2025-06,PRICE-ADJ,A3037,Manish Iyer,Returns Desk,1,1,1349.0,1349.0
+2025-06,CANCEL,A3023,Ritika Gaikwad,Voice Frontline,1,1,1300.0,1300.0
+2025-06,GW-OTHER,A3031,Zaid Desai,Logistics,1,1,1299.0,1299.0
+2025-06,PRICE-ADJ,A3034,Tanvi Rathore,Billing,1,1,1299.0,1299.0
+2025-06,CANCEL,A3006,Varun Bhatt,Chat Frontline,1,1,1274.0,1274.0
+2025-06,GW-OTHER,A3033,Vikram Banerjee,Billing,1,1,1169.0,1169.0
+2025-06,WTY-BUYBACK,A3003,Komal Singh,Chat Frontline,1,1,1104.0,1104.0
+2025-06,GW-OTHER,A3002,Steven Ansari,Chat Frontline,1,1,617.0,617.0
+2025-06,CANCEL,A3020,Aadhya Singh,Email Frontline,1,1,612.0,612.0
+2025-06,CANCEL,A3026,Aadhya Deshpande,Voice Frontline,1,1,200.0,200.0
+2025-06,RETURN-QC-OK,A3027,Priya Agarwal,Logistics,1,1,200.0,200.0
+2025-07,RETURN-QC-OK,A3036,Ritika D'Souza,Returns Desk,1,6,18170.0,3028.33
+2025-07,GW-OTHER,A3030,Aishwarya Trivedi,Logistics,1,5,16255.0,3251.0
+2025-07,DUP-PAYMENT,A3034,Tanvi Rathore,Billing,1,4,15512.0,3878.0
+2025-07,DUP-PAYMENT,A3035,Dev Kulkarni,Billing,1,5,15176.0,3035.2
+2025-07,RETURN-QC-OK,A3037,Manish Iyer,Returns Desk,1,3,15022.0,5007.33
+2025-07,GW-OTHER,A3027,Priya Agarwal,Logistics,1,2,14707.0,7353.5
+2025-07,GW-OTHER,A3028,Sameer Kapoor,Logistics,1,3,13747.0,4582.33
+2025-07,CANCEL,A3013,Rohit Nair,Chat Frontline,1,2,13102.0,6551.0
+2025-07,GW-OTHER,A3029,Rajat Mukherjee,Logistics,1,1,12998.0,12998.0
+2025-07,DUP-PAYMENT,A3032,Sneha Bansal,Billing,1,3,9643.0,3214.33
+2025-07,GW-OTHER,A3010,Tenzin Mathew,Chat Frontline,1,2,8173.0,4086.5
+2025-07,GW-OTHER,A3032,Sneha Bansal,Billing,1,4,8092.0,2023.0
+2025-07,RETURN-QC-OK,A3035,Dev Kulkarni,Billing,1,2,7448.0,3724.0
+2025-07,GW-OTHER,A3036,Ritika D'Souza,Returns Desk,1,3,7421.0,2473.67
+2025-07,LOST-TRANSIT,A3030,Aishwarya Trivedi,Logistics,1,2,7349.0,3674.5
+2025-07,CANCEL,A3004,Geeta Dutta,Chat Frontline,1,2,7218.0,3609.0
+2025-07,CANCEL,A3029,Rajat Mukherjee,Logistics,1,2,7123.0,3561.5
+2025-07,DOA-REPL,A3044,Arjun Kumar,Escalations & Warranty,2,1,6999.0,6999.0
+2025-07,PRICE-ADJ,A3035,Dev Kulkarni,Billing,1,2,6998.0,3499.0
+2025-07,GW-OTHER,A3034,Tanvi Rathore,Billing,1,1,6499.0,6499.0
+2025-07,RETURN-QC-OK,A3030,Aishwarya Trivedi,Logistics,1,1,6499.0,6499.0
+2025-07,GW-OTHER,A3044,Arjun Kumar,Escalations & Warranty,2,1,6174.0,6174.0
+2025-07,GW-OTHER,A3026,Aadhya Deshpande,Voice Frontline,1,3,6172.0,2057.33
+2025-07,WTY-BUYBACK,A3041,Mohammed Mehta,Escalations & Warranty,2,1,5849.0,5849.0
+2025-07,GW-OTHER,A3016,Thomas Kumar,Email Frontline,1,1,5599.0,5599.0
+2025-07,CANCEL,A3030,Aishwarya Trivedi,Logistics,1,1,5399.0,5399.0
+2025-07,DUP-PAYMENT,A3015,Sameer Jadhav,Chat Frontline,1,2,5299.0,2649.5
+2025-07,GW-OTHER,A3035,Dev Kulkarni,Billing,1,4,5123.0,1280.75
+2025-07,CANCEL,A3001,Suresh Kaur,Chat Frontline,1,1,4999.0,4999.0
+2025-07,GW-OTHER,A3033,Vikram Banerjee,Billing,1,3,4583.0,1527.67
+2025-07,DOA-REPL,A3010,Tenzin Mathew,Chat Frontline,1,1,4499.0,4499.0
+2025-07,DUP-PAYMENT,A3009,Sukhwinder Singh,Chat Frontline,1,2,4499.0,2249.5
+2025-07,GW-OTHER,A3020,Aadhya Singh,Email Frontline,1,1,4499.0,4499.0
+2025-07,RETURN-QC-OK,A3038,Ankit Dhillon,Returns Desk,1,4,4016.0,1004.0
+2025-07,GW-OTHER,A3031,Zaid Desai,Logistics,1,2,3998.0,1999.0
+2025-07,DOA-REPL,A3029,Rajat Mukherjee,Logistics,1,1,3499.0,3499.0
+2025-07,GW-OTHER,A3022,Daniel Arora,Email Frontline,1,1,3499.0,3499.0
+2025-07,PRICE-ADJ,A3033,Vikram Banerjee,Billing,1,1,3499.0,3499.0
+2025-07,GW-OTHER,A3038,Ankit Dhillon,Returns Desk,1,2,3289.0,1644.5
+2025-07,DUP-PAYMENT,A3033,Vikram Banerjee,Billing,1,1,2974.0,2974.0
+2025-07,GW-OTHER,A3024,Amit Deshpande,Voice Frontline,1,1,2799.0,2799.0
+2025-07,CANCEL,A3027,Priya Agarwal,Logistics,1,1,2499.0,2499.0
+2025-07,GW-OTHER,A3014,Anjali D'Souza,Chat Frontline,1,1,2499.0,2499.0
+2025-07,GW-OTHER,A3037,Manish Iyer,Returns Desk,1,1,2499.0,2499.0
+2025-07,GW-OTHER,A3039,Reyansh Mishra,Escalations & Warranty,2,1,2499.0,2499.0
+2025-07,LOST-TRANSIT,A3031,Zaid Desai,Logistics,1,1,2499.0,2499.0
+2025-07,WTY-BUYBACK,A3017,Kabir Singh,Email Frontline,1,1,2374.0,2374.0
+2025-07,GW-OTHER,A3018,Krishna Bhatt,Email Frontline,1,1,2250.0,2250.0
+2025-07,CANCEL,A3021,Meera Mathew,Email Frontline,1,1,2124.0,2124.0
+2025-07,DUP-PAYMENT,A3005,Payal Bhatia,Chat Frontline,1,1,2124.0,2124.0
+2025-07,GW-OTHER,A3013,Rohit Nair,Chat Frontline,1,2,2048.0,1024.0
+2025-07,DUP-PAYMENT,A3012,Lakshmi Srivastava,Chat Frontline,1,1,1999.0,1999.0
+2025-07,LOST-TRANSIT,A3014,Anjali D'Souza,Chat Frontline,1,1,1999.0,1999.0
+2025-07,DOA-REPL,A3030,Aishwarya Trivedi,Logistics,1,2,1967.0,983.5
+2025-07,CANCEL,A3018,Krishna Bhatt,Email Frontline,1,1,1899.0,1899.0
+2025-07,CANCEL,A3009,Sukhwinder Singh,Chat Frontline,1,1,1799.0,1799.0
+2025-07,CANCEL,A3002,Steven Ansari,Chat Frontline,1,1,1299.0,1299.0
+2025-07,CANCEL,A3035,Dev Kulkarni,Billing,1,1,1190.0,1190.0
+2025-07,PRICE-ADJ,A3002,Steven Ansari,Chat Frontline,1,1,1187.0,1187.0
+2025-07,CANCEL,A3016,Thomas Kumar,Email Frontline,1,1,1105.0,1105.0
+2025-07,WTY-BUYBACK,A3030,Aishwarya Trivedi,Logistics,1,1,1104.0,1104.0
+2025-07,DOA-REPL,A3014,Anjali D'Souza,Chat Frontline,1,1,945.0,945.0
+2025-07,RETURN-QC-OK,A3010,Tenzin Mathew,Chat Frontline,1,1,780.0,780.0
+2025-07,CANCEL,A3037,Manish Iyer,Returns Desk,1,1,650.0,650.0
+2025-07,LOST-TRANSIT,A3027,Priya Agarwal,Logistics,1,1,450.0,450.0
+2025-07,CANCEL,A3026,Aadhya Deshpande,Voice Frontline,1,1,300.0,300.0
+2025-07,CANCEL,A3032,Sneha Bansal,Billing,1,1,285.0,285.0
+2025-07,WTY-BUYBACK,A3001,Suresh Kaur,Chat Frontline,1,1,195.0,195.0
+2025-08,RETURN-QC-OK,A3038,Ankit Dhillon,Returns Desk,1,10,29528.0,2952.8
+2025-08,GW-OTHER,A3036,Ritika D'Souza,Returns Desk,1,8,23885.0,2985.62
+2025-08,DUP-PAYMENT,A3033,Vikram Banerjee,Billing,1,6,21520.0,3586.67
+2025-08,GW-OTHER,A3037,Manish Iyer,Returns Desk,1,5,17445.0,3489.0
+2025-08,DUP-PAYMENT,A3035,Dev Kulkarni,Billing,1,6,16496.0,2749.33
+2025-08,RETURN-QC-OK,A3036,Ritika D'Souza,Returns Desk,1,7,15915.0,2273.57
+2025-08,GW-OTHER,A3039,Reyansh Mishra,Escalations & Warranty,2,3,15197.0,5065.67
+2025-08,GW-OTHER,A3030,Aishwarya Trivedi,Logistics,1,5,14086.0,2817.2
+2025-08,RETURN-QC-OK,A3037,Manish Iyer,Returns Desk,1,5,13127.0,2625.4
+2025-08,GW-OTHER,A3007,Abhishek Gupta,Chat Frontline,1,3,12497.0,4165.67
+2025-08,GW-OTHER,A3038,Ankit Dhillon,Returns Desk,1,3,9717.0,3239.0
+2025-08,DOA-REPL,A3030,Aishwarya Trivedi,Logistics,1,2,9473.0,4736.5
+2025-08,LOST-TRANSIT,A3030,Aishwarya Trivedi,Logistics,1,2,8848.0,4424.0
+2025-08,GW-OTHER,A3014,Anjali D'Souza,Chat Frontline,1,2,7848.0,3924.0
+2025-08,CANCEL,A3011,Rohit Gill,Chat Frontline,1,1,6499.0,6499.0
+2025-08,CANCEL,A3017,Kabir Singh,Email Frontline,1,1,6499.0,6499.0
+2025-08,CANCEL,A3030,Aishwarya Trivedi,Logistics,1,1,6499.0,6499.0
+2025-08,LOST-TRANSIT,A3029,Rajat Mukherjee,Logistics,1,1,6499.0,6499.0
+2025-08,CANCEL,A3001,Suresh Kaur,Chat Frontline,1,1,6299.0,6299.0
+2025-08,DOA-REPL,A3042,Swati Bhatia,Escalations & Warranty,2,1,5999.0,5999.0
+2025-08,CANCEL,A3026,Aadhya Deshpande,Voice Frontline,1,2,5998.0,2999.0
+2025-08,CANCEL,A3018,Krishna Bhatt,Email Frontline,1,2,5714.0,2857.0
+2025-08,GW-OTHER,A3029,Rajat Mukherjee,Logistics,1,2,5598.0,2799.0
+2025-08,GW-OTHER,A3025,Komal Malhotra,Voice Frontline,1,2,5473.0,2736.5
+2025-08,RETURN-QC-OK,A3028,Sameer Kapoor,Logistics,1,2,5298.0,2649.0
+2025-08,GW-OTHER,A3034,Tanvi Rathore,Billing,1,2,5224.0,2612.0
+2025-08,GW-OTHER,A3017,Kabir Singh,Email Frontline,1,2,5118.0,2559.0
+2025-08,DOA-REPL,A3031,Zaid Desai,Logistics,1,1,4999.0,4999.0
+2025-08,GW-OTHER,A3035,Dev Kulkarni,Billing,1,3,4623.0,1541.0
+2025-08,GW-OTHER,A3005,Payal Bhatia,Chat Frontline,1,2,4309.0,2154.5
+2025-08,GW-OTHER,A3006,Varun Bhatt,Chat Frontline,1,2,4173.0,2086.5
+2025-08,CANCEL,A3032,Sneha Bansal,Billing,1,1,3499.0,3499.0
+2025-08,DOA-REPL,A3044,Arjun Kumar,Escalations & Warranty,2,1,3499.0,3499.0
+2025-08,LOST-TRANSIT,A3027,Priya Agarwal,Logistics,1,1,3499.0,3499.0
+2025-08,WTY-BUYBACK,A3036,Ritika D'Souza,Returns Desk,1,1,3499.0,3499.0
+2025-08,DUP-PAYMENT,A3022,Daniel Arora,Email Frontline,1,1,3324.0,3324.0
+2025-08,WTY-BUYBACK,A3030,Aishwarya Trivedi,Logistics,1,1,3324.0,3324.0
+2025-08,RETURN-QC-OK,A3034,Tanvi Rathore,Billing,1,3,3229.0,1076.33
+2025-08,GW-OTHER,A3010,Tenzin Mathew,Chat Frontline,1,1,3149.0,3149.0
+2025-08,PRICE-ADJ,A3004,Geeta Dutta,Chat Frontline,1,1,2878.0,2878.0
+2025-08,CANCEL,A3035,Dev Kulkarni,Billing,1,1,2499.0,2499.0
+2025-08,PRICE-ADJ,A3035,Dev Kulkarni,Billing,1,1,2499.0,2499.0
+2025-08,WTY-BUYBACK,A3041,Mohammed Mehta,Escalations & Warranty,2,1,2499.0,2499.0
+2025-08,CANCEL,A3014,Anjali D'Souza,Chat Frontline,1,1,2249.0,2249.0
+2025-08,DOA-REPL,A3040,Thomas Jadhav,Escalations & Warranty,2,1,1999.0,1999.0
+2025-08,GW-OTHER,A3022,Daniel Arora,Email Frontline,1,1,1999.0,1999.0
+2025-08,GW-OTHER,A3033,Vikram Banerjee,Billing,1,1,1999.0,1999.0
+2025-08,WTY-BUYBACK,A3008,Meera Malhotra,Chat Frontline,1,1,1799.0,1799.0
+2025-08,CANCEL,A3034,Tanvi Rathore,Billing,1,1,1750.0,1750.0
+2025-08,DOA-REPL,A3007,Abhishek Gupta,Chat Frontline,1,1,1439.0,1439.0
+2025-08,GW-OTHER,A3012,Lakshmi Srivastava,Chat Frontline,1,1,1400.0,1400.0
+2025-08,DUP-PAYMENT,A3032,Sneha Bansal,Billing,1,2,1370.0,685.0
+2025-08,DOA-REPL,A3018,Krishna Bhatt,Email Frontline,1,1,1169.0,1169.0
+2025-08,GW-OTHER,A3032,Sneha Bansal,Billing,1,1,810.0,810.0
+2025-08,RETURN-QC-OK,A3035,Dev Kulkarni,Billing,1,1,700.0,700.0
+2025-08,LOST-TRANSIT,A3031,Zaid Desai,Logistics,1,1,617.0,617.0
+2025-08,RETURN-QC-OK,A3032,Sneha Bansal,Billing,1,1,500.0,500.0
+2025-08,DUP-PAYMENT,A3018,Krishna Bhatt,Email Frontline,1,1,221.0,221.0
+2025-09,GW-OTHER,A3038,Ankit Dhillon,Returns Desk,1,7,40816.0,5830.86
+2025-09,DUP-PAYMENT,A3035,Dev Kulkarni,Billing,1,8,32542.0,4067.75
+2025-09,RETURN-QC-OK,A3036,Ritika D'Souza,Returns Desk,1,6,26294.0,4382.33
+2025-09,GW-OTHER,A3037,Manish Iyer,Returns Desk,1,4,19296.0,4824.0
+2025-09,GW-OTHER,A3028,Sameer Kapoor,Logistics,1,4,14471.0,3617.75
+2025-09,GW-OTHER,A3035,Dev Kulkarni,Billing,1,6,14385.0,2397.5
+2025-09,GW-OTHER,A3036,Ritika D'Souza,Returns Desk,1,7,14279.0,2039.86
+2025-09,DOA-REPL,A3039,Reyansh Mishra,Escalations & Warranty,2,3,14148.0,4716.0
+2025-09,GW-OTHER,A3039,Reyansh Mishra,Escalations & Warranty,2,3,13997.0,4665.67
+2025-09,RETURN-QC-OK,A3037,Manish Iyer,Returns Desk,1,9,13140.0,1460.0
+2025-09,GW-OTHER,A3029,Rajat Mukherjee,Logistics,1,2,12797.0,6398.5
+2025-09,GW-OTHER,A3032,Sneha Bansal,Billing,1,4,12296.0,3074.0
+2025-09,RETURN-QC-OK,A3038,Ankit Dhillon,Returns Desk,1,7,11746.0,1678.0
+2025-09,CANCEL,A3024,Amit Deshpande,Voice Frontline,1,1,11198.0,11198.0
+2025-09,DUP-PAYMENT,A3033,Vikram Banerjee,Billing,1,4,11047.0,2761.75
+2025-09,GW-OTHER,A3018,Krishna Bhatt,Email Frontline,1,4,10352.0,2588.0
+2025-09,GW-OTHER,A3026,Aadhya Deshpande,Voice Frontline,1,3,10113.0,3371.0
+2025-09,GW-OTHER,A3015,Sameer Jadhav,Chat Frontline,1,3,8403.0,2801.0
+2025-09,GW-OTHER,A3030,Aishwarya Trivedi,Logistics,1,3,8247.0,2749.0
+2025-09,GW-OTHER,A3034,Tanvi Rathore,Billing,1,2,7999.0,3999.5
+2025-09,DOA-REPL,A3027,Priya Agarwal,Logistics,1,2,7973.0,3986.5
+2025-09,GW-OTHER,A3003,Komal Singh,Chat Frontline,1,2,7973.0,3986.5
+2025-09,GW-OTHER,A3013,Rohit Nair,Chat Frontline,1,1,6999.0,6999.0
+2025-09,DOA-REPL,A3031,Zaid Desai,Logistics,1,1,6499.0,6499.0
+2025-09,WTY-BUYBACK,A3030,Aishwarya Trivedi,Logistics,1,1,6499.0,6499.0
+2025-09,CANCEL,A3005,Payal Bhatia,Chat Frontline,1,2,6471.0,3235.5
+2025-09,DOA-REPL,A3018,Krishna Bhatt,Email Frontline,1,2,6438.0,3219.0
+2025-09,DOA-REPL,A3036,Ritika D'Souza,Returns Desk,1,1,6174.0,6174.0
+2025-09,DUP-PAYMENT,A3034,Tanvi Rathore,Billing,1,5,6109.0,1221.8
+2025-09,LOST-TRANSIT,A3018,Krishna Bhatt,Email Frontline,1,1,5999.0,5999.0
+2025-09,PRICE-ADJ,A3013,Rohit Nair,Chat Frontline,1,1,5524.0,5524.0
+2025-09,CANCEL,A3018,Krishna Bhatt,Email Frontline,1,2,5473.0,2736.5
+2025-09,CANCEL,A3006,Varun Bhatt,Chat Frontline,1,1,5199.0,5199.0
+2025-09,RETURN-QC-OK,A3030,Aishwarya Trivedi,Logistics,1,3,5149.0,1716.33
+2025-09,WTY-BUYBACK,A3043,Nikhil Gupta,Escalations & Warranty,2,1,4999.0,4999.0
+2025-09,GW-OTHER,A3025,Komal Malhotra,Voice Frontline,1,2,4503.0,2251.5
+2025-09,PRICE-ADJ,A3035,Dev Kulkarni,Billing,1,1,3999.0,3999.0
+2025-09,GW-OTHER,A3031,Zaid Desai,Logistics,1,2,3798.0,1899.0
+2025-09,GW-OTHER,A3016,Thomas Kumar,Email Frontline,1,2,3598.0,1799.0
+2025-09,LOST-TRANSIT,A3030,Aishwarya Trivedi,Logistics,1,1,3499.0,3499.0
+2025-09,RETURN-QC-OK,A3028,Sameer Kapoor,Logistics,1,1,3499.0,3499.0
+2025-09,WTY-BUYBACK,A3015,Sameer Jadhav,Chat Frontline,1,1,3499.0,3499.0
+2025-09,CANCEL,A3008,Meera Malhotra,Chat Frontline,1,2,3466.0,1733.0
+2025-09,DUP-PAYMENT,A3032,Sneha Bansal,Billing,1,2,3199.0,1599.5
+2025-09,DOA-REPL,A3010,Tenzin Mathew,Chat Frontline,1,1,2974.0,2974.0
+2025-09,GW-OTHER,A3014,Anjali D'Souza,Chat Frontline,1,1,2974.0,2974.0
+2025-09,CANCEL,A3007,Abhishek Gupta,Chat Frontline,1,1,2799.0,2799.0
+2025-09,GW-OTHER,A3017,Kabir Singh,Email Frontline,1,1,2799.0,2799.0
+2025-09,GW-OTHER,A3027,Priya Agarwal,Logistics,1,1,2799.0,2799.0
+2025-09,GW-OTHER,A3006,Varun Bhatt,Chat Frontline,1,1,2499.0,2499.0
+2025-09,LOST-TRANSIT,A3028,Sameer Kapoor,Logistics,1,1,2499.0,2499.0
+2025-09,WTY-BUYBACK,A3026,Aadhya Deshpande,Voice Frontline,1,1,2499.0,2499.0
+2025-09,PRICE-ADJ,A3033,Vikram Banerjee,Billing,1,2,2439.0,1219.5
+2025-09,CANCEL,A3034,Tanvi Rathore,Billing,1,1,2249.0,2249.0
+2025-09,WTY-BUYBACK,A3031,Zaid Desai,Logistics,1,1,2249.0,2249.0
+2025-09,GW-OTHER,A3020,Aadhya Singh,Email Frontline,1,1,1999.0,1999.0
+2025-09,PRICE-ADJ,A3034,Tanvi Rathore,Billing,1,1,1999.0,1999.0
+2025-09,CANCEL,A3015,Sameer Jadhav,Chat Frontline,1,1,1750.0,1750.0
+2025-09,DUP-PAYMENT,A3006,Varun Bhatt,Chat Frontline,1,1,1499.0,1499.0
+2025-09,CANCEL,A3004,Geeta Dutta,Chat Frontline,1,1,1439.0,1439.0
+2025-09,DUP-PAYMENT,A3026,Aadhya Deshpande,Voice Frontline,1,1,1439.0,1439.0
+2025-09,GW-OTHER,A3002,Steven Ansari,Chat Frontline,1,1,1234.0,1234.0
+2025-09,GW-OTHER,A3009,Sukhwinder Singh,Chat Frontline,1,1,1234.0,1234.0
+2025-09,DOA-REPL,A3040,Thomas Jadhav,Escalations & Warranty,2,1,1187.0,1187.0
+2025-09,DUP-PAYMENT,A3022,Daniel Arora,Email Frontline,1,1,1039.0,1039.0
+2025-09,PRICE-ADJ,A3032,Sneha Bansal,Billing,1,1,750.0,750.0
+2025-09,GW-OTHER,A3005,Payal Bhatia,Chat Frontline,1,1,712.0,712.0
+2025-09,RETURN-QC-OK,A3032,Sneha Bansal,Billing,1,1,700.0,700.0
+2025-09,WTY-BUYBACK,A3024,Amit Deshpande,Voice Frontline,1,1,700.0,700.0
+2025-09,RETURN-QC-OK,A3035,Dev Kulkarni,Billing,1,1,617.0,617.0
+2025-09,CANCEL,A3013,Rohit Nair,Chat Frontline,1,1,342.0,342.0
+2025-09,CANCEL,A3010,Tenzin Mathew,Chat Frontline,1,1,319.0,319.0
+2025-09,CANCEL,A3021,Meera Mathew,Email Frontline,1,1,280.0,280.0
+2025-09,GW-OTHER,A3004,Geeta Dutta,Chat Frontline,1,1,162.0,162.0
+2025-10,GW-OTHER,A3036,Ritika D'Souza,Returns Desk,1,15,46184.0,3078.93
+2025-10,GW-OTHER,A3035,Dev Kulkarni,Billing,1,14,44648.0,3189.14
+2025-10,RETURN-QC-OK,A3036,Ritika D'Souza,Returns Desk,1,7,26793.0,3827.57
+2025-10,GW-OTHER,A3039,Reyansh Mishra,Escalations & Warranty,2,5,24895.0,4979.0
+2025-10,RETURN-QC-OK,A3038,Ankit Dhillon,Returns Desk,1,7,24270.0,3467.14
+2025-10,DUP-PAYMENT,A3033,Vikram Banerjee,Billing,1,6,23545.0,3924.17
+2025-10,DUP-PAYMENT,A3035,Dev Kulkarni,Billing,1,11,21013.0,1910.27
+2025-10,GW-OTHER,A3032,Sneha Bansal,Billing,1,7,20605.0,2943.57
+2025-10,GW-OTHER,A3033,Vikram Banerjee,Billing,1,3,18396.0,6132.0
+2025-10,RETURN-QC-OK,A3037,Manish Iyer,Returns Desk,1,5,15753.0,3150.6
+2025-10,DUP-PAYMENT,A3032,Sneha Bansal,Billing,1,6,15264.0,2544.0
+2025-10,GW-OTHER,A3030,Aishwarya Trivedi,Logistics,1,8,14014.0,1751.75
+2025-10,GW-OTHER,A3026,Aadhya Deshpande,Voice Frontline,1,2,13517.0,6758.5
+2025-10,GW-OTHER,A3023,Ritika Gaikwad,Voice Frontline,1,2,12397.0,6198.5
+2025-10,GW-OTHER,A3038,Ankit Dhillon,Returns Desk,1,5,12124.0,2424.8
+2025-10,GW-OTHER,A3002,Steven Ansari,Chat Frontline,1,3,11799.0,3933.0
+2025-10,GW-OTHER,A3028,Sameer Kapoor,Logistics,1,3,11623.0,3874.33
+2025-10,GW-OTHER,A3011,Rohit Gill,Chat Frontline,1,3,10848.0,3616.0
+2025-10,DOA-REPL,A3030,Aishwarya Trivedi,Logistics,1,3,10008.0,3336.0
+2025-10,GW-OTHER,A3001,Suresh Kaur,Chat Frontline,1,2,9123.0,4561.5
+2025-10,GW-OTHER,A3018,Krishna Bhatt,Email Frontline,1,3,8223.0,2741.0
+2025-10,GW-OTHER,A3005,Payal Bhatia,Chat Frontline,1,2,8098.0,4049.0
+2025-10,GW-OTHER,A3034,Tanvi Rathore,Billing,1,4,8029.0,2007.25
+2025-10,GW-OTHER,A3006,Varun Bhatt,Chat Frontline,1,1,6998.0,6998.0
+2025-10,WTY-BUYBACK,A3010,Tenzin Mathew,Chat Frontline,1,1,6649.0,6649.0
+2025-10,GW-OTHER,A3010,Tenzin Mathew,Chat Frontline,1,1,6648.0,6648.0
+2025-10,CANCEL,A3026,Aadhya Deshpande,Voice Frontline,1,1,6499.0,6499.0
+2025-10,CANCEL,A3017,Kabir Singh,Email Frontline,1,2,6473.0,3236.5
+2025-10,GW-OTHER,A3031,Zaid Desai,Logistics,1,2,6473.0,3236.5
+2025-10,PRICE-ADJ,A3016,Thomas Kumar,Email Frontline,1,1,6174.0,6174.0
+2025-10,GW-OTHER,A3022,Daniel Arora,Email Frontline,1,1,5999.0,5999.0
+2025-10,GW-OTHER,A3012,Lakshmi Srivastava,Chat Frontline,1,1,5949.0,5949.0
+2025-10,CANCEL,A3020,Aadhya Singh,Email Frontline,1,1,5399.0,5399.0
+2025-10,DUP-PAYMENT,A3018,Krishna Bhatt,Email Frontline,1,3,5197.0,1732.33
+2025-10,GW-OTHER,A3029,Rajat Mukherjee,Logistics,1,2,5173.0,2586.5
+2025-10,GW-OTHER,A3017,Kabir Singh,Email Frontline,1,2,5148.0,2574.0
+2025-10,GW-OTHER,A3009,Sukhwinder Singh,Chat Frontline,1,2,4899.0,2449.5
+2025-10,DOA-REPL,A3003,Komal Singh,Chat Frontline,1,1,4499.0,4499.0
+2025-10,GW-OTHER,A3021,Meera Mathew,Email Frontline,1,1,3999.0,3999.0
+2025-10,WTY-BUYBACK,A3004,Geeta Dutta,Chat Frontline,1,1,3999.0,3999.0
+2025-10,CANCEL,A3009,Sukhwinder Singh,Chat Frontline,1,2,3948.0,1974.0
+2025-10,DUP-PAYMENT,A3034,Tanvi Rathore,Billing,1,4,3589.0,897.25
+2025-10,GW-OTHER,A3042,Swati Bhatia,Escalations & Warranty,2,1,3500.0,3500.0
+2025-10,CANCEL,A3030,Aishwarya Trivedi,Logistics,1,1,3499.0,3499.0
+2025-10,RETURN-QC-OK,A3027,Priya Agarwal,Logistics,1,1,3499.0,3499.0
+2025-10,WTY-BUYBACK,A3017,Kabir Singh,Email Frontline,1,1,3499.0,3499.0
+2025-10,RETURN-QC-OK,A3005,Payal Bhatia,Chat Frontline,1,1,3398.0,3398.0
+2025-10,CANCEL,A3004,Geeta Dutta,Chat Frontline,1,1,3324.0,3324.0
+2025-10,DOA-REPL,A3012,Lakshmi Srivastava,Chat Frontline,1,1,3324.0,3324.0
+2025-10,DUP-PAYMENT,A3005,Payal Bhatia,Chat Frontline,1,1,3324.0,3324.0
+2025-10,CANCEL,A3011,Rohit Gill,Chat Frontline,1,1,3149.0,3149.0
+2025-10,CANCEL,A3001,Suresh Kaur,Chat Frontline,1,1,2974.0,2974.0
+2025-10,PRICE-ADJ,A3006,Varun Bhatt,Chat Frontline,1,1,2799.0,2799.0
+2025-10,CANCEL,A3008,Meera Malhotra,Chat Frontline,1,1,2499.0,2499.0
+2025-10,LOST-TRANSIT,A3029,Rajat Mukherjee,Logistics,1,1,2499.0,2499.0
+2025-10,CANCEL,A3035,Dev Kulkarni,Billing,1,1,2374.0,2374.0
+2025-10,CANCEL,A3021,Meera Mathew,Email Frontline,1,1,2124.0,2124.0
+2025-10,CANCEL,A3032,Sneha Bansal,Billing,1,1,2000.0,2000.0
+2025-10,DOA-REPL,A3026,Aadhya Deshpande,Voice Frontline,1,1,1999.0,1999.0
+2025-10,GW-OTHER,A3014,Anjali D'Souza,Chat Frontline,1,1,1999.0,1999.0
+2025-10,GW-OTHER,A3016,Thomas Kumar,Email Frontline,1,1,1799.0,1799.0
+2025-10,CANCEL,A3016,Thomas Kumar,Email Frontline,1,1,1750.0,1750.0
+2025-10,DUP-PAYMENT,A3012,Lakshmi Srivastava,Chat Frontline,1,1,1499.0,1499.0
+2025-10,DUP-PAYMENT,A3009,Sukhwinder Singh,Chat Frontline,1,1,975.0,975.0
+2025-10,GW-OTHER,A3037,Manish Iyer,Returns Desk,1,1,900.0,900.0
+2025-10,PRICE-ADJ,A3035,Dev Kulkarni,Billing,1,2,663.0,331.5
+2025-10,LOST-TRANSIT,A3032,Sneha Bansal,Billing,1,1,650.0,650.0
+2025-10,WTY-BUYBACK,A3018,Krishna Bhatt,Email Frontline,1,1,472.0,472.0
+2025-10,LOST-TRANSIT,A3018,Krishna Bhatt,Email Frontline,1,1,225.0,225.0
+2025-10,CANCEL,A3010,Tenzin Mathew,Chat Frontline,1,1,40.0,40.0
+2025-11,GW-OTHER,A3036,Ritika D'Souza,Returns Desk,1,14,49971.0,3569.36
+2025-11,RETURN-QC-OK,A3038,Ankit Dhillon,Returns Desk,1,11,35776.0,3252.36
+2025-11,DUP-PAYMENT,A3035,Dev Kulkarni,Billing,1,9,27391.0,3043.44
+2025-11,GW-OTHER,A3030,Aishwarya Trivedi,Logistics,1,8,26592.0,3324.0
+2025-11,RETURN-QC-OK,A3036,Ritika D'Souza,Returns Desk,1,8,25691.0,3211.38
+2025-11,DOA-REPL,A3030,Aishwarya Trivedi,Logistics,1,6,19505.0,3250.83
+2025-11,GW-OTHER,A3033,Vikram Banerjee,Billing,1,5,19432.0,3886.4
+2025-11,RETURN-QC-OK,A3037,Manish Iyer,Returns Desk,1,10,16997.0,1699.7
+2025-11,CANCEL,A3011,Rohit Gill,Chat Frontline,1,3,14882.0,4960.67
+2025-11,GW-OTHER,A3018,Krishna Bhatt,Email Frontline,1,7,14436.0,2062.29
+2025-11,DOA-REPL,A3016,Thomas Kumar,Email Frontline,1,1,13998.0,13998.0
+2025-11,GW-OTHER,A3032,Sneha Bansal,Billing,1,3,13282.0,4427.33
+2025-11,GW-OTHER,A3027,Priya Agarwal,Logistics,1,1,11398.0,11398.0
+2025-11,CANCEL,A3010,Tenzin Mathew,Chat Frontline,1,2,11148.0,5574.0
+2025-11,GW-OTHER,A3035,Dev Kulkarni,Billing,1,6,11046.0,1841.0
+2025-11,RETURN-QC-OK,A3033,Vikram Banerjee,Billing,1,2,10348.0,5174.0
+2025-11,DOA-REPL,A3027,Priya Agarwal,Logistics,1,2,10273.0,5136.5
+2025-11,DUP-PAYMENT,A3032,Sneha Bansal,Billing,1,3,9562.0,3187.33
+2025-11,DUP-PAYMENT,A3033,Vikram Banerjee,Billing,1,6,9235.0,1539.17
+2025-11,DUP-PAYMENT,A3034,Tanvi Rathore,Billing,1,4,9172.0,2293.0
+2025-11,GW-OTHER,A3039,Reyansh Mishra,Escalations & Warranty,2,3,9172.0,3057.33
+2025-11,GW-OTHER,A3042,Swati Bhatia,Escalations & Warranty,2,3,9164.0,3054.67
+2025-11,RETURN-QC-OK,A3030,Aishwarya Trivedi,Logistics,1,3,9147.0,3049.0
+2025-11,GW-OTHER,A3029,Rajat Mukherjee,Logistics,1,2,7499.0,3749.5
+2025-11,GW-OTHER,A3005,Payal Bhatia,Chat Frontline,1,2,7287.0,3643.5
+2025-11,GW-OTHER,A3026,Aadhya Deshpande,Voice Frontline,1,2,7269.0,3634.5
+2025-11,DUP-PAYMENT,A3016,Thomas Kumar,Email Frontline,1,1,6998.0,6998.0
+2025-11,WTY-BUYBACK,A3030,Aishwarya Trivedi,Logistics,1,2,6973.0,3486.5
+2025-11,GW-OTHER,A3037,Manish Iyer,Returns Desk,1,5,6677.0,1335.4
+2025-11,CANCEL,A3007,Abhishek Gupta,Chat Frontline,1,1,6499.0,6499.0
+2025-11,RETURN-QC-OK,A3032,Sneha Bansal,Billing,1,1,6499.0,6499.0
+2025-11,DUP-PAYMENT,A3003,Komal Singh,Chat Frontline,1,1,6174.0,6174.0
+2025-11,GW-OTHER,A3044,Arjun Kumar,Escalations & Warranty,2,1,6174.0,6174.0
+2025-11,GW-OTHER,A3006,Varun Bhatt,Chat Frontline,1,1,5999.0,5999.0
+2025-11,PRICE-ADJ,A3032,Sneha Bansal,Billing,1,1,5999.0,5999.0
+2025-11,WTY-BUYBACK,A3039,Reyansh Mishra,Escalations & Warranty,2,1,5999.0,5999.0
+2025-11,PRICE-ADJ,A3034,Tanvi Rathore,Billing,1,1,5949.0,5949.0
+2025-11,GW-OTHER,A3015,Sameer Jadhav,Chat Frontline,1,2,5924.0,2962.0
+2025-11,WTY-BUYBACK,A3036,Ritika D'Souza,Returns Desk,1,2,5498.0,2749.0
+2025-11,GW-OTHER,A3012,Lakshmi Srivastava,Chat Frontline,1,2,5298.0,2649.0
+2025-11,GW-OTHER,A3034,Tanvi Rathore,Billing,1,3,5060.0,1686.67
+2025-11,GW-OTHER,A3002,Steven Ansari,Chat Frontline,1,1,4749.0,4749.0
+2025-11,PRICE-ADJ,A3035,Dev Kulkarni,Billing,1,2,4498.0,2249.0
+2025-11,LOST-TRANSIT,A3030,Aishwarya Trivedi,Logistics,1,2,4199.0,2099.5
+2025-11,DOA-REPL,A3029,Rajat Mukherjee,Logistics,1,2,4161.0,2080.5
+2025-11,GW-OTHER,A3024,Amit Deshpande,Voice Frontline,1,2,4024.0,2012.0
+2025-11,GW-OTHER,A3031,Zaid Desai,Logistics,1,2,3563.0,1781.5
+2025-11,CANCEL,A3003,Komal Singh,Chat Frontline,1,1,3499.0,3499.0
+2025-11,CANCEL,A3030,Aishwarya Trivedi,Logistics,1,1,3324.0,3324.0
+2025-11,DUP-PAYMENT,A3013,Rohit Nair,Chat Frontline,1,1,3149.0,3149.0
+2025-11,WTY-BUYBACK,A3019,Kavya Agarwal,Email Frontline,1,1,3149.0,3149.0
+2025-11,CANCEL,A3012,Lakshmi Srivastava,Chat Frontline,1,1,2974.0,2974.0
+2025-11,GW-OTHER,A3028,Sameer Kapoor,Logistics,1,2,2814.0,1407.0
+2025-11,DOA-REPL,A3017,Kabir Singh,Email Frontline,1,1,2799.0,2799.0
+2025-11,WTY-BUYBACK,A3015,Sameer Jadhav,Chat Frontline,1,1,2799.0,2799.0
+2025-11,CANCEL,A3013,Rohit Nair,Chat Frontline,1,1,2499.0,2499.0
+2025-11,DOA-REPL,A3037,Manish Iyer,Returns Desk,1,1,2499.0,2499.0
+2025-11,GW-OTHER,A3014,Anjali D'Souza,Chat Frontline,1,1,2499.0,2499.0
+2025-11,WTY-BUYBACK,A3021,Meera Mathew,Email Frontline,1,1,2499.0,2499.0
+2025-11,RETURN-QC-OK,A3034,Tanvi Rathore,Billing,1,1,2374.0,2374.0
+2025-11,WTY-BUYBACK,A3026,Aadhya Deshpande,Voice Frontline,1,1,1999.0,1999.0
+2025-11,DUP-PAYMENT,A3018,Krishna Bhatt,Email Frontline,1,1,1799.0,1799.0
+2025-11,GW-OTHER,A3013,Rohit Nair,Chat Frontline,1,1,1709.0,1709.0
+2025-11,RETURN-QC-OK,A3029,Rajat Mukherjee,Logistics,1,1,1662.0,1662.0
+2025-11,GW-OTHER,A3041,Mohammed Mehta,Escalations & Warranty,2,1,1439.0,1439.0
+2025-11,WTY-BUYBACK,A3028,Sameer Kapoor,Logistics,1,1,1299.0,1299.0
+2025-11,GW-OTHER,A3003,Komal Singh,Chat Frontline,1,1,1104.0,1104.0
+2025-11,DUP-PAYMENT,A3020,Aadhya Singh,Email Frontline,1,1,1000.0,1000.0
+2025-11,GW-OTHER,A3038,Ankit Dhillon,Returns Desk,1,1,297.0,297.0
+2025-11,DOA-REPL,A3025,Komal Malhotra,Voice Frontline,1,1,212.0,212.0
+2025-12,DUP-PAYMENT,A3035,Dev Kulkarni,Billing,1,8,30676.0,3834.5
+2025-12,RETURN-QC-OK,A3036,Ritika D'Souza,Returns Desk,1,12,27328.0,2277.33
+2025-12,GW-OTHER,A3038,Ankit Dhillon,Returns Desk,1,7,22630.0,3232.86
+2025-12,RETURN-QC-OK,A3038,Ankit Dhillon,Returns Desk,1,7,21586.0,3083.71
+2025-12,GW-OTHER,A3035,Dev Kulkarni,Billing,1,8,20255.0,2531.88
+2025-12,GW-OTHER,A3036,Ritika D'Souza,Returns Desk,1,6,19768.0,3294.67
+2025-12,GW-OTHER,A3002,Steven Ansari,Chat Frontline,1,3,19597.0,6532.33
+2025-12,CANCEL,A3018,Krishna Bhatt,Email Frontline,1,3,16952.0,5650.67
+2025-12,RETURN-QC-OK,A3037,Manish Iyer,Returns Desk,1,6,12186.0,2031.0
+2025-12,GW-OTHER,A3032,Sneha Bansal,Billing,1,4,11534.0,2883.5
+2025-12,CANCEL,A3028,Sameer Kapoor,Logistics,1,1,11198.0,11198.0
+2025-12,GW-OTHER,A3037,Manish Iyer,Returns Desk,1,7,11062.0,1580.29
+2025-12,DUP-PAYMENT,A3032,Sneha Bansal,Billing,1,4,10606.0,2651.5
+2025-12,GW-OTHER,A3015,Sameer Jadhav,Chat Frontline,1,3,10058.0,3352.67
+2025-12,DUP-PAYMENT,A3026,Aadhya Deshpande,Voice Frontline,1,2,9747.0,4873.5
+2025-12,GW-OTHER,A3021,Meera Mathew,Email Frontline,1,2,8973.0,4486.5
+2025-12,GW-OTHER,A3033,Vikram Banerjee,Billing,1,5,8807.0,1761.4
+2025-12,GW-OTHER,A3022,Daniel Arora,Email Frontline,1,3,7115.0,2371.67
+2025-12,DOA-REPL,A3002,Steven Ansari,Chat Frontline,1,1,6999.0,6999.0
+2025-12,CANCEL,A3026,Aadhya Deshpande,Voice Frontline,1,3,6922.0,2307.33
+2025-12,RETURN-QC-OK,A3028,Sameer Kapoor,Logistics,1,2,6649.0,3324.5
+2025-12,WTY-BUYBACK,A3021,Meera Mathew,Email Frontline,1,1,6649.0,6649.0
+2025-12,RETURN-QC-OK,A3029,Rajat Mukherjee,Logistics,1,2,6563.0,3281.5
+2025-12,GW-OTHER,A3007,Abhishek Gupta,Chat Frontline,1,1,6499.0,6499.0
+2025-12,GW-OTHER,A3008,Meera Malhotra,Chat Frontline,1,1,6499.0,6499.0
+2025-12,DOA-REPL,A3003,Komal Singh,Chat Frontline,1,1,6299.0,6299.0
+2025-12,CANCEL,A3034,Tanvi Rathore,Billing,1,1,6174.0,6174.0
+2025-12,RETURN-QC-OK,A3032,Sneha Bansal,Billing,1,1,5699.0,5699.0
+2025-12,GW-OTHER,A3026,Aadhya Deshpande,Voice Frontline,1,3,5402.0,1800.67
+2025-12,GW-OTHER,A3030,Aishwarya Trivedi,Logistics,1,3,5248.0,1749.33
+2025-12,RETURN-QC-OK,A3031,Zaid Desai,Logistics,1,2,5217.0,2608.5
+2025-12,DUP-PAYMENT,A3033,Vikram Banerjee,Billing,1,2,4948.0,2474.0
+2025-12,GW-OTHER,A3009,Sukhwinder Singh,Chat Frontline,1,2,4508.0,2254.0
+2025-12,LOST-TRANSIT,A3031,Zaid Desai,Logistics,1,1,4499.0,4499.0
+2025-12,RETURN-QC-OK,A3030,Aishwarya Trivedi,Logistics,1,2,4273.0,2136.5
+2025-12,CANCEL,A3006,Varun Bhatt,Chat Frontline,1,2,4234.0,2117.0
+2025-12,RETURN-QC-OK,A3033,Vikram Banerjee,Billing,1,2,4198.0,2099.0
+2025-12,LOST-TRANSIT,A3030,Aishwarya Trivedi,Logistics,1,2,4098.0,2049.0
+2025-12,WTY-BUYBACK,A3018,Krishna Bhatt,Email Frontline,1,2,3924.0,1962.0
+2025-12,CANCEL,A3013,Rohit Nair,Chat Frontline,1,1,3499.0,3499.0
+2025-12,DOA-REPL,A3015,Sameer Jadhav,Chat Frontline,1,1,3499.0,3499.0
+2025-12,DOA-REPL,A3029,Rajat Mukherjee,Logistics,1,1,3499.0,3499.0
+2025-12,DUP-PAYMENT,A3007,Abhishek Gupta,Chat Frontline,1,1,3499.0,3499.0
+2025-12,DUP-PAYMENT,A3031,Zaid Desai,Logistics,1,1,3499.0,3499.0
+2025-12,RETURN-QC-OK,A3027,Priya Agarwal,Logistics,1,1,3499.0,3499.0
+2025-12,CANCEL,A3019,Kavya Agarwal,Email Frontline,1,2,3324.0,1662.0
+2025-12,GW-OTHER,A3027,Priya Agarwal,Logistics,1,2,3324.0,1662.0
+2025-12,RETURN-QC-OK,A3035,Dev Kulkarni,Billing,1,1,3324.0,3324.0
+2025-12,WTY-BUYBACK,A3007,Abhishek Gupta,Chat Frontline,1,1,3324.0,3324.0
+2025-12,RETURN-QC-OK,A3034,Tanvi Rathore,Billing,1,1,3149.0,3149.0
+2025-12,CANCEL,A3002,Steven Ansari,Chat Frontline,1,1,2974.0,2974.0
+2025-12,GW-OTHER,A3010,Tenzin Mathew,Chat Frontline,1,1,2799.0,2799.0
+2025-12,GW-OTHER,A3014,Anjali D'Souza,Chat Frontline,1,1,2799.0,2799.0
+2025-12,PRICE-ADJ,A3035,Dev Kulkarni,Billing,1,2,2755.0,1377.5
+2025-12,DUP-PAYMENT,A3034,Tanvi Rathore,Billing,1,1,2600.0,2600.0
+2025-12,DOA-REPL,A3013,Rohit Nair,Chat Frontline,1,1,2499.0,2499.0
+2025-12,DUP-PAYMENT,A3018,Krishna Bhatt,Email Frontline,1,1,2499.0,2499.0
+2025-12,GW-OTHER,A3025,Komal Malhotra,Voice Frontline,1,1,2499.0,2499.0
+2025-12,PRICE-ADJ,A3033,Vikram Banerjee,Billing,1,1,2499.0,2499.0
+2025-12,GW-OTHER,A3034,Tanvi Rathore,Billing,1,2,2057.0,1028.5
+2025-12,CANCEL,A3012,Lakshmi Srivastava,Chat Frontline,1,1,1999.0,1999.0
+2025-12,DOA-REPL,A3039,Reyansh Mishra,Escalations & Warranty,2,1,1999.0,1999.0
+2025-12,DOA-REPL,A3043,Nikhil Gupta,Escalations & Warranty,2,1,1999.0,1999.0
+2025-12,WTY-BUYBACK,A3026,Aadhya Deshpande,Voice Frontline,1,1,1619.0,1619.0
+2025-12,DUP-PAYMENT,A3015,Sameer Jadhav,Chat Frontline,1,1,1299.0,1299.0
+2025-12,LOST-TRANSIT,A3028,Sameer Kapoor,Logistics,1,1,1299.0,1299.0
+2025-12,DUP-PAYMENT,A3024,Amit Deshpande,Voice Frontline,1,1,1105.0,1105.0
+2025-12,DOA-REPL,A3030,Aishwarya Trivedi,Logistics,1,1,840.0,840.0
+2025-12,GW-OTHER,A3019,Kavya Agarwal,Email Frontline,1,1,700.0,700.0
+2025-12,RETURN-QC-OK,A3001,Suresh Kaur,Chat Frontline,1,1,630.0,630.0
+2025-12,DUP-PAYMENT,A3005,Payal Bhatia,Chat Frontline,1,1,560.0,560.0
+2025-12,GW-OTHER,A3016,Thomas Kumar,Email Frontline,1,1,525.0,525.0
+2025-12,GW-OTHER,A3031,Zaid Desai,Logistics,1,1,525.0,525.0
+2025-12,CANCEL,A3010,Tenzin Mathew,Chat Frontline,1,1,500.0,500.0
+2025-12,WTY-BUYBACK,A3017,Kabir Singh,Email Frontline,1,1,472.0,472.0
+2025-12,GW-OTHER,A3028,Sameer Kapoor,Logistics,1,1,375.0,375.0
+2025-12,CANCEL,A3031,Zaid Desai,Logistics,1,1,350.0,350.0
+2025-12,GW-OTHER,A3006,Varun Bhatt,Chat Frontline,1,1,160.0,160.0
+2026-01,RETURN-QC-OK,A3036,Ritika D'Souza,Returns Desk,1,12,46713.0,3892.75
+2026-01,DUP-PAYMENT,A3032,Sneha Bansal,Billing,1,6,28419.0,4736.5
+2026-01,GW-OTHER,A3038,Ankit Dhillon,Returns Desk,1,6,20190.0,3365.0
+2026-01,DUP-PAYMENT,A3034,Tanvi Rathore,Billing,1,6,17141.0,2856.83
+2026-01,GW-OTHER,A3035,Dev Kulkarni,Billing,1,6,15461.0,2576.83
+2026-01,GW-OTHER,A3029,Rajat Mukherjee,Logistics,1,2,15097.0,7548.5
+2026-01,GW-OTHER,A3036,Ritika D'Souza,Returns Desk,1,5,13893.0,2778.6
+2026-01,GW-OTHER,A3011,Rohit Gill,Chat Frontline,1,3,13297.0,4432.33
+2026-01,DUP-PAYMENT,A3035,Dev Kulkarni,Billing,1,5,10749.0,2149.8
+2026-01,GW-OTHER,A3037,Manish Iyer,Returns Desk,1,5,10601.0,2120.2
+2026-01,GW-OTHER,A3004,Geeta Dutta,Chat Frontline,1,3,10497.0,3499.0
+2026-01,GW-OTHER,A3018,Krishna Bhatt,Email Frontline,1,4,9946.0,2486.5
+2026-01,RETURN-QC-OK,A3038,Ankit Dhillon,Returns Desk,1,4,9015.0,2253.75
+2026-01,GW-OTHER,A3030,Aishwarya Trivedi,Logistics,1,2,8898.0,4449.0
+2026-01,GW-OTHER,A3026,Aadhya Deshpande,Voice Frontline,1,2,8873.0,4436.5
+2026-01,RETURN-QC-OK,A3035,Dev Kulkarni,Billing,1,3,7723.0,2574.33
+2026-01,RETURN-QC-OK,A3030,Aishwarya Trivedi,Logistics,1,3,7453.0,2484.33
+2026-01,DUP-PAYMENT,A3033,Vikram Banerjee,Billing,1,3,7310.0,2436.67
+2026-01,GW-OTHER,A3009,Sukhwinder Singh,Chat Frontline,1,2,7223.0,3611.5
+2026-01,DOA-REPL,A3028,Sameer Kapoor,Logistics,1,1,6998.0,6998.0
+2026-01,GW-OTHER,A3032,Sneha Bansal,Billing,1,1,6649.0,6649.0
+2026-01,CANCEL,A3007,Abhishek Gupta,Chat Frontline,1,2,6648.0,3324.0
+2026-01,GW-OTHER,A3039,Reyansh Mishra,Escalations & Warranty,2,1,6499.0,6499.0
+2026-01,PRICE-ADJ,A3032,Sneha Bansal,Billing,1,1,6499.0,6499.0
+2026-01,RETURN-QC-OK,A3037,Manish Iyer,Returns Desk,1,2,6248.0,3124.0
+2026-01,GW-OTHER,A3033,Vikram Banerjee,Billing,1,4,6013.0,1503.25
+2026-01,DUP-PAYMENT,A3026,Aadhya Deshpande,Voice Frontline,1,2,5924.0,2962.0
+2026-01,DUP-PAYMENT,A3017,Kabir Singh,Email Frontline,1,1,5599.0,5599.0
+2026-01,CANCEL,A3018,Krishna Bhatt,Email Frontline,1,3,5597.0,1865.67
+2026-01,DOA-REPL,A3001,Suresh Kaur,Chat Frontline,1,1,5524.0,5524.0
+2026-01,GW-OTHER,A3027,Priya Agarwal,Logistics,1,2,5298.0,2649.0
+2026-01,DUP-PAYMENT,A3002,Steven Ansari,Chat Frontline,1,1,5199.0,5199.0
+2026-01,WTY-BUYBACK,A3013,Rohit Nair,Chat Frontline,1,1,4998.0,4998.0
+2026-01,DOA-REPL,A3031,Zaid Desai,Logistics,1,1,4499.0,4499.0
+2026-01,WTY-BUYBACK,A3018,Krishna Bhatt,Email Frontline,1,2,4448.0,2224.0
+2026-01,GW-OTHER,A3034,Tanvi Rathore,Billing,1,2,3799.0,1899.5
+2026-01,CANCEL,A3013,Rohit Nair,Chat Frontline,1,1,3499.0,3499.0
+2026-01,DUP-PAYMENT,A3024,Amit Deshpande,Voice Frontline,1,1,3499.0,3499.0
+2026-01,GW-OTHER,A3003,Komal Singh,Chat Frontline,1,1,3499.0,3499.0
+2026-01,GW-OTHER,A3006,Varun Bhatt,Chat Frontline,1,1,3499.0,3499.0
+2026-01,GW-OTHER,A3031,Zaid Desai,Logistics,1,1,3499.0,3499.0
+2026-01,PRICE-ADJ,A3007,Abhishek Gupta,Chat Frontline,1,1,3499.0,3499.0
+2026-01,WTY-BUYBACK,A3003,Komal Singh,Chat Frontline,1,1,3499.0,3499.0
+2026-01,GW-OTHER,A3016,Thomas Kumar,Email Frontline,1,2,3399.0,1699.5
+2026-01,CANCEL,A3008,Meera Malhotra,Chat Frontline,1,1,3149.0,3149.0
+2026-01,GW-OTHER,A3012,Lakshmi Srivastava,Chat Frontline,1,1,3149.0,3149.0
+2026-01,LOST-TRANSIT,A3027,Priya Agarwal,Logistics,1,1,3149.0,3149.0
+2026-01,WTY-BUYBACK,A3008,Meera Malhotra,Chat Frontline,1,1,3149.0,3149.0
+2026-01,WTY-BUYBACK,A3039,Reyansh Mishra,Escalations & Warranty,2,1,3149.0,3149.0
+2026-01,GW-OTHER,A3028,Sameer Kapoor,Logistics,1,2,2998.0,1499.0
+2026-01,CANCEL,A3015,Sameer Jadhav,Chat Frontline,1,1,2974.0,2974.0
+2026-01,RETURN-QC-OK,A3028,Sameer Kapoor,Logistics,1,1,2974.0,2974.0
+2026-01,CANCEL,A3026,Aadhya Deshpande,Voice Frontline,1,1,2799.0,2799.0
+2026-01,CANCEL,A3003,Komal Singh,Chat Frontline,1,2,2723.0,1361.5
+2026-01,CANCEL,A3030,Aishwarya Trivedi,Logistics,1,1,2499.0,2499.0
+2026-01,CANCEL,A3034,Tanvi Rathore,Billing,1,1,2499.0,2499.0
+2026-01,DUP-PAYMENT,A3013,Rohit Nair,Chat Frontline,1,1,2468.0,2468.0
+2026-01,LOST-TRANSIT,A3009,Sukhwinder Singh,Chat Frontline,1,1,2249.0,2249.0
+2026-01,DOA-REPL,A3005,Payal Bhatia,Chat Frontline,1,1,1999.0,1999.0
+2026-01,LOST-TRANSIT,A3029,Rajat Mukherjee,Logistics,1,1,1999.0,1999.0
+2026-01,CANCEL,A3017,Kabir Singh,Email Frontline,1,1,1799.0,1799.0
+2026-01,GW-OTHER,A3021,Meera Mathew,Email Frontline,1,1,1699.0,1699.0
+2026-01,CANCEL,A3014,Anjali D'Souza,Chat Frontline,1,1,1299.0,1299.0
+2026-01,DUP-PAYMENT,A3009,Sukhwinder Singh,Chat Frontline,1,1,1250.0,1250.0
+2026-01,DOA-REPL,A3042,Swati Bhatia,Escalations & Warranty,2,1,1169.0,1169.0
+2026-01,DOA-REPL,A3043,Nikhil Gupta,Escalations & Warranty,2,1,1039.0,1039.0
+2026-01,CANCEL,A3010,Tenzin Mathew,Chat Frontline,1,1,700.0,700.0
+2026-01,GW-OTHER,A3013,Rohit Nair,Chat Frontline,1,1,700.0,700.0
+2026-01,CANCEL,A3016,Thomas Kumar,Email Frontline,1,1,630.0,630.0
+2026-01,RETURN-QC-OK,A3027,Priya Agarwal,Logistics,1,1,525.0,525.0
+2026-01,DUP-PAYMENT,A3012,Lakshmi Srivastava,Chat Frontline,1,1,520.0,520.0
+2026-01,GW-OTHER,A3008,Meera Malhotra,Chat Frontline,1,1,500.0,500.0
+2026-01,PRICE-ADJ,A3008,Meera Malhotra,Chat Frontline,1,1,400.0,400.0
+2026-01,CANCEL,A3033,Vikram Banerjee,Billing,1,1,332.0,332.0
+2026-01,DUP-PAYMENT,A3038,Ankit Dhillon,Returns Desk,1,1,280.0,280.0
+2026-01,GW-OTHER,A3042,Swati Bhatia,Escalations & Warranty,2,1,270.0,270.0
+2026-02,RETURN-QC-OK,A3036,Ritika D'Souza,Returns Desk,1,10,30103.0,3010.3
+2026-02,GW-OTHER,A3038,Ankit Dhillon,Returns Desk,1,8,29623.0,3702.88
+2026-02,RETURN-QC-OK,A3037,Manish Iyer,Returns Desk,1,7,22339.0,3191.29
+2026-02,DUP-PAYMENT,A3033,Vikram Banerjee,Billing,1,4,16441.0,4110.25
+2026-02,GW-OTHER,A3036,Ritika D'Souza,Returns Desk,1,7,16440.0,2348.57
+2026-02,GW-OTHER,A3035,Dev Kulkarni,Billing,1,6,16418.0,2736.33
+2026-02,DUP-PAYMENT,A3035,Dev Kulkarni,Billing,1,5,16114.0,3222.8
+2026-02,GW-OTHER,A3027,Priya Agarwal,Logistics,1,2,14147.0,7073.5
+2026-02,GW-OTHER,A3032,Sneha Bansal,Billing,1,4,10047.0,2511.75
+2026-02,RETURN-QC-OK,A3038,Ankit Dhillon,Returns Desk,1,8,9882.0,1235.25
+2026-02,DUP-PAYMENT,A3032,Sneha Bansal,Billing,1,5,9342.0,1868.4
+2026-02,DUP-PAYMENT,A3018,Krishna Bhatt,Email Frontline,1,1,8498.0,8498.0
+2026-02,PRICE-ADJ,A3035,Dev Kulkarni,Billing,1,2,8397.0,4198.5
+2026-02,GW-OTHER,A3018,Krishna Bhatt,Email Frontline,1,4,8122.0,2030.5
+2026-02,GW-OTHER,A3026,Aadhya Deshpande,Voice Frontline,1,3,7197.0,2399.0
+2026-02,DOA-REPL,A3021,Meera Mathew,Email Frontline,1,1,6499.0,6499.0
+2026-02,PRICE-ADJ,A3018,Krishna Bhatt,Email Frontline,1,1,6299.0,6299.0
+2026-02,GW-OTHER,A3007,Abhishek Gupta,Chat Frontline,1,3,6280.0,2093.33
+2026-02,DOA-REPL,A3030,Aishwarya Trivedi,Logistics,1,2,5998.0,2999.0
+2026-02,GW-OTHER,A3042,Swati Bhatia,Escalations & Warranty,2,1,5949.0,5949.0
+2026-02,DUP-PAYMENT,A3034,Tanvi Rathore,Billing,1,2,5948.0,2974.0
+2026-02,DOA-REPL,A3038,Ankit Dhillon,Returns Desk,1,1,5524.0,5524.0
+2026-02,GW-OTHER,A3005,Payal Bhatia,Chat Frontline,1,3,5463.0,1821.0
+2026-02,GW-OTHER,A3031,Zaid Desai,Logistics,1,2,5298.0,2649.0
+2026-02,RETURN-QC-OK,A3027,Priya Agarwal,Logistics,1,2,5173.0,2586.5
+2026-02,DOA-REPL,A3039,Reyansh Mishra,Escalations & Warranty,2,1,5099.0,5099.0
+2026-02,RETURN-QC-OK,A3030,Aishwarya Trivedi,Logistics,1,1,4999.0,4999.0
+2026-02,GW-OTHER,A3033,Vikram Banerjee,Billing,1,2,4798.0,2399.0
+2026-02,GW-OTHER,A3030,Aishwarya Trivedi,Logistics,1,3,4223.0,1407.67
+2026-02,GW-OTHER,A3034,Tanvi Rathore,Billing,1,3,4004.0,1334.67
+2026-02,CANCEL,A3023,Ritika Gaikwad,Voice Frontline,1,1,3999.0,3999.0
+2026-02,CANCEL,A3014,Anjali D'Souza,Chat Frontline,1,1,3499.0,3499.0
+2026-02,DOA-REPL,A3007,Abhishek Gupta,Chat Frontline,1,1,3499.0,3499.0
+2026-02,DUP-PAYMENT,A3003,Komal Singh,Chat Frontline,1,1,3499.0,3499.0
+2026-02,GW-OTHER,A3002,Steven Ansari,Chat Frontline,1,1,3499.0,3499.0
+2026-02,GW-OTHER,A3021,Meera Mathew,Email Frontline,1,1,3499.0,3499.0
+2026-02,GW-OTHER,A3037,Manish Iyer,Returns Desk,1,2,3419.0,1709.5
+2026-02,DOA-REPL,A3010,Tenzin Mathew,Chat Frontline,1,1,3324.0,3324.0
+2026-02,RETURN-QC-OK,A3032,Sneha Bansal,Billing,1,1,3324.0,3324.0
+2026-02,WTY-BUYBACK,A3028,Sameer Kapoor,Logistics,1,1,3324.0,3324.0
+2026-02,PRICE-ADJ,A3033,Vikram Banerjee,Billing,1,2,3273.0,1636.5
+2026-02,DUP-PAYMENT,A3010,Tenzin Mathew,Chat Frontline,1,1,3149.0,3149.0
+2026-02,GW-OTHER,A3016,Thomas Kumar,Email Frontline,1,1,3149.0,3149.0
+2026-02,GW-OTHER,A3020,Aadhya Singh,Email Frontline,1,1,2799.0,2799.0
+2026-02,GW-OTHER,A3028,Sameer Kapoor,Logistics,1,2,2599.0,1299.5
+2026-02,GW-OTHER,A3041,Mohammed Mehta,Escalations & Warranty,2,1,2499.0,2499.0
+2026-02,CANCEL,A3017,Kabir Singh,Email Frontline,1,1,2124.0,2124.0
+2026-02,PRICE-ADJ,A3034,Tanvi Rathore,Billing,1,2,1850.0,925.0
+2026-02,LOST-TRANSIT,A3029,Rajat Mukherjee,Logistics,1,1,1799.0,1799.0
+2026-02,RETURN-QC-OK,A3029,Rajat Mukherjee,Logistics,1,1,1799.0,1799.0
+2026-02,CANCEL,A3016,Thomas Kumar,Email Frontline,1,1,1619.0,1619.0
+2026-02,GW-OTHER,A3039,Reyansh Mishra,Escalations & Warranty,2,1,1619.0,1619.0
+2026-02,RETURN-QC-OK,A3028,Sameer Kapoor,Logistics,1,1,1619.0,1619.0
+2026-02,GW-OTHER,A3017,Kabir Singh,Email Frontline,1,1,650.0,650.0
+2026-02,CANCEL,A3009,Sukhwinder Singh,Chat Frontline,1,1,585.0,585.0
+2026-02,CANCEL,A3003,Komal Singh,Chat Frontline,1,1,420.0,420.0
+2026-02,CANCEL,A3010,Tenzin Mathew,Chat Frontline,1,1,420.0,420.0
+2026-02,WTY-BUYBACK,A3026,Aadhya Deshpande,Voice Frontline,1,1,332.0,332.0
+2026-02,DOA-REPL,A3022,Daniel Arora,Email Frontline,1,1,319.0,319.0
+2026-02,GW-OTHER,A3029,Rajat Mukherjee,Logistics,1,1,319.0,319.0
+2026-02,DOA-REPL,A3029,Rajat Mukherjee,Logistics,1,1,306.0,306.0
+2026-03,RETURN-QC-OK,A3038,Ankit Dhillon,Returns Desk,1,9,28469.0,3163.22
+2026-03,RETURN-QC-OK,A3037,Manish Iyer,Returns Desk,1,8,25372.0,3171.5
+2026-03,GW-OTHER,A3035,Dev Kulkarni,Billing,1,8,20601.0,2575.12
+2026-03,DUP-PAYMENT,A3035,Dev Kulkarni,Billing,1,8,18865.0,2358.12
+2026-03,GW-OTHER,A3030,Aishwarya Trivedi,Logistics,1,6,18065.0,3010.83
+2026-03,GW-OTHER,A3037,Manish Iyer,Returns Desk,1,4,15671.0,3917.75
+2026-03,RETURN-QC-OK,A3036,Ritika D'Souza,Returns Desk,1,7,13166.0,1880.86
+2026-03,GW-OTHER,A3041,Mohammed Mehta,Escalations & Warranty,2,1,12348.0,12348.0
+2026-03,DOA-REPL,A3030,Aishwarya Trivedi,Logistics,1,3,11147.0,3715.67
+2026-03,LOST-TRANSIT,A3030,Aishwarya Trivedi,Logistics,1,2,10247.0,5123.5
+2026-03,GW-OTHER,A3033,Vikram Banerjee,Billing,1,4,8814.0,2203.5
+2026-03,GW-OTHER,A3010,Tenzin Mathew,Chat Frontline,1,3,8774.0,2924.67
+2026-03,GW-OTHER,A3014,Anjali D'Souza,Chat Frontline,1,2,8648.0,4324.0
+2026-03,PRICE-ADJ,A3035,Dev Kulkarni,Billing,1,1,8498.0,8498.0
+2026-03,GW-OTHER,A3005,Payal Bhatia,Chat Frontline,1,3,8097.0,2699.0
+2026-03,DUP-PAYMENT,A3034,Tanvi Rathore,Billing,1,3,7737.0,2579.0
+2026-03,PRICE-ADJ,A3001,Suresh Kaur,Chat Frontline,1,1,6999.0,6999.0
+2026-03,RETURN-QC-OK,A3029,Rajat Mukherjee,Logistics,1,1,6999.0,6999.0
+2026-03,WTY-BUYBACK,A3039,Reyansh Mishra,Escalations & Warranty,2,1,6998.0,6998.0
+2026-03,DOA-REPL,A3016,Thomas Kumar,Email Frontline,1,3,6997.0,2332.33
+2026-03,DUP-PAYMENT,A3033,Vikram Banerjee,Billing,1,2,6949.0,3474.5
+2026-03,DOA-REPL,A3039,Reyansh Mishra,Escalations & Warranty,2,2,6798.0,3399.0
+2026-03,GW-OTHER,A3038,Ankit Dhillon,Returns Desk,1,4,6784.0,1696.0
+2026-03,GW-OTHER,A3013,Rohit Nair,Chat Frontline,1,2,6698.0,3349.0
+2026-03,LOST-TRANSIT,A3031,Zaid Desai,Logistics,1,1,6499.0,6499.0
+2026-03,GW-OTHER,A3007,Abhishek Gupta,Chat Frontline,1,2,6199.0,3099.5
+2026-03,DUP-PAYMENT,A3011,Rohit Gill,Chat Frontline,1,2,6123.0,3061.5
+2026-03,GW-OTHER,A3028,Sameer Kapoor,Logistics,1,2,5998.0,2999.0
+2026-03,GW-OTHER,A3006,Varun Bhatt,Chat Frontline,1,2,5659.0,2829.5
+2026-03,GW-OTHER,A3009,Sukhwinder Singh,Chat Frontline,1,2,5523.0,2761.5
+2026-03,WTY-BUYBACK,A3030,Aishwarya Trivedi,Logistics,1,2,5498.0,2749.0
+2026-03,DOA-REPL,A3031,Zaid Desai,Logistics,1,2,5298.0,2649.0
+2026-03,GW-OTHER,A3034,Tanvi Rathore,Billing,1,2,5298.0,2649.0
+2026-03,LOST-TRANSIT,A3029,Rajat Mukherjee,Logistics,1,1,5199.0,5199.0
+2026-03,CANCEL,A3018,Krishna Bhatt,Email Frontline,1,4,4402.0,1100.5
+2026-03,CANCEL,A3035,Dev Kulkarni,Billing,1,2,3868.0,1934.0
+2026-03,GW-OTHER,A3032,Sneha Bansal,Billing,1,2,3844.0,1922.0
+2026-03,GW-OTHER,A3004,Geeta Dutta,Chat Frontline,1,1,3499.0,3499.0
+2026-03,GW-OTHER,A3018,Krishna Bhatt,Email Frontline,1,1,3499.0,3499.0
+2026-03,GW-OTHER,A3026,Aadhya Deshpande,Voice Frontline,1,1,3499.0,3499.0
+2026-03,CANCEL,A3006,Varun Bhatt,Chat Frontline,1,2,3333.0,1666.5
+2026-03,DOA-REPL,A3029,Rajat Mukherjee,Logistics,1,1,3324.0,3324.0
+2026-03,DUP-PAYMENT,A3024,Amit Deshpande,Voice Frontline,1,1,3324.0,3324.0
+2026-03,GW-OTHER,A3040,Thomas Jadhav,Escalations & Warranty,2,1,3324.0,3324.0
+2026-03,RETURN-QC-OK,A3031,Zaid Desai,Logistics,1,1,3324.0,3324.0
+2026-03,RETURN-QC-OK,A3033,Vikram Banerjee,Billing,1,1,3324.0,3324.0
+2026-03,RETURN-QC-OK,A3019,Kavya Agarwal,Email Frontline,1,1,3149.0,3149.0
+2026-03,WTY-BUYBACK,A3003,Komal Singh,Chat Frontline,1,1,3149.0,3149.0
+2026-03,GW-OTHER,A3036,Ritika D'Souza,Returns Desk,1,2,3060.0,1530.0
+2026-03,DOA-REPL,A3014,Anjali D'Souza,Chat Frontline,1,1,3058.0,3058.0
+2026-03,LOST-TRANSIT,A3027,Priya Agarwal,Logistics,1,1,2974.0,2974.0
+2026-03,DUP-PAYMENT,A3002,Steven Ansari,Chat Frontline,1,1,2848.0,2848.0
+2026-03,CANCEL,A3003,Komal Singh,Chat Frontline,1,2,2674.0,1337.0
+2026-03,GW-OTHER,A3039,Reyansh Mishra,Escalations & Warranty,2,1,2499.0,2499.0
+2026-03,RETURN-QC-OK,A3030,Aishwarya Trivedi,Logistics,1,1,2499.0,2499.0
+2026-03,GW-OTHER,A3031,Zaid Desai,Logistics,1,2,2327.0,1163.5
+2026-03,DUP-PAYMENT,A3036,Ritika D'Souza,Returns Desk,1,1,2249.0,2249.0
+2026-03,GW-OTHER,A3027,Priya Agarwal,Logistics,1,1,2124.0,2124.0
+2026-03,WTY-BUYBACK,A3029,Rajat Mukherjee,Logistics,1,1,1999.0,1999.0
+2026-03,DOA-REPL,A3003,Komal Singh,Chat Frontline,1,1,1799.0,1799.0
+2026-03,DUP-PAYMENT,A3026,Aadhya Deshpande,Voice Frontline,1,1,1799.0,1799.0
+2026-03,GW-OTHER,A3016,Thomas Kumar,Email Frontline,1,1,1799.0,1799.0
+2026-03,WTY-BUYBACK,A3040,Thomas Jadhav,Escalations & Warranty,2,1,1529.0,1529.0
+2026-03,CANCEL,A3016,Thomas Kumar,Email Frontline,1,1,1299.0,1299.0
+2026-03,WTY-BUYBACK,A3017,Kabir Singh,Email Frontline,1,1,1299.0,1299.0
+2026-03,WTY-BUYBACK,A3024,Amit Deshpande,Voice Frontline,1,1,1299.0,1299.0
+2026-03,CANCEL,A3001,Suresh Kaur,Chat Frontline,1,1,1274.0,1274.0
+2026-03,DUP-PAYMENT,A3003,Komal Singh,Chat Frontline,1,1,1234.0,1234.0
+2026-03,LOST-TRANSIT,A3026,Aadhya Deshpande,Voice Frontline,1,1,1234.0,1234.0
+2026-03,GW-OTHER,A3019,Kavya Agarwal,Email Frontline,1,1,1199.0,1199.0
+2026-03,DOA-REPL,A3019,Kavya Agarwal,Email Frontline,1,1,1120.0,1120.0
+2026-03,GW-OTHER,A3015,Sameer Jadhav,Chat Frontline,1,1,900.0,900.0
+2026-03,DUP-PAYMENT,A3018,Krishna Bhatt,Email Frontline,1,1,650.0,650.0
+2026-03,GW-OTHER,A3021,Meera Mathew,Email Frontline,1,1,525.0,525.0
+2026-03,CANCEL,A3031,Zaid Desai,Logistics,1,1,499.0,499.0
+2026-03,RETURN-QC-OK,A3016,Thomas Kumar,Email Frontline,1,1,450.0,450.0
+2026-03,CANCEL,A3015,Sameer Jadhav,Chat Frontline,1,1,425.0,425.0
+2026-03,CANCEL,A3032,Sneha Bansal,Billing,1,1,360.0,360.0
+2026-03,RETURN-QC-OK,A3035,Dev Kulkarni,Billing,1,1,332.0,332.0
+2026-03,DUP-PAYMENT,A3031,Zaid Desai,Logistics,1,1,280.0,280.0
+2026-03,RETURN-QC-OK,A3002,Steven Ansari,Chat Frontline,1,1,156.0,156.0
+2026-03,GW-OTHER,A3020,Aadhya Singh,Email Frontline,1,1,104.0,104.0
+2026-04,RETURN-QC-OK,A3036,Ritika D'Souza,Returns Desk,1,13,27604.0,2123.38
+2026-04,GW-OTHER,A3036,Ritika D'Souza,Returns Desk,1,8,25754.0,3219.25
+2026-04,RETURN-QC-OK,A3037,Manish Iyer,Returns Desk,1,8,23490.0,2936.25
+2026-04,RETURN-QC-OK,A3038,Ankit Dhillon,Returns Desk,1,8,17832.0,2229.0
+2026-04,GW-OTHER,A3037,Manish Iyer,Returns Desk,1,7,17710.0,2530.0
+2026-04,GW-OTHER,A3038,Ankit Dhillon,Returns Desk,1,4,16596.0,4149.0
+2026-04,GW-OTHER,A3034,Tanvi Rathore,Billing,1,4,15047.0,3761.75
+2026-04,GW-OTHER,A3035,Dev Kulkarni,Billing,1,7,13798.0,1971.14
+2026-04,GW-OTHER,A3033,Vikram Banerjee,Billing,1,3,12797.0,4265.67
+2026-04,GW-OTHER,A3030,Aishwarya Trivedi,Logistics,1,3,10497.0,3499.0
+2026-04,CANCEL,A3030,Aishwarya Trivedi,Logistics,1,2,10148.0,5074.0
+2026-04,GW-OTHER,A3032,Sneha Bansal,Billing,1,4,9594.0,2398.5
+2026-04,DOA-REPL,A3027,Priya Agarwal,Logistics,1,2,9098.0,4549.0
+2026-04,GW-OTHER,A3031,Zaid Desai,Logistics,1,2,8249.0,4124.5
+2026-04,GW-OTHER,A3018,Krishna Bhatt,Email Frontline,1,2,7698.0,3849.0
+2026-04,DUP-PAYMENT,A3034,Tanvi Rathore,Billing,1,4,7641.0,1910.25
+2026-04,GW-OTHER,A3007,Abhishek Gupta,Chat Frontline,1,2,7398.0,3699.0
+2026-04,CANCEL,A3011,Rohit Gill,Chat Frontline,1,1,6999.0,6999.0
+2026-04,GW-OTHER,A3028,Sameer Kapoor,Logistics,1,2,6999.0,3499.5
+2026-04,DUP-PAYMENT,A3032,Sneha Bansal,Billing,1,3,6698.0,2232.67
+2026-04,GW-OTHER,A3003,Komal Singh,Chat Frontline,1,2,6648.0,3324.0
+2026-04,PRICE-ADJ,A3018,Krishna Bhatt,Email Frontline,1,1,6648.0,6648.0
+2026-04,GW-OTHER,A3001,Suresh Kaur,Chat Frontline,1,1,6298.0,6298.0
+2026-04,GW-OTHER,A3027,Priya Agarwal,Logistics,1,3,6202.0,2067.33
+2026-04,WTY-BUYBACK,A3036,Ritika D'Souza,Returns Desk,1,1,6174.0,6174.0
+2026-04,RETURN-QC-OK,A3030,Aishwarya Trivedi,Logistics,1,2,5339.0,2669.5
+2026-04,GW-OTHER,A3015,Sameer Jadhav,Chat Frontline,1,2,4923.0,2461.5
+2026-04,GW-OTHER,A3026,Aadhya Deshpande,Voice Frontline,1,3,4198.0,1399.33
+2026-04,CANCEL,A3018,Krishna Bhatt,Email Frontline,1,1,3999.0,3999.0
+2026-04,LOST-TRANSIT,A3030,Aishwarya Trivedi,Logistics,1,2,3549.0,1774.5
+2026-04,DUP-PAYMENT,A3026,Aadhya Deshpande,Voice Frontline,1,1,3499.0,3499.0
+2026-04,LOST-TRANSIT,A3036,Ritika D'Souza,Returns Desk,1,1,3499.0,3499.0
+2026-04,PRICE-ADJ,A3038,Ankit Dhillon,Returns Desk,1,1,3499.0,3499.0
+2026-04,WTY-BUYBACK,A3017,Kabir Singh,Email Frontline,1,1,3499.0,3499.0
+2026-04,PRICE-ADJ,A3015,Sameer Jadhav,Chat Frontline,1,1,3324.0,3324.0
+2026-04,CANCEL,A3007,Abhishek Gupta,Chat Frontline,1,2,3274.0,1637.0
+2026-04,DOA-REPL,A3039,Reyansh Mishra,Escalations & Warranty,2,2,3174.0,1587.0
+2026-04,CANCEL,A3023,Ritika Gaikwad,Voice Frontline,1,1,3149.0,3149.0
+2026-04,GW-OTHER,A3008,Meera Malhotra,Chat Frontline,1,1,3149.0,3149.0
+2026-04,GW-OTHER,A3025,Komal Malhotra,Voice Frontline,1,1,3149.0,3149.0
+2026-04,CANCEL,A3026,Aadhya Deshpande,Voice Frontline,1,1,2799.0,2799.0
+2026-04,CANCEL,A3032,Sneha Bansal,Billing,1,1,2799.0,2799.0
+2026-04,GW-OTHER,A3002,Steven Ansari,Chat Frontline,1,1,2799.0,2799.0
+2026-04,GW-OTHER,A3011,Rohit Gill,Chat Frontline,1,1,2799.0,2799.0
+2026-04,GW-OTHER,A3021,Meera Mathew,Email Frontline,1,1,2799.0,2799.0
+2026-04,WTY-BUYBACK,A3039,Reyansh Mishra,Escalations & Warranty,2,1,2799.0,2799.0
+2026-04,GW-OTHER,A3010,Tenzin Mathew,Chat Frontline,1,1,2499.0,2499.0
+2026-04,WTY-BUYBACK,A3013,Rohit Nair,Chat Frontline,1,1,2499.0,2499.0
+2026-04,DOA-REPL,A3032,Sneha Bansal,Billing,1,1,2374.0,2374.0
+2026-04,DUP-PAYMENT,A3018,Krishna Bhatt,Email Frontline,1,1,2374.0,2374.0
+2026-04,DOA-REPL,A3006,Varun Bhatt,Chat Frontline,1,1,2124.0,2124.0
+2026-04,PRICE-ADJ,A3035,Dev Kulkarni,Billing,1,2,2099.0,1049.5
+2026-04,DOA-REPL,A3031,Zaid Desai,Logistics,1,1,1999.0,1999.0
+2026-04,LOST-TRANSIT,A3028,Sameer Kapoor,Logistics,1,1,1999.0,1999.0
+2026-04,RETURN-QC-OK,A3032,Sneha Bansal,Billing,1,1,1999.0,1999.0
+2026-04,DOA-REPL,A3030,Aishwarya Trivedi,Logistics,1,1,1799.0,1799.0
+2026-04,RETURN-QC-OK,A3017,Kabir Singh,Email Frontline,1,1,1799.0,1799.0
+2026-04,DUP-PAYMENT,A3035,Dev Kulkarni,Billing,1,2,1709.0,854.5
+2026-04,CANCEL,A3004,Geeta Dutta,Chat Frontline,1,1,1529.0,1529.0
+2026-04,DOA-REPL,A3029,Rajat Mukherjee,Logistics,1,1,1299.0,1299.0
+2026-04,DOA-REPL,A3040,Thomas Jadhav,Escalations & Warranty,2,1,1299.0,1299.0
+2026-04,CANCEL,A3021,Meera Mathew,Email Frontline,1,1,1274.0,1274.0
+2026-04,WTY-BUYBACK,A3012,Lakshmi Srivastava,Chat Frontline,1,1,1250.0,1250.0
+2026-04,RETURN-QC-OK,A3035,Dev Kulkarni,Billing,1,1,1234.0,1234.0
+2026-04,GW-OTHER,A3041,Mohammed Mehta,Escalations & Warranty,2,1,1000.0,1000.0
+2026-04,RETURN-QC-OK,A3029,Rajat Mukherjee,Logistics,1,1,630.0,630.0
+2026-04,PRICE-ADJ,A3033,Vikram Banerjee,Billing,1,1,499.0,499.0
+2026-04,CANCEL,A3012,Lakshmi Srivastava,Chat Frontline,1,1,400.0,400.0
+2026-04,GW-OTHER,A3006,Varun Bhatt,Chat Frontline,1,1,340.0,340.0
+2026-04,DOA-REPL,A3037,Manish Iyer,Returns Desk,1,1,200.0,200.0
+2026-04,RETURN-QC-OK,A3031,Zaid Desai,Logistics,1,1,180.0,180.0
+2026-04,GW-OTHER,A3020,Aadhya Singh,Email Frontline,1,1,144.0,144.0
+2026-04,DUP-PAYMENT,A3020,Aadhya Singh,Email Frontline,1,1,80.0,80.0
+2026-05,GW-OTHER,A3036,Ritika D'Souza,Returns Desk,1,13,33237.0,2556.69
+2026-05,RETURN-QC-OK,A3037,Manish Iyer,Returns Desk,1,11,25696.0,2336.0
+2026-05,RETURN-QC-OK,A3036,Ritika D'Souza,Returns Desk,1,9,18877.0,2097.44
+2026-05,LOST-TRANSIT,A3030,Aishwarya Trivedi,Logistics,1,2,13044.0,6522.0
+2026-05,GW-OTHER,A3030,Aishwarya Trivedi,Logistics,1,5,12115.0,2423.0
+2026-05,GW-OTHER,A3034,Tanvi Rathore,Billing,1,5,12019.0,2403.8
+2026-05,GW-OTHER,A3035,Dev Kulkarni,Billing,1,5,11925.0,2385.0
+2026-05,GW-OTHER,A3039,Reyansh Mishra,Escalations & Warranty,2,3,10746.0,3582.0
+2026-05,RETURN-QC-OK,A3030,Aishwarya Trivedi,Logistics,1,3,10603.0,3534.33
+2026-05,CANCEL,A3010,Tenzin Mathew,Chat Frontline,1,2,9973.0,4986.5
+2026-05,DOA-REPL,A3030,Aishwarya Trivedi,Logistics,1,3,9622.0,3207.33
+2026-05,GW-OTHER,A3037,Manish Iyer,Returns Desk,1,4,8902.0,2225.5
+2026-05,GW-OTHER,A3008,Meera Malhotra,Chat Frontline,1,1,7998.0,7998.0
+2026-05,GW-OTHER,A3038,Ankit Dhillon,Returns Desk,1,3,7872.0,2624.0
+2026-05,RETURN-QC-OK,A3032,Sneha Bansal,Billing,1,2,7594.0,3797.0
+2026-05,CANCEL,A3026,Aadhya Deshpande,Voice Frontline,1,1,6999.0,6999.0
+2026-05,GW-OTHER,A3009,Sukhwinder Singh,Chat Frontline,1,1,6999.0,6999.0
+2026-05,GW-OTHER,A3016,Thomas Kumar,Email Frontline,1,1,6998.0,6998.0
+2026-05,RETURN-QC-OK,A3038,Ankit Dhillon,Returns Desk,1,2,6998.0,3499.0
+2026-05,DUP-PAYMENT,A3035,Dev Kulkarni,Billing,1,2,6749.0,3374.5
+2026-05,WTY-BUYBACK,A3026,Aadhya Deshpande,Voice Frontline,1,1,6649.0,6649.0
+2026-05,GW-OTHER,A3032,Sneha Bansal,Billing,1,2,6648.0,3324.0
+2026-05,CANCEL,A3005,Payal Bhatia,Chat Frontline,1,1,6499.0,6499.0
+2026-05,GW-OTHER,A3012,Lakshmi Srivastava,Chat Frontline,1,1,6499.0,6499.0
+2026-05,GW-OTHER,A3031,Zaid Desai,Logistics,1,1,6174.0,6174.0
+2026-05,PRICE-ADJ,A3035,Dev Kulkarni,Billing,1,1,5949.0,5949.0
+2026-05,GW-OTHER,A3028,Sameer Kapoor,Logistics,1,4,5718.0,1429.5
+2026-05,DOA-REPL,A3044,Arjun Kumar,Escalations & Warranty,2,1,5598.0,5598.0
+2026-05,GW-OTHER,A3011,Rohit Gill,Chat Frontline,1,1,5524.0,5524.0
+2026-05,WTY-BUYBACK,A3007,Abhishek Gupta,Chat Frontline,1,1,5524.0,5524.0
+2026-05,DUP-PAYMENT,A3034,Tanvi Rathore,Billing,1,5,5242.0,1048.4
+2026-05,GW-OTHER,A3015,Sameer Jadhav,Chat Frontline,1,1,5199.0,5199.0
+2026-05,PRICE-ADJ,A3033,Vikram Banerjee,Billing,1,1,5199.0,5199.0
+2026-05,WTY-BUYBACK,A3027,Priya Agarwal,Logistics,1,1,5199.0,5199.0
+2026-05,PRICE-ADJ,A3015,Sameer Jadhav,Chat Frontline,1,1,4999.0,4999.0
+2026-05,GW-OTHER,A3004,Geeta Dutta,Chat Frontline,1,2,4849.0,2424.5
+2026-05,WTY-BUYBACK,A3039,Reyansh Mishra,Escalations & Warranty,2,1,4749.0,4749.0
+2026-05,RETURN-QC-OK,A3035,Dev Kulkarni,Billing,1,3,4658.0,1552.67
+2026-05,CANCEL,A3006,Varun Bhatt,Chat Frontline,1,2,4519.0,2259.5
+2026-05,GW-OTHER,A3013,Rohit Nair,Chat Frontline,1,1,4499.0,4499.0
+2026-05,GW-OTHER,A3033,Vikram Banerjee,Billing,1,2,3849.0,1924.5
+2026-05,DUP-PAYMENT,A3033,Vikram Banerjee,Billing,1,2,3798.0,1899.0
+2026-05,DOA-REPL,A3018,Krishna Bhatt,Email Frontline,1,1,3499.0,3499.0
+2026-05,DOA-REPL,A3036,Ritika D'Souza,Returns Desk,1,1,3499.0,3499.0
+2026-05,GW-OTHER,A3010,Tenzin Mathew,Chat Frontline,1,1,3499.0,3499.0
+2026-05,GW-OTHER,A3026,Aadhya Deshpande,Voice Frontline,1,1,3499.0,3499.0
+2026-05,PRICE-ADJ,A3027,Priya Agarwal,Logistics,1,1,3499.0,3499.0
+2026-05,WTY-BUYBACK,A3014,Anjali D'Souza,Chat Frontline,1,1,3499.0,3499.0
+2026-05,WTY-BUYBACK,A3030,Aishwarya Trivedi,Logistics,1,1,3499.0,3499.0
+2026-05,GW-OTHER,A3018,Krishna Bhatt,Email Frontline,1,3,3426.0,1142.0
+2026-05,CANCEL,A3002,Steven Ansari,Chat Frontline,1,1,3398.0,3398.0
+2026-05,DOA-REPL,A3011,Rohit Gill,Chat Frontline,1,1,3324.0,3324.0
+2026-05,WTY-BUYBACK,A3024,Amit Deshpande,Voice Frontline,1,1,3324.0,3324.0
+2026-05,GW-OTHER,A3002,Steven Ansari,Chat Frontline,1,2,2994.0,1497.0
+2026-05,DOA-REPL,A3016,Thomas Kumar,Email Frontline,1,1,2974.0,2974.0
+2026-05,GW-OTHER,A3005,Payal Bhatia,Chat Frontline,1,1,2974.0,2974.0
+2026-05,RETURN-QC-OK,A3020,Aadhya Singh,Email Frontline,1,1,2800.0,2800.0
+2026-05,DUP-PAYMENT,A3032,Sneha Bansal,Billing,1,3,2748.0,916.0
+2026-05,GW-OTHER,A3019,Kavya Agarwal,Email Frontline,1,1,2499.0,2499.0
+2026-05,GW-OTHER,A3040,Thomas Jadhav,Escalations & Warranty,2,1,2499.0,2499.0
+2026-05,RETURN-QC-OK,A3027,Priya Agarwal,Logistics,1,1,2499.0,2499.0
+2026-05,GW-OTHER,A3017,Kabir Singh,Email Frontline,1,1,2124.0,2124.0
+2026-05,PRICE-ADJ,A3017,Kabir Singh,Email Frontline,1,1,2124.0,2124.0
+2026-05,RETURN-QC-OK,A3003,Komal Singh,Chat Frontline,1,1,2124.0,2124.0
+2026-05,GW-OTHER,A3006,Varun Bhatt,Chat Frontline,1,1,1599.0,1599.0
+2026-05,CANCEL,A3023,Ritika Gaikwad,Voice Frontline,1,1,1439.0,1439.0
+2026-05,CANCEL,A3035,Dev Kulkarni,Billing,1,1,1400.0,1400.0
+2026-05,GW-OTHER,A3020,Aadhya Singh,Email Frontline,1,1,1400.0,1400.0
+2026-05,GW-OTHER,A3043,Nikhil Gupta,Escalations & Warranty,2,1,1169.0,1169.0
+2026-05,DUP-PAYMENT,A3006,Varun Bhatt,Chat Frontline,1,1,552.0,552.0
+2026-05,DOA-REPL,A3037,Manish Iyer,Returns Desk,1,1,185.0,185.0
+2026-05,DOA-REPL,A3002,Steven Ansari,Chat Frontline,1,1,162.0,162.0
+2026-06,DUP-PAYMENT,A3035,Dev Kulkarni,Billing,1,9,23301.0,2589.0
+2026-06,RETURN-QC-OK,A3036,Ritika D'Souza,Returns Desk,1,8,23197.0,2899.62
+2026-06,GW-OTHER,A3037,Manish Iyer,Returns Desk,1,7,21685.0,3097.86
+2026-06,GW-OTHER,A3036,Ritika D'Souza,Returns Desk,1,6,17398.0,2899.67
+2026-06,GW-OTHER,A3034,Tanvi Rathore,Billing,1,5,16680.0,3336.0
+2026-06,GW-OTHER,A3039,Reyansh Mishra,Escalations & Warranty,2,3,16497.0,5499.0
+2026-06,RETURN-QC-OK,A3037,Manish Iyer,Returns Desk,1,7,16159.0,2308.43
+2026-06,RETURN-QC-OK,A3038,Ankit Dhillon,Returns Desk,1,6,14151.0,2358.5
+2026-06,GW-OTHER,A3030,Aishwarya Trivedi,Logistics,1,6,12667.0,2111.17
+2026-06,GW-OTHER,A3027,Priya Agarwal,Logistics,1,2,9448.0,4724.0
+2026-06,GW-OTHER,A3035,Dev Kulkarni,Billing,1,5,8273.0,1654.6
+2026-06,GW-OTHER,A3028,Sameer Kapoor,Logistics,1,2,8038.0,4019.0
+2026-06,RETURN-QC-OK,A3032,Sneha Bansal,Billing,1,2,7948.0,3974.0
+2026-06,GW-OTHER,A3001,Suresh Kaur,Chat Frontline,1,3,7642.0,2547.33
+2026-06,RETURN-QC-OK,A3033,Vikram Banerjee,Billing,1,2,7424.0,3712.0
+2026-06,GW-OTHER,A3006,Varun Bhatt,Chat Frontline,1,3,7157.0,2385.67
+2026-06,CANCEL,A3021,Meera Mathew,Email Frontline,1,1,6999.0,6999.0
+2026-06,DOA-REPL,A3010,Tenzin Mathew,Chat Frontline,1,1,6999.0,6999.0
+2026-06,DOA-REPL,A3029,Rajat Mukherjee,Logistics,1,1,6999.0,6999.0
+2026-06,LOST-TRANSIT,A3028,Sameer Kapoor,Logistics,1,1,6999.0,6999.0
+2026-06,DOA-REPL,A3009,Sukhwinder Singh,Chat Frontline,1,1,6499.0,6499.0
+2026-06,DOA-REPL,A3015,Sameer Jadhav,Chat Frontline,1,2,6473.0,3236.5
+2026-06,CANCEL,A3001,Suresh Kaur,Chat Frontline,1,1,6174.0,6174.0
+2026-06,DOA-REPL,A3028,Sameer Kapoor,Logistics,1,1,6174.0,6174.0
+2026-06,GW-OTHER,A3002,Steven Ansari,Chat Frontline,1,1,6174.0,6174.0
+2026-06,CANCEL,A3029,Rajat Mukherjee,Logistics,1,2,5998.0,2999.0
+2026-06,CANCEL,A3018,Krishna Bhatt,Email Frontline,1,2,5873.0,2936.5
+2026-06,GW-OTHER,A3018,Krishna Bhatt,Email Frontline,1,2,5623.0,2811.5
+2026-06,GW-OTHER,A3024,Amit Deshpande,Voice Frontline,1,2,5598.0,2799.0
+2026-06,DOA-REPL,A3024,Amit Deshpande,Voice Frontline,1,1,5524.0,5524.0
+2026-06,GW-OTHER,A3012,Lakshmi Srivastava,Chat Frontline,1,1,5199.0,5199.0
+2026-06,GW-OTHER,A3026,Aadhya Deshpande,Voice Frontline,1,2,5023.0,2511.5
+2026-06,DUP-PAYMENT,A3013,Rohit Nair,Chat Frontline,1,1,4999.0,4999.0
+2026-06,DUP-PAYMENT,A3018,Krishna Bhatt,Email Frontline,1,1,4999.0,4999.0
+2026-06,LOST-TRANSIT,A3005,Payal Bhatia,Chat Frontline,1,1,4999.0,4999.0
+2026-06,GW-OTHER,A3009,Sukhwinder Singh,Chat Frontline,1,2,4973.0,2486.5
+2026-06,GW-OTHER,A3008,Meera Malhotra,Chat Frontline,1,2,4948.0,2474.0
+2026-06,PRICE-ADJ,A3032,Sneha Bansal,Billing,1,2,4538.0,2269.0
+2026-06,GW-OTHER,A3038,Ankit Dhillon,Returns Desk,1,3,4448.0,1482.67
+2026-06,GW-OTHER,A3031,Zaid Desai,Logistics,1,2,4199.0,2099.5
+2026-06,GW-OTHER,A3003,Komal Singh,Chat Frontline,1,3,3827.0,1275.67
+2026-06,CANCEL,A3003,Komal Singh,Chat Frontline,1,3,3728.0,1242.67
+2026-06,CANCEL,A3008,Meera Malhotra,Chat Frontline,1,1,3499.0,3499.0
+2026-06,GW-OTHER,A3005,Payal Bhatia,Chat Frontline,1,1,3499.0,3499.0
+2026-06,WTY-BUYBACK,A3030,Aishwarya Trivedi,Logistics,1,2,3473.0,1736.5
+2026-06,CANCEL,A3015,Sameer Jadhav,Chat Frontline,1,1,3324.0,3324.0
+2026-06,CANCEL,A3030,Aishwarya Trivedi,Logistics,1,1,3324.0,3324.0
+2026-06,CANCEL,A3032,Sneha Bansal,Billing,1,1,3324.0,3324.0
+2026-06,DOA-REPL,A3013,Rohit Nair,Chat Frontline,1,1,3324.0,3324.0
+2026-06,DOA-REPL,A3030,Aishwarya Trivedi,Logistics,1,3,3286.0,1095.33
+2026-06,CANCEL,A3002,Steven Ansari,Chat Frontline,1,1,3149.0,3149.0
+2026-06,CANCEL,A3012,Lakshmi Srivastava,Chat Frontline,1,1,3149.0,3149.0
+2026-06,CANCEL,A3034,Tanvi Rathore,Billing,1,1,3149.0,3149.0
+2026-06,DOA-REPL,A3021,Meera Mathew,Email Frontline,1,1,3149.0,3149.0
+2026-06,LOST-TRANSIT,A3030,Aishwarya Trivedi,Logistics,1,2,3118.0,1559.0
+2026-06,CANCEL,A3026,Aadhya Deshpande,Voice Frontline,1,1,2974.0,2974.0
+2026-06,GW-OTHER,A3011,Rohit Gill,Chat Frontline,1,1,2974.0,2974.0
+2026-06,DOA-REPL,A3005,Payal Bhatia,Chat Frontline,1,1,2799.0,2799.0
+2026-06,DUP-PAYMENT,A3033,Vikram Banerjee,Billing,1,1,2799.0,2799.0
+2026-06,WTY-BUYBACK,A3018,Krishna Bhatt,Email Frontline,1,1,2799.0,2799.0
+2026-06,WTY-BUYBACK,A3041,Mohammed Mehta,Escalations & Warranty,2,1,2799.0,2799.0
+2026-06,DOA-REPL,A3031,Zaid Desai,Logistics,1,2,2644.0,1322.0
+2026-06,DOA-REPL,A3037,Manish Iyer,Returns Desk,1,1,2499.0,2499.0
+2026-06,PRICE-ADJ,A3033,Vikram Banerjee,Billing,1,1,2499.0,2499.0
+2026-06,CANCEL,A3017,Kabir Singh,Email Frontline,1,2,2338.0,1169.0
+2026-06,WTY-BUYBACK,A3012,Lakshmi Srivastava,Chat Frontline,1,1,2249.0,2249.0
+2026-06,CANCEL,A3033,Vikram Banerjee,Billing,1,1,1999.0,1999.0
+2026-06,GW-OTHER,A3044,Arjun Kumar,Escalations & Warranty,2,1,1709.0,1709.0
+2026-06,DUP-PAYMENT,A3032,Sneha Bansal,Billing,1,3,1640.0,546.67
+2026-06,GW-OTHER,A3010,Tenzin Mathew,Chat Frontline,1,1,1529.0,1529.0
+2026-06,DUP-PAYMENT,A3001,Suresh Kaur,Chat Frontline,1,1,1499.0,1499.0
+2026-06,GW-OTHER,A3029,Rajat Mukherjee,Logistics,1,1,1499.0,1499.0
+2026-06,GW-OTHER,A3022,Daniel Arora,Email Frontline,1,1,1299.0,1299.0
+2026-06,GW-OTHER,A3016,Thomas Kumar,Email Frontline,1,1,1000.0,1000.0
+2026-06,GW-OTHER,A3033,Vikram Banerjee,Billing,1,1,900.0,900.0
+2026-06,CANCEL,A3004,Geeta Dutta,Chat Frontline,1,1,700.0,700.0
+2026-06,PRICE-ADJ,A3035,Dev Kulkarni,Billing,1,1,700.0,700.0
+2026-06,CANCEL,A3005,Payal Bhatia,Chat Frontline,1,1,585.0,585.0
+2026-06,DOA-REPL,A3032,Sneha Bansal,Billing,1,1,332.0,332.0
+2026-06,GW-OTHER,A3025,Komal Malhotra,Voice Frontline,1,1,332.0,332.0
+2026-06,CANCEL,A3022,Daniel Arora,Email Frontline,1,1,297.0,297.0
+2026-06,CANCEL,A3006,Varun Bhatt,Chat Frontline,1,1,270.0,270.0
+2026-06,DUP-PAYMENT,A3009,Sukhwinder Singh,Chat Frontline,1,1,256.0,256.0
+2026-06,PRICE-ADJ,A3016,Thomas Kumar,Email Frontline,1,1,250.0,250.0
+2026-06,DUP-PAYMENT,A3021,Meera Mathew,Email Frontline,1,1,130.0,130.0
+2026-06,PRICE-ADJ,A3034,Tanvi Rathore,Billing,1,1,104.0,104.0
